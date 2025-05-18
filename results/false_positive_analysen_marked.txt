@@ -1,0 +1,915 @@
+Kategorie 1: Rollen-, Amts- und Identitätsbezeichnungen mit konkreter Personenreferenz
+Definition (aktualisiert):
+Diese Fehler entstehen, wenn maskuline Begriffe wie Ministerpräsident, Lehrer, Christdemokrat oder Saarländer als generisch interpretiert werden, obwohl sie sich auf eine konkret benannte oder durch Kontext eindeutig identifizierbare Einzelperson beziehen. Das System erkennt die persönliche Referenz nicht und behandelt den Ausdruck fälschlich als allgemeine Personenbezeichnung.
+
+Typische Muster:
+
+„Der --Saarländer-- gewann die Wahl.“
+„Der --Außenminister-- Schimon Peres …“
+Vorhanden: 184
+
+2. Pronomen mit referenziellem Bezug:
+Maskuline Pronomina wie er oder ihn werden als generisch erkannt, obwohl sie klar auf eine zuvor genannte Einzelperson zurückverweisen. Ohne Koreferenzauflösung wird etwa ein Satz wie „Yitzhak Rabin war Ministerpräsident. Er strebte nach Frieden.“ fälschlich als generisch-maskulin interpretiert.
+Fehlende Koreferenzauflösung über Satzgrenzen hinweg.
+Vorhanden: 96
+
+3. Maskuline Bezeichnungen in erzählenden oder biografischen Kontexten:
+Begriffe wie Sohn, Freund, Mörder oder Held erscheinen in biografischen oder erzählerischen Passagen oft als spezifische Figurenbezeichnungen, werden aber trotzdem als generisch gewertet. Ein typisches Beispiel ist: „Er war der erste Sabra, der Ministerpräsident wurde.“
+Kein Erkennen des übergeordneten Textmodus (narrativ, biografisch, reportierend).
+Vorhanden: 22
+
+Kategorie 4: Abstrakte Begriffe und nicht-personale Ausdrücke ohne Genderbezug
+Definition:
+Wörter wie Rat, Mut, Fleiß oder Geist, die grammatisch maskulin sind, aber keine Personen bezeichnen, werden fälschlich als generisch erkannt. Dabei handelt es sich um abstrakte Konzepte, Eigenschaften oder Zustände, nicht um menschliche Rollen oder Gruppen.
+Ebenfalls zu dieser Kategorie gehören geschlechtsneutrale oder nicht flektierbare Ausdrücke, insbesondere Lehnwörter wie Fans oder Members, die im Deutschen nicht zwischen maskuliner und femininer Form unterscheiden und daher keine generische Maskulinform darstellen können. Die Markierung solcher Begriffe als generisch beruht auf einer rein formbasierten Fehleinschätzung ohne semantische Grundlage.
+Vorhanden: 5
+
+5: Funktionale Pronomen und Fragewörter
+Definition:
+Maskuline Fragewörter oder Pronomina wie wer, wen, wem, dessen, einiger, die keine Personenbezeichnung im engeren Sinn darstellen, sondern grammatische Operatoren sind, werden fälschlich als generische Maskulina gewertet.
+Vorhanden: 18
+
+Kategorie 6 : Grammatische Maskulina mit gegenständlichem Bezug
+Definition:
+Fehlmarkierungen entstehen, wenn grammatische Maskulina wie der Tisch, dem Grund, den Zustand usw. automatisch als personenbezeichnend interpretiert werden, obwohl sie rein gegenständlich sind und keinerlei Personenbezug aufweisen.
+Vorhanden: 13
+
+Typisches Muster:
+
+„--Wen-- könnte die Not unseres Jahrhunderts nicht rühren?“
+
+
+ArtikelId: 2166_0001:
+--Wen-- könnte die Not unseres Jahrhunderts nicht rühren...
+Philipp Melanchthon über das Elend der Wissenschaften und die Neugestaltung des Studiums vor fast 500 Jahren
+Philipp Melanchthon, der enge Freund Martin Luthers, galt als der "--Lehrer-- Deutschlands", weil er die Reformation intellektuell vermittelte.
+Zur 500. Wiederkehr seines Geburtstages am 16. Februar dokumentieren wir aus dem Buch Philipp Melanchthon - Der Lehrer Deutschlands, hrsg. von Hans-Rüdiger Schwab, Deutscher Taschenbuch Verlag, München 1997, Auszüge aus dem Kapitel "Über die Neugestaltung des Universitätsstudiums".
+Es war seine Antrittsvorlesung an der Uni Wittenberg 1518.
+In unserer Freitag-Ausgabe sind aufgrund eines technischen Fehlers Teile des Interviews zur Arbeit der Wahrheitskommission in Südafrika vertauscht, andere weggelassen worden.
+Wir werden die Beiträge deshalb am Montag noch einmal dokumentieren.
+Ich möchte durchaus nicht unbescheiden und für mich unangemessen in dieser Versammlung das Wort ergreifen, --Herr-- --Rektor-- magnifice und hochansehnliche --Professoren--.
+Mich halten gewöhnlich meine Veranlagung und meine stille Art des Studiums von derartigen Festveranstaltungen und einer solchen hochlöblichen Gelehrtenversammlung fern;
+mich hätte auch heute vor allem die Schwierigkeit der Aufgabe, die ich zu unternehmen im Begriffe stehe, abschrecken können, wenn mich nicht die Liebe zur wahren Wissenschaft und die Pflicht meines Amtes dazu gemahnten, daß ich euch allen die schönen Studien und die wiedererwachenden Wissenschaften aufs angelegentlichste empfehlen möchte.
+Ich habe es nämlich auf mich genommen, ihre Sache gegen diejenigen zu verfechten, die sich allgemein in den Schulen die Titel und Vorrechte von Gelehrten, aber als Ungelehrte mit barbarischen Mitteln, nämlich durch Gewalt und Betrug, angemaßt haben und die bis heute zumeist mit unlauteren Absichten die Menschen in ihrem Fortschreiten hemmen.
+Auch jetzt noch suchen nicht wenige die deutsche Jugend, die in den letztvergangenen Jahren allenthalben an diesem erfreulichen wissenschaftlichen Wettstreit teilzunehmen begonnen hat, mit höchst plumpen Argumenten gleichsam aus ihrer Bahn zu reißen:
+Das Studium der humanistischen Wissenschaften sei zu schwierig und habe demgegenüber zu geringen Nutzen;
+das Griechische eigneten sich nur gewisse Personen an, die ihre Zeit vertun und damit prahlen wollten;
+das Hebräische sei von zweifelhaftem Werte, indessen gingen die Wissenschaften der ursprünglichen Art zugrunde, die Philosophie werde achtlos beiseite gelassen;
+und was derartige Beschuldigungen mehr sind.
+Wer vermöchte nicht einzusehen, daß einer, der sich mit jener Schar von Ungelehrten auseinandersetzen will, nicht nur ein Theseus, sondern wohl gar ein Herkules sein müßte?
+Man könnte mich deshalb für allzu kühn halten, daß ich ein so gerechtfertigtes Vorhaben unternommen habe.
+Um vorerst davon zu schweigen, daß ich dieses Gebiet kaum vornehmen kann, ohne unbescheiden zu sein - aber ich will des Todes sein, wenn ich jemals etwas Irdisches für vordringlicher gehalten habe (als das).
+Denn in mir glüht die Liebe zur Wahrheit, und da ich eure Studien, ihr Jünglinge, kräftig zu fördern wünsche, so muß ich wohl gewisse Dinge offener aussprechen, als jene Leute es wollen.
+Wenn mich jedoch meine Vernunft, wie mir scheint, oder irgendeine Fügung hierzu treibt, so wünsche ich mir, hochverehrte Anwesende, daß ihr dieses Anliegen mit mir teilt;
+denn durch eure Mühewaltung, --Rat-- und Hilfe sollen die Wissenschaften allmählich von Rost und Staub befreit werden und hoffen dürfen, ihren ursprünglichen Glanz allenthalben wiederzugewinnen.
+Es war somit meine Absicht, die Jugend unserer berühmten Universitäten in kurzen Worten darauf hinzuweisen, daß sie - um den Kern eures großartigen Vorhabens herauszustellen - erkennen mag, was es mit den neubelebten Studien auf sich hat und mit denen, die unsere barbarischen Vorfahren von den Angelsachsen ins Frankenreich und von den --Franken-- nach Deutschland eingeführt haben, damit ihr selber zu beurteilen vermögt, wenn ihr beider Verlauf kennengelernt habt, welche man mit größerem Nutzen und geringerem Schaden treiben kann.
+Und meine ganze Rede soll darin gipfeln, daß ich euch zu den schönen Wissenschaften, das heißt zum Griechischen und Lateinischen, Lust mache.
+Denn ich weiß, daß die meisten schon im Vorhof durch die Neuheit der Sache, wenn schon nicht abgeschreckt, so doch wenigstens geängstigt werden.
+Es wäre allerdings angebracht gewesen, das Thema meiner Rede und gewissermaßen ihren Anknüpfungspunkt von den eigentlichen Quellen und wissenschaftlichen Grundlagen aller Zeiten herzuleiten:
+doch das soll einer anderen Veranstaltung vorbehalten bleiben.
+Jetzt will ich in diesem Zusammenhang nur mit kurzen Worten die barbarischen Studien mit den echten vergleichen und zeigen, unter welchen Gesichtspunkten man das Lateinische lernen und das Griechische versuchen soll.
+Schenkt also bitte meiner Rede geneigtes Gehör, wie es mein besonderes Anliegen an euch und die Bedeutung der Wissenschaften erfordern.
+Es ist nun wohl achthundert Jahre her - fast der gesamte Erdkreis war von den Goten in Aufruhr gebracht, Italien war von den --Langobarden-- verwüstet worden -, da erstarben mitsamt dem römischen Weltreich auch die römischen Wissenschaften, weil das Wüten des Krieges zugleich auch die Bibliotheken zerstört und die schönen Künste durch die natürlicherweise mangelnde Muße zum Erlöschen gebracht hatte.
+Ihr wißt ja, wie wenig sich mit den Studien der Weisheit und der Pflege so friedlicher Dinge der --Kriegsgott--3 verträgt, --den--2 unser Dichter Homer mit Pallas Athene in heftigem Streit liegen läßt: Mars, "der rasende Tor", wie er sagt.
+Etwa zu jener Zeit nun hat Gregor, --den--1 sie "den Großen "nennen und --den--1 ich als den --Fackelträger--1 und den Verkünder einer vergangenen Theologie bezeichnen möchte, im übrigen ein Mann von außergewöhnlicher Frömmigkeit, die römische Kirche gelenkt und den Verfall dieser unseligen Zeit durch Wort und Schrift, so gut er konnte, aufzuhalten versucht.
+In dieser Zeit gab es, wie es scheint, niemanden unter den hiesigen Menschen, der der Nachwelt eine bedeutende Schrift hinterließ.
+Doch hatte bis dahin bei den --Angelsachsen--1 und --Iren--1 ein dauerhafter Friede die Wissenschaften gefördert, und diese standen in hohem Ansehen;
+neben verschiedenen anderen war es besonders der ehrwürdige Beda, der im Griechischen und im Lateinischen ungewöhnlich bewandert, dazu auch in der Philosophie, Mathematik und Theologie so beschlagen war, daß er sich sogar mit den Alten vergleichen konnte.
+Italien indessen und Gallien waren ohne literarisches Leben, und Deutschland war von jeher in den Waffen erfahrener als in den Wissenschaften;
+und gerade damals kämpfte es besonders in Italien, denn es hatte noch nicht insgesamt das Christentum angenommen.
+Unter diesen Verhältnissen wurde Karl (der Große) geboren, und als er die Grenzen des Römischen Reiches befriedet hatte, wandte er der Hebung der Kultur seine Aufmerksamkeit zu;
+denn er beherrschte auch selbst die meisten Fächer, die man in der Schule lernt, sicher und exakt, abgesehen von seiner Kenntnis vieler Sprachen.
+Er berief den Alkuin aus England ins Frankenreich, auf dessen Veranlassung man in Paris die Wissenschaften zu lehren begann, gewiß ein glückverheißender Anfang;
+denn sie waren noch unverfälscht, und es kam eine gewisse Kenntnis des Griechischen hinzu.
+Dieses Zeitalter hat uns Männer wie Hugo und Richard (von Sankt Viktor) und andere nicht ganz schlechte --Schriftsteller--1 beschert.
+Die Philosophie bezog man noch nicht wie heutzutage aus dem Aristoteles, sondern für sie war noch ganz die Mathematik zuständig, die damals noch allen Gebildeten sehr am Herzen lag, was die alten Bibliotheken der Benediktinermönche zeigen;
+denn alle bedeutenden Männer unter ihnen haben auch durch ein mathematisches Werk ihre hervorragende Ausbildung darin bewiesen.
+Dann war es durch die Gewohnheit damit vorbei, und die Menschen verfielen auf den Aristoteles, sei es nun aus gelehrtem Verlangen oder aus Lust am Streit, und zwar auf einen mangelhaften und verstümmelten Aristoteles, der an sich schon im Griechischen schwer verständlich und dem --Orakelgott--3 ähnlich schien, nun aber so ins Lateinische übersetzt war, daß --er--1 gar die Orakelsprüche einer rasenden Sibylle von sich gab: dahin hatten die unbesonnenen Menschen es kommen lassen.
+Allmählich wurden die ernsten Wissenschaften vernachlässigt, die Kenntnis des Griechischen kam uns abhanden, und überhaupt begann man anstelle des Guten das Schlechte zu lehren.
+Von daher nahmen ein Thomas, ein Scotus, ein Durandus, ein seraphischer und cherubischer --Lehrer--1, und wie sie alle heißen, ihren Ausgang, eine zahlreichere Brut als die --Söhne--3 des Kadmos.
+Hinzu kam obendrein, daß die alten --Autoren--1 durch das Studium der neuen nicht nur mißachtet wurden, sondern daß sie, wenn bis zu jener Zeit überhaupt noch welche erhalten geblieben waren, völlig in Vergessenheit gerieten und verlorengingen.
+Man könnte sich daher fragen, ob die Erfinder der dialektischen Spitzfindigkeiten durch etwas anderes mehr Schaden angerichtet haben als dadurch, daß sie in ihrem Wahnwitz so viele Tausende alter Schriftsteller bis zur völligen Vernichtung verkommen ließen.
+Solchen Leuten wurde nun ein für allemal die Vollmacht des göttlichen und irdischen Rechts zuerkannt, aus dessen Dekreten man die Jugend unterrichtete.
+Daraufhin ging man später gegen die Rechtswissenschaft und die Medizin in gleicher Weise vor.
+Es mußte der Schüler ja seinem --Lehrmeister--3 ähnlich sein, denn - wie man im Volksmund sagt - "ein böser Rabe legt ein böses Ei".
+Diese Studienform herrschte etwa dreihundert Jahre lang in England, Frankreich und Deutschland;
+und um beileibe nicht zu übertreiben: wie verderblich sie war, das kann man annähernd aus dem Gesagten erschließen.
+Und damit ihr es deutlich erkennt, hört mir weiter genau zu!
+Zuerst ließ man die Wissenschaft der Alten beiseite, als jene dreiste Methode des Erklärens und Philosophierens an Geltung gewann;
+zugleich blieb das Griechische unbeachtet, die Mathematik wurde vergessen und die Theologie nachlässiger gepflegt.
+Welche Pest konnte schlimmer sein als dieser Übelstand?
+Gewiß aber war keine jemals weiter verbreitet.
+Denn da bis zu jener Zeit die gesamte Philosophie griechisch gewesen war und da es an lateinischen theologischen Schriften außer denen des Cyprian, Hilarius, Ambrosius, Hieronymus und Augustinus keine bedeutenden gab und die Theologie des Westens den originalen Zugang zur griechischen bis dahin großenteils noch hatte, mußte mit der Vernachlässigung des Griechischen zugleich alles, was die Philosophie den menschlichen Studien für Nutzen bringt - und sie bringt bei weitem den größten Nutzen! -, und damit auch die Pflege der Theologie allmählich zugrunde gehen.
+Dieser letztere Verfall hat tatsächlich die Sitten und Gebräuche der christlichen Kirche, der erstere dagegen das Studium der Wissenschaften schwer getroffen.
+Der Verfall nur eines von beiden wäre vielleicht gelassener zu ertragen gewesen.
+Denn die unverdorbenen Gebräuche der Kirche hätten wohl die verfallenden Wissenschaften leicht wiederherstellen können;
+und wenn die rechten Wissenschaften in Ordnung geblieben wären, dann wäre es wohl auch möglich gewesen, die verdorbenen Sitten in der Kirche zu bessern und den daniederliegenden Sinn der Menschen wieder zu erwecken, zu kräftigen und in Ordnung zu bringen.
+Doch mag es nun durch das Schicksal oder durch unsere eigene Schuld gekommen sein - gleichermaßen ist die wahre Wissenschaft mit der falschen und der alte Glaube mit Zeremonien, menschlichen Traditionen, Bestimmungen, Erlässen, Verordnungen, Extravaganzen und Zusätzen der Epigonen vertauscht worden.
+Und es hat niemanden gekümmert, daß die --Väter--1 auf dem Konzil zu Nicaea so klug und vorsorglich bestimmt haben:
+"Die alten Bräuche soll man bewahren!"
+Euch aber, ihr Jünglinge, gratuliere ich zu eurem Glück, daß es euch durch die Güte unseres vortrefflichen und weisen Kurfürsten Friedrich von Sachsen beschieden ist, die weitaus förderlichste Ausbildung zu erhalten;
+ihr schöpft die Quellen des Wissens aus den besten Autoren. Dieser Mann da lehrt euch den echten und unverfälschten Aristoteles, jener den Rhetor Quintilian, der dritte den Plinius, beinahe den wissensreichsten und gleichsam eine Art Füllhorn des Wissens, ein anderer lehrt euch die logischen Schlüsse, aber in kluger Beschränkung.
+Es kommen die Fächer hinzu, ohne die man niemanden als gebildet ansehen kann: die Mathematik, dann die Poetik und die Redner, von keinen gewöhnlichen Lehrern dargeboten.
+Wenn ihr dafür die richtige Studienordnung kennengelernt habt, so bin ich sicher, werden sie euch leicht und erstaunlich förderlich vorkommen.
+Die Schulbildung, die sogenannte Grundausbildung in Grammatik, Dialektik und Rhetorik, muß man sich so weit aneignen, daß man im Reden und im Denken geschult ist und nicht unvorbereitet den Höhen der Wissenschaft zustrebt.
+Zum Lateinischen muß die Kenntnis des Griechischen treten, damit man bei Lektüre der --Historiker--1, Redner und Dichter überall auf den Kern der Sache selber trifft und nicht auf ihr Schattenbild wie Ixion, der die Juno umarmen wollte und an eine Wolke geriet.
+Hast du dir gleichsam diese Wegzehrung verschafft, im abgekürzten Verfahren und ohne Beschwerde, wie Plato sagt, dann gehe an die Philosophie heran.
+Denn ich bin durchaus der Auffassung, daß einer, der etwas Bedeutendes in der Theologie oder in der Öffentlichkeit leisten will, wenig erreichen wird, wenn er nicht seinen Geist zuvor in den Geisteswissenschaften - denn das meine ich mit "Philosophie "- mit Überlegung und in gehörigem Maße geschult hat.
+Ich möchte nicht, daß man beim Philosophieren Unsinn treibt;
+denn dann kommt es so weit, daß man schließlich sogar den gesunden Menschenverstand vergißt.
+Doch wähle dir vom Besten das Beste aus, und zwar, was zur Kenntnis der Natur und zur Bildung des Charakters beiträgt.
+Vor allem ist hierbei die griechische Bildung vonnöten, die die gesamte Naturwissenschaft umfaßt, um über die Ethik sachkundig und gewandt sprechen zu können.
+Von größter Wichtigkeit sind die "Ethik "des Aristoteles, Platons "Gesetze "und die Dichter;
+von ihnen natürlich die besten und die, deren Lektüre zur Geistesbildung beiträgt.
+Homer ist für die Griechen die Quelle allen Wissens, für die Lateiner sind es Vergil und Horaz.
+Durchaus notwendig hierzu ist die Geschichte, der ich tatsächlich, wenn es gestattet wäre, gutwillig alles allein zuschreiben wollte, was der gesamte Kreis gelehrter Bildung an Lob verdient.
+Sie sagt uns ausführlicher und besser als Chrysipp und Crantor, was schön und was häßlich, was nützlich ist und was nicht.
+Auf sie kann kein Bereich des Lebens, weder öffentlicher noch privater Art, verzichten.
+Ihr ist die Verwaltung der staatlichen und häuslichen Dinge zu Dank verpflichtet.
+Ja, ich weiß nicht, ob gar unsere irdische Welt mit geringerem Schaden die Sonne, also ihr Lebensprinzip, entbehren könnte als die Leitung der staatlichen Angelegenheiten die Geschichte.
+Bei den Alten galt allgemein die Göttin "Erinnerung "als die Mutter der Musen, was nach meiner Meinung bedeutet, daß sich alle schönen Künste aus der Geschichte herleiten.
+Ich umfasse also mit der Bezeichnung "Philosophie "die Naturwissenschaft, die Sittenlehre und die Geschichte.
+Wer darin richtig ausgebildet worden ist, hat sich den Weg zum Gipfel geebnet.
+Will er Rechtssachen vertreten, dann weiß er, wie er eine inhaltsreiche, glänzende Rede halten kann, will er ein Staatswesen leiten, weiß er, wo er die Normen für Billigkeit, Sitte und Recht erfahren kann.
+Kein Wunder, daß diese Vorzüge der Philosophie dem Demosthenes, dem berühmtesten Redner, wesentlich erschienen, weshalb er sie jedem Jüngling so dringend empfahl mit den Worten: "Denke aber daran...";
+lest das weitere selbst in seiner Rede nach!
+Marcus Cicero hat der Philosophie überall den Vorrang gegeben, und ihr habt, glaube ich, schon gehört, was er bei einem Vergleich der beiden Rechtsgelehrten Servius Sulpicius und Quintus Scaevola gesagt hat, ihn haben die Römer als Weisen bezeichnet und haben an ihm das reiche Wissen in philosophischen Dingen bewundert.
+Was aber die Theologie angeht, so ist es sehr wesentlich, wie man seinen Geist bildet.
+Denn wenn irgendein Studium, so hat natürlich vor allem die Theologie Begabung, Übung und Fleiß nötig.
+Geht doch der Salbenduft des --Herrn--3 über alle irdischen Gerüche (Hohel 4, 10).
+Geleitet vom Heiligen Geist und begleitet von der Ausbildung in den irdischen Wissenschaften sollte man an die Theologie herangehen;
+wie Synesius von Cyrene an Herculanius schreibt: "Sei tüchtig und wohlgemut im Leben und gebrauche die Philosophie als Führerin zum Göttlichen, mein Lieber."
+Wem das nicht einleuchtet, --der--2 denke unter anderem auch an das Erz von Tyrus, das man zum Tempelbau in Jerusalem verwendete.
+Da nun die Theologie teils hebräisch, teils griechisch ist - denn wir trinken als Lateiner nur aus ihren Quellflüssen -, muß man die fremden Sprachen erlernen, damit man nicht als "stumme Person "mit den --Theologen--1 umgeht.
+Dann wird sich uns die Schönheit und die eigentliche Bedeutung der Worte erschließen, und es wird uns wie am hellen Mittag der wahre und echte Schriftsinn aufgehen.
+Wenn wir den Buchstaben verstanden haben, werden wir unvermittelt auch den Sinn des Inhalts erfassen.
+Dann mögen sich all die vielen frostigen Glossen, Parallelstellen und Widersprüche fortscheren und was es sonst noch für Hemmnisse einer freien Geistesentfaltung gibt.
+Und wenn wir unseren Sinn auf die Quellen richten, dann beginnen wir Christus zu verstehen;
+sein Gebot wird uns klarwerden, und es durchströmt uns jener beglückende Nektar göttlicher Weisheit.
+Und wenn wir in den Weingärten von En-Gedi Trauben lesen, dann wird der --Bräutigam--1 kommen "und hüpft über die Berge und springt über die Hügel "(Hohel 1, 14. 2, 8), und er führt uns in den Palast von Eden, (...) er wird uns mit "köstlicher Salbe "und wohlriechendem, duftendem Öle salben, das in die gläubigen Herzen strömt, und wird uns des "Kusses von seinem Munde "würdigen (Hohel 1, 1).
+Seine Glieder geworden, werden wir leben, atmen und wirken und werden Zion schauen und in geheimniskündendem Schweigen Jeru-Salem anbeten (Hebr. 12, 22).
+Das ist die Frucht der himmlischen Weisheit.
+Sie wollen wir daher so rein wie möglich und von Menschenwitz unverfälscht betreiben.
+Das ist es, was uns Paulus immer wieder einschärft, wenn er besonders im Brief an Titus nachdrücklich von der Lehre eines Christenmenschen Unverfälschtheit und Lauterkeit verlangt (Tit. 2, 7), das heißt, daß der Glaube nicht trügerisch sein soll, und ferner Heiligkeit und Reinheit, das heißt, daß wir das Heilige nicht in unerlaubter Weise mit weltlichem Wissen vermengen sollen.
+Ich glaube, er hat vorausgesehen, daß dann, wenn das Profane sich mit dem Heiligen vermischte, zugleich auch die weltlichen Leidenschaften, Haß, Parteisucht, Spaltungen und Zank und Streit unausbleiblich folgten.
+Wer daher in das Göttliche eingeweiht werden will, der muß den alten Adam ablegen, um den neuen, unverdorbenen Adam anzulegen, das heißt, er muß die menschlichen Leidenschaften und damit das Joch der listigen Schlange mit siegreicher Tugend zerbrechen und abschütteln, auf daß er zur Ehre des --Herrn--3 verwandelt werde in alle Unendlichkeit.
+Das war der Grund, weshalb ich sage, die der wahren Wissenschaft entfremdete Kirche habe allenthalben die echte und innere Frömmigkeit mit menschlicher Überlieferung vertauscht.
+Als uns die Satzungen der Menschen zu gefallen begannen und wir aus Liebe zu unseren Werken anstelle von Himmelsbrot lieber Götzenfleisch aßen, da hörten wir auf, wahre Christen zu sein.
+Ich möchte, daß ihr mich so versteht, wie ich es meine.
+Ich meine durchaus nichts anderes, als was der evangelischen Wahrheit entspricht, wie sie die Kirche verkündet, und es wird auch mir, wie jene behaupten, "des --Herrn--3 Wahrheit Schirm und Schild "sein (Ps. 91, 4).
+Habt ihr nun eine ungefähre Vorstellung davon, welche Bedeutung in der Neubelebung der Studien liegt und wie sehr sie dazu beitragen, die rechte Geisteshaltung herauszubilden?
+5--Wen-- könnte die vergangene Zeitepoche nicht dauern, die eine so strahlende Helle in den Wissenschaften entbehrte und die in tiefste Finsternis, ja fast in wissenschaftlichen Sumpf geriet?
+5--Wen-- könnte die große Not unseres Jahrhunderts nicht rühren, das durch die Sorglosigkeit unserer Landsleute die alten --Autoren--1 vermissen muß und obendrein den Gewinn einbüßt, --den--6 auch die Heutigen aus den Schätzen der Alten gezogen hätten, wenn diese nicht verlorengegangen wären.
+Hört mich nun noch bis zum Schlusse an, ihr Jünglinge!
+Wiewohl das Gute und Schöne gewöhnlich schwer ist, wird euer Eifer doch die Schwierigkeiten überwinden, so daß ihr, wie ich hoffe, mit weit geringerem Kraftaufwand das Gute erreicht als das Schlechte.
+Eure Lehrer werden euch das auswählen, was zu wissen nützlich ist, und das Wertlose aussondern;
+besonders werden sie das wohl im Lateinischen tun.
+Mit dem Lateinischen muß man und kann man leicht das Griechische lernen.
+Widmet nur einige abfallende Stunden dem Griechischen, und ich will meinerseits eifrig bemüht sein, daß eure Arbeit nicht vergeblich ist.
+Ich werde von Anfang an die Schwierigkeit der Grammatik durch Lektüre der besten Autoren mildern, so daß hierbei die Beispiele zeigen, was dort die Regel besagt.
+Gelegentlich wird indessen auch etwas hinzukommen, was zur Charakterbildung oder zur Kenntnis geheimer Dinge beiträgt;
+wenn ihr das alles zusammenfaßt, wird es den Kreis eurer Studien herrlich abrunden.
+Denn meine Sorge wird es sein, euch sorgfältig darin zu unterweisen, was von Nutzen erscheint.
+Wir haben den Homer in Händen, desgleichen den Brief des Paulus an Titus.
+Hieraus werdet ihr ersehen können, wieviel das Textverständnis zum tieferen Verstehen der Heiligen Schrift beiträgt und was für ein Unterschied zwischen Erklärern besteht, die des Griechischen kundig oder unkundig sind.
+Bei anderen Dingen soll man die schlechten Zeichen immer zum Guten deuten, in dieser Sache aber kann man ohne großen Schaden nicht länger töricht sein.
+So ergreift denn also das rechte Studium und denkt an das Dichterwort:
+"Frisch gewagt ist halb gewonnen!
+Wage zu wissen!"
+Pflegt die alten Lateiner und macht euch das Griechische zu eigen, ohne das man das Lateinische nicht richtig behandeln kann.
+Das wird euch den Geist zum Nutzen aller Wissenschaftsbereiche angenehm fördern und ihn in jeder Beziehung verfeinern.
+Vor wenigen Jahren erst sind solche Männer hervorgetreten, die euch zum Vorbild und Ansporn dienen können.
+Denn ich hatte in der Stille bei meinen Beobachtungen den Eindruck, daß Deutschland an zahlreichen Orten aufzublühen beginne und offensichtlich in seinen Sitten und dem allgemeinen Empfinden der Menschen sanfter und gleichsam gezähmter werde, das doch früher durch barbarische Sitten verwildert war und irgendwie etwas Rohes zu atmen pflegte.
+Überdies werdet ihr eure Mühe nicht nur zu eurem eigenen Vorteil anwenden und dazu, ihn auf die kommenden Geschlechter auszudehnen, sondern auch zum unvergänglichen Ruhme unseres allseits hochgeschätzten --Fürsten--1, --dem--2 nichts mehr am Herzen liegt als die Pflege der schönen Wissenschaften.
+Ich werde, was an mir liegt, bemüht sein, dem Willen unseres allergnädigsten --Fürsten--1 und euren Studien, meine lieben Zuhörer, nach Kräften zu dienen.
+Das verspreche und gelobe ich euch, verehrte Anwesende und ihr --Herren--1 sächsische --Professoren--1 - euch wird es obliegen, (diese) meine --Studenten--(Historischer Kontext), die sich mit den schönen Wissenschaften befassen und von den schlechten Künsten noch unberührt sind und die sich freiwillig eurem Schutze anvertraut haben, freundlich und pflichtbewußt zu hüten und zu schützen.
+Damit bin ich am End
+
+FALSE POSITIVES:
+['Wen, 2 oder 5', 'Lehrer, 1', 'Herr, 1', 'Rektor, 1', 'Professoren, 1', 'Rat, 4', 'Franken, 1', 'Langobarden, 1', 'Kriegsgott', 'den', 'den', 'den', 'Fackelträger', 'Angelsachsen, 1', 'Iren, 1', 'Schriftsteller', 'Orakelgott', 'er', 'Lehrer', 'Söhne', 'Autoren', 'Lehrmeister', 'Väter', 'Historiker', 'Herrn', 'der', 'Theologen', 'Bräutigam', 'Herrn', 'Herrn', 'Wen', 'Wen', 'Autoren', 'den', 'Autoren', 'Fürsten', 'dem', 'Fürsten', 'Herren', 'Professoren', 'Studenten']
+
+================================================================================
+ArtikelId: 1148_0001:
+Der --Saarländer--1 aber gewann die Herzen der Genossen
+In einem spannenden Duell entriß Oskar Lafontaine dem Amtsinhaber Rudolf Scharping den SPD-Vorsitz
+Wenn --einer--5 so ist wie Rudolf Scharping, dann stehen ihm nicht viele Mittel zu Gebote, jemandem etwas heimzuzahlen.
+Also stellt --er--2 sich in den Dienst des Großen und Ganzen, was in diesem Fall die Sozialdemokratie ist, und fordert die ganze Partei auf, "Oskar Lafontaine uneingeschränkt zu unterstützen".
+Aber dann wendet --er--2 sich doch an den, der --ihm--2 - was 24 Stunden zuvor noch unvorstellbar war - die Parteiführung entrissen hat.
+"Oskar, manches hat bitter wehgetan", sagt er.
+"Aber wir müssen jetzt die Kraft haben, die Schmerzen der Vergangenheit hinter uns zu lassen, denn wir haben eine Aufgabe, die wichtiger ist, als wir selbst."
+Da feiern ihn die Delegierten, die ihrem bisherigen Vorsitzenden kurz zuvor mit 190 gegen 321 Stimmen den Abschied gegeben hatten, sie klatschen heftig gegen ihr schlechtes Gewissen an, manche trampeln sogar.
+Und während alle um ihn herum stehend applaudieren, sitzt Scharping auf seinem Platz im Präsidium, die Beine übereinandergeschlagen, die Hände um ein Knie verkrampft.
+Selbst Johannes Rau, Meister herzlicher Worte und Gesten, wagt es kaum, dem starr vor sich hin Blickenden ganz kurz und zaghaft die Hand auf die Schulter zu legen.
+Wenn --einer--5 so ist, wie Rudolf Scharping, dann hat --er--2 Übung darin, sein Inneres zu verbergen.
+An diesem Donnerstag gelingt ihm das nur unzureichend.
+Als --er--2 am Morgen in den Saal kommt, da trägt --er--2 dieses bemüht-fröhliche Lächeln vor sich her, an dem abzulesen ist, daß --er--2 einen Kampf verloren hat.
+Weiß --er--2 das zu diesem Zeitpunkt schon?
+Oder setzt --er--2 noch auf Solidarität?
+Scharping gibt sich gelassen, neigt sich über den noch leeren Stuhl seines Stellvertreters Johannes Rau hinweg zu Lafontaine, plaudert...
+Aber dann geht es Schlag auf Schlag, dann läuft das Wahldrama ab wie nach einem spannenden Drehbuch.
+Tagungspräsident Kurt Beck eröffnet, begrüßt drei Gäste und verkündet: "Der --Bundesvorsitzende--1 der SPD hat ums Wort gebeten."
+Scharping strafft sich, geht ans Pult.
+Er habe zu Beginn des Parteitags davon gesprochen, daß die SPD gebraucht werde, daß aber die Partei auch etwas brauche.
+"Sie braucht Klarheit, auch personelle Klarheit", sagt er.
+"Ich habe heute morgen Oskar gefragt, ob er bereit ist zu kandidieren."
+Beifall.
+Er selber, so steigert Scharping die Spannung weiter, er selber halte sich an den Vorstandsbeschluß vom 16. Oktober und kandidiere.
+Großer Beifall.
+"Oskar hat auf meine Frage hin erklärt, daß er ebenfalls kandidieren wird."
+Jubelnder Beifall, spitze Schreie.
+Ist das schon die Entscheidung?
+Oder übertrumpfen nur die --Oskar-Fans--4 die Fraktionsmitglieder, die Rheinland-Pfälzer, die Scharping-Anhänger in Nordrhein-Westfalen und anderen Landesverbänden nicht an Zahl, aber an Lautstärke?
+Dann geht Lafontaine ans Rednerpult.
+Er sagt, daß Scharping ihre Unterredung vom Morgen in "fairer Weise "wiedergegeben habe und daß auch er es für besser halte, "wenn der Parteitag hier Klarheit schafft".
+Dann setzt er hinzu, daß er, "unabhängig vom Ausgang der Wahl, wirklich faire Zusammenarbeit "anbiete.
+Der Kongreß wird für eine halbe Stunde unterbrochen.
+An allen Ecken sammeln sich Grüppchen um --Partei-Prominente--4.
+"Das hier zeigt doch, in welchem Zustand die Partei ist.
+Da kommt --einer--5 und hält eine halbstündige Rede, und die Delegierten sagen: Dann nehmen wir doch mal --den--2!
+Die spinnen!"
+So macht Fraktionsgeschäftsführer Peter Struck seinem Herzen Luft.
+Renate Schmidt aus Bayern geht das Problem analytischer an:
+"Was nicht geht, ist, daß da --einer--5 ist, --den--2 möchten manche wählen, aber --der--2 steht nicht zur Verfügung.
+Und den --anderen--1, --der--2 sich zur Wahl stellt, --den--2 wollen viele eigentlich nicht.
+Das geht nicht, da muß Klarheit geschaffen werden."
+Dann wird gewählt und ausgezählt - das zieht sich hin...
+Lafontaine sitzt zunächst allein am Präsidiumstisch, später setzt sich seine Frau Christa Müller dazu, Scharping hat sich zu den rheinland-pfälzischen Delegierten verzogen.
+Als die für die Auszählung veranschlagten zehn Minuten verstrichen sind, füllt sich der Saal, auch Scharping strebt wieder seinem Präsidiumsplatz zu.
+Da dreht sich Kurt Beck, zu dieser Zeit --Tagungspräsident--1, auf seinem Stuhl halb um, langt nach Scharpings Arm - eine mitleidige, eine tröstende Geste.
+"Oskar ist es! "wird da schon auf der Journalistentribüne geraunt.
+Im Mannheimer Hotel "Maritim "war schon in den frühen Morgenstunden Unruhe ausgebrochen.
+Um halb sieben klingelten Telefone, Präsidiumsmitglieder tauschten Informationen aus.
+Auf der fünften Etage, wo die führenden Sozialdemokraten untergebracht waren, trafen sich verschiedene Grüppchen.
+Die stellvertretenden Vorsitzenden Johannes Rau, Herta Däubler-Gmelin, Heidemarie Wieczorek-Zeul und Wolfgang Thierse waren aktiv, zwischendrin Bundesgeschäftsführer Franz Müntefering, der Fäden zog und zusammenknüpfte.
+Später frühstückten getrennt, aber in Sichtweite: Rau mit treuen Freunden, Lafontaine mit einem Stapel Zeitungen und Präsidiumsmitglied Gerhard Schröder mit seinem Sprecher Uwe-Karsten Heye.
+Zu dieser Stunde sickerte durch, was verabredet war:
+Lafontaine tritt an.
+Eine halbe Stunde, bevor der dritte, dramatischste Tag dieses turbulenten Parteitags eröffnet wurde, traf sich ein kleiner Kreis um Rau, um den Ablauf "einvernehmlich "festzulegen.
+Auch wenn aus diesen vertraulichen Runden nicht viel herausdrang, war von außen sichtbar, daß Rau die Schlüsselrolle spielte:
+Er hatte Scharpings Wahl zum --Parteichef--1 gewollt und ihn danach geschützt, wenn er ins Trudeln geriet.
+Rau ist in die Rolle des --Parteipatriarchen--1 geschlüpft, und trotz wachsender interner Kritik an seiner manchmal undurchschaubaren Kompromißtaktik, erfreut --er--2 sich noch immer allgemeiner Achtung.
+Rau muß in der Nacht gespürt haben, daß er für eine dauerhafte Lähmung der SPD verantwortlich wäre, wenn er sich einem Personalwechsel widersetzt.
+Seiner feinen Witterung für Stimmungen und seinem Lebensmotto "Versöhnen statt spalten "folgend, ließ er sich auf die Gegenkandidatur ein.
+In den Gesprächen, die er moderierte - als --Berater--1 und --Mittler--1 mischten im Hintergrund der frühere Parteivorsitzende Hans-Jochen Vogel und der rheinland-pfälzische Ministerpräsident Beck mit - entwickelte sich während der Nacht eine Idee, wie die überstürzte Rochade der Öffentlichkeit dargestellt werden könnte: Als eine Lösung, bei der Scharping im Fall der Niederlage das Gesicht nicht verliert.
+Und wenn --einer--5 so ist wie Scharping, nimmt --er--2 sogar die Last auf sich, --einen--2 der Stellvertreterposten an der Seite des neuen --Chefs--1 zu übernehmen.
+Daß ganz nebenbei Schröder übergangen wurde, dürfte im Interesse Scharpings und Raus liegen, die dessen Eskapaden schädlich für die Partei finden.
+Doch Lafontaine weiß, daß er Schröder einbinden und seine Talente nutzen muß.
+Was am Donnerstag morgen geschah, hatte sich seit Beginn des Parteitags angedeutet.
+Als am Dienstag mittag der artige Achtungsbeifall für Scharping nach seiner Grundsatzrede verebbt war, ahnten die meisten Delegierten: So kann es nicht weitergehen, oder zumindest: Das kann nicht mehr lange gut gehen.
+Auch wenn die Bild- Zeitung titelte "Scharping so stark wie nie "- alle anderen, die seinen Auftritt miterlebten, fanden ihn eher durchschnittlich und glanzlos.
+Auch seine Bemerkung bei seinem zweiten Auftritt am Dienstag nachmittag, es sei "nicht meine Schuld, wenn es zu einer personellen Alternative nicht kommt", klang verunglückt.
+Eine andere Formulierung offenbarte, wie einsam es um den 47jährigen Partei- und --Fraktionschef--1 geworden ist.
+Er finde es "zum Kotzen", enthüllte Scharping, wenn --er--2 von Journalisten erfahre, was andere über --ihn--2 dächten.
+"Erzählt ' s mir doch direkt, das ist doch viel einfacher!", bat --er--2 und gestand damit unfreiwillig ein, wie isoliert --er--2 zeitweise war.
+Falsch ist aber, was manche absichtsvoll verbreiteten:
+Scharping habe nicht wahrgenommen, was um --ihn--2 herum geschieht.
+--Er--2 ist sich durchaus über seine Schwächen im klaren, nahm auch Ratschläge auf, war aber unter zunehmendem Erwartungsdruck nicht mehr in der Lage, sie umzusetzen.
+Letztlich ging es allerdings überhaupt nicht mehr um die Vermittlung von --Inhalten--4, sondern nur noch um die Außenwirkung der SPD.
+Als am Mittwoch nachmittag Lafontaine seine inhaltlich gar nicht so außergewöhnliche, aber die Herzen der Delegierten erreichende und deshalb von Beifall umrauschte Rede hielt, gab es kein Halten mehr.
+Jungsozialisten aus Ostwestfalen und Baden-Württemberg sammelten Unterschriften für einen Antrag, mit --dem--2 Lafontaine aufgefordert werden sollte, als --Parteichef--1 zu kandidieren.
+Doch sie verpaßten den Zeitpunkt des Antragsschlusses für Personalvorschläge.
+Aber die junge Delegierte Petra Heß aus Arnstadt, Mitglied des thüringischen SPD-Landesvorstands, nutzte ihre Zeit am Rednerpult zu einer Schlußbemerkung:
+"Oskar, wer sich so weit raushängt, muß springen", forderte sie unumwunden.
+"Kandidiere für den Parteivorsitz!"
+Der Beifall für diesen spontanen Ausspruch blieb mager.
+Doch alle, die zuhörten, wußten: Petra Heß hatte die Grundstimmung erfaß
+
+FALSE POSITIVES:
+['Saarländer', 'einer', 'er', 'er', 'ihm', 'einer', 'er', 'er', 'er', 'er', 'er', 'er', 'Bundesvorsitzende', 'Oskar-Fans', 'Partei-Prominente', 'einer', 'den', 'einer', 'den', 'der', 'anderen', 'der', 'den', 'Tagungspräsident', 'Parteichef', 'Parteipatriarchen', 'er', 'Berater', 'Mittler', 'einer', 'er', 'einen', 'Chefs', 'Fraktionschef', 'er', 'ihn', 'er', 'er', 'ihn', 'Er', 'Inhalten', 'dem', 'Parteichef']
+
+================================================================================
+ArtikelId: 2197_0001:
+--Er--2 tut es, --er--2 tut es nicht, --er--2 tut es...
+Vor allem die Medien rätseln darüber, ob der "ewige Kanzler "Helmut Kohl noch einmal antritt
+Meist läuten die Telefone lange, häufig ist der jeweils erwünschte --Gesprächspartner--1 vorerst nicht verfügbar.
+Er weile im Urlaub, heißt es über den --Politiker--1, er sei bei einem Seminar oder auf Dienstreise.
+Unmittelbar vor, während und kurz nach den tollen Tagen am Rhein strahlt das Regierungsviertel auch dieses Jahr schläfrige Ruhe aus.
+Und es ist diese Ruhe, die die aktuellen Schlagzeilen noch schriller klingen läßt.
+Der Druck auf den --Kanzler--1 wachse, heißt es da, die Debatte über einen Wechsel in diesem Amt werde heftiger...
+Dabei sind die Ereignisse hinter den großen Lettern eher von kleiner Bedeutung.
+So kann kaum verwundern, daß der FDP-Vorsitzende Wolfgang Gerhardt und sein CSU-Kollege Theo Waigel Helmut Kohl öffentlich sanft drängen, er solle seine Kandidatur für die Bundestagswahl im nächsten Jahr bekanntgeben.
+Von Kohl ist bekannt, daß er einer großen Koalition nicht vorstehen würde.
+Kündigte er also demnächst an, 1998 den Hut erneut in den Ring zu werfen, müßten Freidemokraten und Christsoziale weniger damit rechnen, daß CDU und SPD ein Bündnis schließen.
+Solange die Möglichkeit in der Luft liegt, daß Kohl sein Zepter demnächst an Wolfgang Schäuble weiterreicht, bangen die kleinen --Koalitionspartner--1 um ihre Zukunft als Regierungsparteien.
+Der --Unionsfraktionschef--1 gilt da nämlich als aufgeschlossener.
+Mögen auch genannte oder ungenannte CDU-Politiker nach einem schnellen Ende der Debatte um die Kanzlerkandidatur rufen und von Kohl eine rasche Klärung der Frage verlangen;
+mögen ein paar jüngere führende Landespolitiker der Union - auf entsprechende Fragen freilich - in einem Interview beteuern, Schäuble habe das Zeug zum --Regierungschef--1.
+Das alles wären normalerweise Nachrichten unter anderen, keinesfalls aber --Aufmacher--4.
+Doch die Zeiten sind nicht normal.
+Noch kurz vor der Jahreswende galt Kohl etlichen Medien als "der ewige --Kanzler--1".
+Wenige Monate später ist der Trend in der launischen veröffentlichten Meinung mal wieder ein ganz anderer.
+Wie mehrfach zuvor während Kohls 14jähriger Amtszeit hat es nun erneut Konjunktur, die "Kanzlerdämmerung "auszurufen.
+Dabei genügten - wie stets - wenige Vorkommnisse, den Wind in die fast entgegengesetzte Richtung zu lenken.
+Da sagt Schäuble, wenn die Versuchung, --Kanzler--1 zu werden, auf --ihn--2 zukäme, würde --er--2 wohl nicht widerstehen;
+da fordert ein CDU-Landeschef den Kohl-Schützling Waigel zum Rücktritt auf;
+der --Kanzler--1 und sein Sozialminister Blüm Streiten heftig über die Rentenreform;
+in der Bundestagsdebatte zur Massenarbeitslosigkeit wirkt der --Regierungschef--1 kraftlos wie lange nicht mehr - und schon ist der Boden bestellt, auf --dem--2 eher harmlose Bemerkungen von Unionspolitikern zu gewichtigen Worten werden, auf --dem--2 die üblichen kleinen Intrigen in der CDU als Kampagnen daherkommen.
+Daß auch Helmut Kohl einen Stimmungsumschwung registriert, belegt die Reaktion des --Kanzlers--1 auf einen Artikel im Spiegel - dem Magazin also, das der --Kanzler--1 stets so demonstrativ ignoriert.
+Das Blatt hatte spekuliert, Kohl sei möglicherweise schwer an Prostatakrebs erkrankt.
+Sofort ließ der --Kanzler--1 via Bild-Zeitung verbreiten, die Gerüchte seien hinterhältig und schäbig;
+er erfreue sich sehr guter Gesundheit.
+Kann sein, daß sich der --Regierungschef--1 auch deshalb so laut zu Wort meldete, weil --er--2 "über diese Sauerei aufrichtig empört war", wie ein --Parteifreund--1 meint, --der--2 --ihn--2 gut kennt.
+Die Aktion hatte aber auch noch einen anderen Zweck.
+Man habe "drohende Unruhe "im Vorfeld austreten wollen, sagt ein Vertrauter des --Kanzlers--1.
+Eine Debatte um den Gesundheitszustand Kohls könne sich in aufgeregten Zeiten wie diesen leicht "verselbständigen".
+Daß das Klima intern rauher geworden ist, räumen die meisten Gesprächspartner ein.
+Wachsende Erwerbslosenzahlen und Haushaltslöcher, unerledigte Mammutprojekte wie die Steuer- oder die Rentenreform, das näherrückende Wahljahr 1998 belasten Koalitionspolitiker zunehmend.
+"Die Anmache vor Ort wird heftiger.
+Das macht viele nervös", sagt ein namhafter --Christdemokrat--1.
+Überdies räumen Unionspolitiker ein, daß es derzeit durchaus innerparteiliche Beschwerden über Kohl gibt.
+Man beklagt, der --CDU-Chef--1 hätte die Steuer- und die Rentenfrage zusammenpacken und die Modernisierungsmodelle als ein Gesamtpaket groß herausstellen müssen.
+Auch hätte --er--2 dafür Sorge tragen sollen, daß konkrete Vorschläge erst präsentiert werden, wenn sich wenigstens die Union einig ist.
+Dennoch, kaum --einer--2 dieser Kritiker schlußfolgert bisher, Kohl solle das Feld räumen.
+Im Gegenteil.
+"Schäuble wird respektiert, Kohl geliebt.
+Schäuble ist kompetent, Kohl hat Charisma", so erklärt --einer--2 der aufstrebenden jüngeren --Christdemokraten--1, weshalb "fast die ganze Partei will, daß der Dicke 1998 nochmal antritt".
+Und --er--2 werde antreten.
+Zum einen fühle Kohl sich in die Pflicht genommen.
+Zum anderen würde es - angesichts der sinkenden Zustimmung für die Union - sonst so aussehen, als werfe --er--2 aus Furcht vor einer Niederlage das Handtuch.
+In Grenzen hält sich - noch jedenfalls - auch der CDU-interne Unmut über Kohls Schweigen zu der Frage nach der Kanzlerkandidatur.
+Weil die meisten Christdemokraten ohnehin davon ausgingen, daß der --Amtsinhaber--1 erneut ins Rennen gehe, drängten noch nicht sehr viele auf eine entsprechende Erklärung, sagt ein --Parteifunktionär--1.
+Allerdings, räumt der Mann ein, könne sich das ändern.
+Wenn die Koalition bis zum Beginn der Osterpause kein geschlossenes, in wesentlichen Fragen von allen Teilen der Union und der FDP akzeptiertes Konzept einer Steuer- und Rentenreform vorlege, wachse die Unsicherheit in der Union möglicherweise so sehr, daß die Erklärung Kohls, er werde wieder antreten, "als Beruhigungstablette "unentbehrlich werde.
+Das Schweigen des --Kanzlers--1 scheint in der CDU auf mehr Verständnis zu stoßen als außerhalb.
+Erklärte Kohl sich jetzt, sähe es doch so aus, als reagiere --er--2 nur auf den Druck der Medien, heißt es etwa.
+Auch billigt man dem Vorsitzenden zu, daß er der Partei erst dann sein Ja-Wort gibt, wenn er gleichzeitig einen politischen Erfolg vorweisen kann, also etwa die Präsentation des Steuer- und Rentenpaketes.
+Und schließlich verstehen viele, wenn Kohl seine Kandidatur mit der Konferenz zur Europäischen Union im Frühsommer verknüpfen möchte.
+Um noch einmal ins Wahlrennen zu gehen, müsse der --Parteichef--1 fühlen, die CDU trage seine Europapolitik mit.
+Ob das nicht auf Erpressung hinauslaufe?
+"Nennen Sie es doch lieber", sagt ein --Unionspolitiker--1, "einen sanften Druck, berechtigt in der Sache, erfolgsträchtig in der Wirkung
+
+FALSE POSITIVES:
+['Er', 'er', 'er', 'Gesprächspartner', 'Politiker', 'Kanzler', 'Koalitionspartner', 'Unionsfraktionschef', 'Regierungschef', 'Aufmacher', 'Kanzler', 'Kanzler', 'ihn', 'er', 'Kanzler', 'Regierungschef', 'dem', 'dem', 'Kanzlers', 'Kanzler', 'Kanzler', 'Regierungschef', 'er', 'Parteifreund', 'der', 'ihn', 'Kanzlers', 'Christdemokrat', 'CDU-Chef', 'er', 'einer', 'einer', 'Christdemokraten', 'er', 'er', 'Amtsinhaber', 'Parteifunktionär', 'Kanzlers', 'er', 'Parteichef', 'Unionspolitiker']
+
+================================================================================
+ArtikelId: 1337_0001:
+Fritz.
+Porträt eines --Serienkillers--3
+Über Romuald Karmakars grandiosen Kammerspielfilm "Der --Totmacher--3 "mit Götz George
+"The easy way is always mined", der einfache Weg ist immer vermint, stand schon vor Jahren auf einer Postkarte, mit der er auf zwei TV-Sendungen hinwies, in denen Alexander Kluge ihn über seine Arbeit befragte.
+Er ist seither beharrlich Umwege gegangen, hat sich unter Söldner begeben und ist von den Warheads zum --Totmacher--3, aus dem Dschungel von Guayana in ein Göttinger Untersuchungszimmer gekommen.
+Es geht um 24 durch Biß in die Halsschlagader ermordete junge Männer, und doch fließt kein Tropfen Blut;
+es geht um Details des Ausweidens, Zerstückelns und Beseitigens, und doch ist nicht ein Hauch von Splatter zu spüren.
+Da beschreibt der Angeklagte den Vorgang des Skalpierens - "wie die Indianer es machen "-, er legt ein Taschentuch auf seine Hand und schlägt immer wieder darauf - wie er die Gesichter der Toten zu Brei geschlagen hat.
+Er läßt zur Demonstration die Finger im Stakkato auf den Tisch niedersausen, und wie Gespenster treten im Kopf des Zuschauers die Bilder hervor, die man sich von dem Vorgang macht.
+Dagegen ist jene Szene aus Henry.
+Porträt eines --Serienkillers--1, in der die Titelfigur mit einem Fernseher den Kopf eines Opfers zertrümmert, von einem naiven Konkretismus.
+Das Entsetzen, wenn aus Worten in Köpfen Bilder entstehen, das Dunkle, Abseitige und Extreme, was sich den gängigen Rastern nicht fügt, war auch das Terrain des Dokumentaristen Romuald Karmakar - kein fester Grund, auf --dem--6 man sich befindet.
+Der --Totmacher--3, Karmakars erster Spielfilm, greift den Fall Fritz Haarmann auf, --der--2 zwischen 1918 und 1924 in Hannover über 20 --Strichjungen--3 ermordete.
+Einen "Kammerspielfilm "nennt Karmakar seine Arbeit, nach dem Genre aus der Weimarer Republik.
+Doch Karmakars deutscher --Serienkiller--3 gleicht nicht dem Phantombild, --den--2 das kollektive Unbewußte der zwanziger Jahre entwarf, wo noch in Theodor Lessings minutiöser Beschreibung des "Werwolfs "Haarmann die Matrix der Rassenlehre wirksam ist, die aus den Zügen den Charakter, aus der Schädelform Homosexualität und Delinquenz entwickelt.
+Der 30jährige Karmakar macht, was er immer getan hat:
+er findet seine Themen, wo andere noch nicht mal suchen würden, und er sucht im Bekannten, was andere übersehen haben.
+Er zeigt, er läßt teilnehmen, er gewährt keinen Sicherheitsabstand und fällt kein Urteil.
+Aus dem Halbdunkel löst sich ein Gesicht.
+Drei Schnitte, und die drei Personen: der Täter, der Psychiater --Professor--1 Dr. Ernst Schultze, der --Stenograf--1, sind eingeführt, der Raum ist grob definiert.
+Noch trägt Haarmann Schnäuzer, Anzug und zeittypischen Haarschnitt.
+Dann bedecken die Hände einen rasierten Kopf überm Drillichzeug.
+Wie ein --Schüler--3 agiert er, blinzelnd, listig lächelnd, auftrumpfend, weil er etwas weiß, unsicher und am entschiedensten im gedehnten, empörten, scharfen "Nee".
+Götz George, der seit Jahren zumeist durch Fernsehniederungen watet, ist seit seiner Höß-Rolle in Theodor Kotullas Aus einem deutschen Leben (1977) kaum mehr so gefordert worden: durch die Rolle, durch sich selbst, denn nicht immer verlief die Zusammenarbeit mit Karmakar reibungslos.
+"Mann, bin ich gut", soll George in Venedig gesagt haben, wo er den Darstellerpreis erhielt.
+Das paßt zu ihm - und ist auch noch richtig.
+Seit Fassbinders Filmen hat man im deutschen Kino keinen --Schauspieler--1 mehr so triumphieren sehen.
+Auch deshalb natürlich, weil Jürgen Hentsch als --Psychiater--1 mit Bravour ausharrt.
+Kaum eine Regung ist ihm gestattet, ein flüchtiges Durchdringen von Ekel und moralischer Abscheu allenfalls.
+Das klinische Gleichmaß wahrt er so souverän, wie er die winzigen Dosierungen von Abscheu und Zuwendung verabreicht.
+Die Kamera umkreist den Tisch: keine sauberen Zirkel wie auf einer Eisbahn; eine elliptische Bewegung beschreibend, dem Redetempo angemessen, Sekundenbruchteile verharrend, in diskreter Distanz.
+Der Amerikaner Fred Schuler - er hat für Cassavetes und De Palma gearbeitet - läßt die Bartstoppeln, die Ekzeme im Gesicht von medikamentöser Ruhigstellung erzählen;
+der Winkel, in --dem--6 die Kamera beim Gegenschuß über die Schulter blickt, registriert noch das kleinste Lippenzucken und ein kaum merkliches Spiel der Augenbrauen.
+Wie explodierende Leuchtspurmunition wirkt da ein Augenflackern, wie Sprengladungen detonieren Regungen im Gesicht.
+Die Worte irrlichtern durch den Raum, verhaken sich, die Sätze schweißen Widersprüche zusammen, reißen Abgründe auf, und Augen, Mund und Hände interpunktieren, konterkarieren, überlagern das Gesagte.
+Ein perforierter Diskurs ist dieses Protokoll.
+Cluster zerplatzen und bilden sich: aus Kommunistenhaß / -furcht, Kaisertreue, Fetzen von Kindheitserinnerungen und scharfrandigen Tötungsdetails, aus Ruhmeswahn, Liebeshunger, geächteter Homosexualität und sporadischer Selbstwahrnehmung.
+Die Psychopathologie zieht sich durch die Tonlagen: vom Jammern zum Winseln zum kindlichen Betteln, vom Schmeicheln zur stahlharten, schneidenden Stimme.
+Für diese zerklüftete Horror-Seelenlandschaft braucht es nur: grünlich gestrichene Wände, zwei Fenster mit Gittern, zwei Tische, Stühle, einen Schrank aus dunklem Holz, einen Medikamentenschrank, ein Waschbecken, eine Pritsche.
+Darin leuchtet mal ein Lächeln auf wie das eines Kindes unterm Weihnachtsbaum, und alles verdunkelt sich durch die kreatürliche Verzweiflung.
+"Er verdirbt ganz", sagt er dann wieder komplicenhaft lächelnd und schaut kurz zum --Stenografen--1 (Pierre Franckh) rüber.
+Er spielt für --ihn--2 wie für ein Publikum, er flirtet gar.
+Und manchmal, da reißt er die Augen weit auf, stiert ins Unbestimmte, als blickte er in sich hinein und sähe dabei im Zeitraffer seine Taten.
+"Was kommt zuerst?
+Der Blitz oder der Donner", fragt der --Psychiater--1 ihn einmal.
+--Er--2 zögert, wie bei allen allgemeineren Fragen, und sein Verhalten scheint die Kausalität auf den Kopf zu stellen.
+Wenn --er--2 die Taten beschreibt, redet --er--2 wie ein --Klempner--1 von verstopften Leitungen, und im scheinbar Beiläufigen blitzen aus Augen und Gesten Spuren von Jähzorn und Selbstverlust, die --ihn--2 morden ließen.
+Eine seltsame Beziehung entfaltet sich zwischen --Täter--1 und --Psychiater--1: Prahlen wie vorm --Vater--1 / --Lehrer--1, Klammern und Anhänglichkeit, Kumpanei und Ducken vor der Obrigkeit.
+--Er--2 fabuliert vom eigenen Denkmal - "ist doch eine Sehenswürdigkeit "-, --er--2 nimmt sich einen Block, kritzelt und imitiert den --Professor--1.
+Ein verlorenes Subjekt, ein schlingerndes Ich, bisweilen durchsichtig wie Kristall, dann wieder völlig opak.
+Es gibt keine Klammer, die all dies zusammenhielte, keine Generaldiagnose, die den Fall "erklärte "und ordnete, die Lebenssplitter notdürftig verleimte.
+Zwei Mal nur springt der Film heraus:
+Haarmann steht im Anzug vor der Kamera, im selben Raum allerdings, und posiert verlegen für den --Kommissar--1;
+der --Psychiater--1 sitzt allein an seinem Schreibtisch.
+Man begreift den dramaturgischen Sinn dieses kurzen Luftholens nicht recht, doch es bringt den Film keinen Millimeter von seinem Kurs.
+Der --Totmacher--3: ein disparates Porträt, das kein Entweder-Oder duldet, kein Mensch oder Monster, kein Gut oder Böse; eine dramatisch strukturierte, aber nicht hierarchisch angelegte Studie.
+Am Ende: ersticktes Schluchzen aus dem Off, während der Abspann beginnt.
+1925 wurde Fritz Haarmann hingerichtet.
+Sein Fall wurde zur Modelliermasse, für Fritz Langs M (1931), für den Gassenhauer vom "kleinen Hackebeilchen "- Traummaterial fürs kollektive Unbewußte, heute ausgestellt im Medienzoo neben Jürgen Bartsch, Fritz Honka, Jeffrey Dahmer und anderen natural born killers.
+Was Karmakar aus diesem Stoff gemacht hat, muß man gesehen haben, und man kann es auch nachlesen.
+Was bei Rowohlt morgen als "das Buch zum Film "erscheint, ist ein gegliederter Materialsteinbruch.
+Die Haarmann-Protokolle, das sind die Gesprächsprotokolle, auf denen das Drehbuch basiert, Schultzes Gutachten, ein psychiatrischer Kommentar aus heutiger Sicht, Einblicke in Krankenakte und Erinnerungen des --Strafverteidigers--1 wie des damals zuständigen --Polizeiinspektors--1: Einblicke in die Werkstatt des Films, Anbauten, Abschweifungen, Ergänzungen, und wie ein Phantom beginnt sich auf einmal bei der Lektüre das Bild Götz Georges über die Seiten zu legen.
+Mit dem Instant-Schrott, der sonst als "Buch zum Film "firmiert, hat der Band nur die Ankündigung gemein.
+Und als Begleitgeräusch zur Arbeit von Filmteam und Verlag gibt es natürlich auch das übliche provinzielle Krakeelen.
+Daß Karmakar auf der Suche nach einem Verleih mit Warner Bros. handelseinig wurde, macht ihn für manchen in der deutschen Verleihbranche zum --Vaterlandsverräter--1.
+Wohlmeinende Verleiher, die selber nicht mehr kaufen konnten, empfahlen dem --Regisseur--1, lieber zu einem deutschen Konkurrenten als zu einer amerikanischen Major Company zu gehen.
+Die Häme im Glückwunsch, der schlecht verhohlene Neid und das heuchlerische Bedauern, Warner werde den Film ruinieren, beunruhigen Karmakar nicht.
+"Wenn sich überhaupt --einer--5 beklagen könnte, dann ich", sagt er, der lange Klinken putzen mußte, um sein Projekt überhaupt finanziert zu bekommen, und dabei überall, zumal bei deutschen Verleihern, nur auf gelangweilte Gesichter stieß.
+"The easy way is always mined."
+Der Film hatte gestern in Köln Premiere und startet am Donnerstag in 16 deutschen Städten.
+Am morgigen Dienstag wird er in Frankfurt mit dem Hessischen Filmpreis ausgezeichnet.
+Das Buch Die Haarmann-Protokolle, hrsg. von Christine Pozsár und Michael Farin, ist im Rowohlt Verlag erschienen (640 Seiten, 16,90 DM
+
+FALSE POSITIVES:
+['Serienkillers', 'Totmacher', 'Totmacher', 'Serienkillers', 'dem', 'Totmacher', 'der', 'Strichjungen', 'Serienkiller', 'den', 'Professor', 'Stenograf', 'Schüler', 'Schauspieler', 'Psychiater', 'dem', 'Stenografen', 'ihn', 'Psychiater', 'Er', 'er', 'er', 'Klempner', 'ihn', 'Täter', 'Psychiater', 'Vater', 'Lehrer', 'Er', 'er', 'Professor', 'Kommissar', 'Psychiater', 'Totmacher', 'Strafverteidigers', 'Polizeiinspektors', 'Vaterlandsverräter', 'Regisseur', 'Konkurrenten', 'einer']
+
+================================================================================
+ArtikelId: 0810_0001:
+Kein Blunt wie der --andere--5
+Ein Ungetüm, das man langsam liebgewinnt: "Blunt oder der --Gast--1", das einzige Theaterstück von Karl Philipp Moritz
+Der Raum (eine schlaue Bühnengroßtat auf engem Parcours: Katja Haß) ist zugig.
+Alle Türen, Fenster sind abgehängt und achtlos auf dem Boden verteilt.
+In den Wänden klaffen Löcher.
+Die Luft steht still.
+Kein Windhauch stört die Friedhofsruhe.
+Irgendwann müssen hier einmal reiche Menschen gelebt haben.
+Wo die Tapete sich vom Putz schält, werden geheime Ornamente sichtbar.
+Viele bewegende Schauspiele sind hier früher durchlitten worden, in einer fernen Zeit, "da die --Götter--3 menschlicher waren "und die "Menschen göttlicher", wie Karl Philipp Moritz, vielbelesener Menschenforscher und --Romanautor--1, über die Antike seinerzeit zu wissen versprach.
+Nun aber ist hier, inmitten rohen Mauerwerks, nichts mehr davon zu sehen.
+Es ist das späte 18. Jahrhundert, eine Welt zwischen enttäuschtem Sturm und Drang und hoffnungsvoller Romantik.
+Ein Nischenplatz für Überdauerer, wie Moritz einer war.
+Nur ein einziges Theaterstück hat er geschrieben.
+Und selbst das ist ihm nur halb gelungen, ist - wie sein Roman Anton Reiser - ein Fragment geblieben.
+Das Stück geht so: Blunt kann nicht weinen.
+So lange haust er in seiner Kammer, daß er den Grund für seinen Schmerz vergessen hat.
+Sogar der Schlaf ist ihm abhanden gekommen.
+Statt dessen wird er nachts von seltsamen "Gesichten "besucht, einem "Demon "zum Beispiel, der ihm goldene Schätze verspricht und dafür eine gräßliche Bluttat fordert.
+Blunt hat einen --Gast--1.
+Er ist namenlos.
+Der --Fremde--1 muß sterben.
+Zuerst hebt Blunt ein Grab für --ihn--2 aus, dann schreitet er zur Tat.
+Zweimal klopft Gertrud, seine Frau, ahnungsvoll an die Kammer des Unbekannten.
+Blunt ist darin.
+Er zögert.
+Dann sticht er zu.
+Nun ist er ein Mörder.
+Reich aber ist er noch lange nicht.
+Der Rest ist eine glatte Katastrophe.
+Blunt hat einen --Bruder--1.
+Der --Bruder--1, auch --er--2 ein --Fremdling--3 ohne Namen, ist Bürgermeister.
+Am Morgen kommt --er--2, gefolgt von Tochter Marianne, und will Hochzeit feiern.
+Denn Blunt hat einen --Sohn--1.
+Der --Sohn--1 aber ist tot seit dieser Nacht, erstochen vom --Vater--1, --der--2 --ihn--2 nicht erkannte.
+Blunt, Blunt und Blunt, --Vater--1, --Bruder--1 und --Sohn--1: Drei Namensvetter mit nahen Verwandtschaftsgraden.
+Nur kennen tun sie einander nicht.
+So quartiert sich der verlorene --Sohn--1 beim --Vater--1 ein, um --ihn--2 zu überraschen, will der --Bruder--1 den --Bruder--1 mit seiner Heirat von Tochter und Sohn versöhnen.
+Die Konstruktion ist gewaltig.
+Sie schwankt beträchtlich.
+Glanzvolle Dramengrößen haben sich daran versucht und sind daran gescheitert.
+Camus war so besessen von seinem Mißverständnis, einem anderen Versuch über den unabsichtlichen Sohnesmord, daß er sich am Ende in lauter schwindlige Zufälle und Fügungen verstrickte.
+Bei Camus kehrt der unerkannte --Sohn--1 in das regnerische Schattenland zurück, das einst seine Heimat war.
+Mutter und Tochter erkennen --ihn--2 nicht, mischen --ihm--2 sogleich ein Giftlein, das --ihn--2 niederstreckt, und haben nicht hinzugelernt am Ende.
+Die Studie ist trocken.
+Ein Stück, das Stückwerk bleibt, kaum berührt und nichts erhellt.
+Demgegenüber ist Blunt oder der --Gast--1 immerhin ein Ungetüm, das man langsam liebgewinnt.
+Denn auf halbem Weg verabschiedet sich Moritz vom Konzept und erfindet eine neue, kaum bessere, aber versöhnliche Geschichte.
+Und die geht so: Der --Vater--1 wacht beim toten --Sohn--1, und träumt sich insgeheim zurück.
+Noch einmal steht --er--2 am Bett des Schlafenden.
+Wieder zückt --er--2 das Messer.
+Draußen klopft es.
+Es ist Gertrude.
+Die Hand erzittert, der --Sohn--1 wacht auf.
+Die Tat entpuppt sich als böser Spuk, der Traum ist süße Wirklichkeit.
+Der --Bürgermeister--1 naht, das Fest kann beginnen.
+Blunt küßt Blunt.
+Eine stolze Dynastie, derer zu Blunt, wird sogleich begründet.
+Und das Freche daran: Irgendwann hört das dreiste Stücklein einfach auf, kein Erwachen, kein Klagen, kein gar nichts.
+Das sind die beiden Möglichkeiten, es zur Aufführung zu bringen:
+Die eine setzt auf düsteres Rätselspiel und muß sich schließlich eingestehen, daß es nicht allzu viel zu verbergen gibt.
+Andrea Breth ist an der Schaubühne auf diese Weise gescheitert.
+Ihre Premiere wurde kurzerhand abgesagt.
+Der zweite Weg ist weniger kompliziert, doch dafür lustvoll, sofern man einen wunderbaren --Komödianten--1 im Ensemble hat.
+Manfred Meihöfer spielt Blunt, den Mörder.
+Und er spielt Blunt, den Vater.
+Und am Ende spielt er alles zusammen und durcheinander, herzt sein totes Söhnchen, knufft ihm freundlich die schlaffe, bleiche Backe und zaubert es mit Leichtigkeit ins Leben zurück.
+Das ist putzig anzusehen und boykottiert das stolze Regiekonzept, das Elmar Goerden fein ersonnen hat.
+Der --Regisseur--1 ist ein Schaubühnen-Kind, hat dort das Assistentenhandwerk erlernen dürfen.
+Diese Schuld ist schwer und muß zuerst beglichen werden.
+Die Inszenierung beginnt im heiligen Tempelbezirk, mit ein paar unverstandenen Gesichten und Dämonen, kapituliert ehrenvoll und endet als abgründiges Kammerspiel.
+Dort sind sie launenhaft versammelt.
+Das Fest tobt.
+Es ist ein großes Betatschen, von Blunt zu Blunt.
+Ein allgemeines Gesäusel hebt an, ein klebriges Schauspiel mit allerlei gespreizten Gesten, zartesten Tönen.
+Man mag kaum hinsehen.
+Und kann einfach nicht wegschauen, solange, bis der Vorhang sich huldvoll herniedersenkt.
+Dann ist es endlich ruhig um den Dichter Moritz, Heinrich Heines "Liebster", wie man weiß, und sogar Schmidt Arno's "Schreckensmann".
+Eines steht fest nach diesem Abend: Er muß ein netter Mensch gewesen sei
+
+FALSE POSITIVES:
+['andere', 'Gast', 'Götter', 'Romanautor', 'Gast', 'Fremde', 'ihn', 'Bruder', 'Bruder', 'er', 'Fremdling', 'er', 'Sohn', 'Sohn', 'Vater', 'der', 'ihn', 'Vater', 'Bruder', 'Sohn', 'Sohn', 'Vater', 'ihn', 'Bruder', 'Bruder', 'Sohn', 'ihn', 'ihm', 'ihn', 'Gast', 'Vater', 'Sohn', 'er', 'er', 'Sohn', 'Bürgermeister', 'Komödianten', 'Regisseur']
+
+================================================================================
+ArtikelId: 0001_0089:
+Seelenbad für den --Landesvater--1 und Seelenmassage fürs Volk
+Mit Manfred Stolpe auf Landpartie:
+Von der Kunst, die Brandenburger zugleich aufzumuntern und zu besänftigen
+Irgendwas an der Gewerkschaftsregie klappt nicht an diesem Tag in Premnitz, Kreis Rathenow.
+300 Menschen sind seit 10 Uhr vor Tor 2 der Märkischen Faserwerke versammelt.
+Die Leute haben Sorgen.
+Die Arbeitsplätze sind von 6000 im Jahre 1990 auf inzwischen 2000 gesunken, steht auf einem Transparent, "Wir sind zur Arbeit bereit, schafft Arbeitsplätze "auf einem anderen.
+Die Arbeitnehmer wollen nicht nur klagen.
+Sie sind auch wütend.
+Sie wollen protestieren gegen diese Landesregierung in Potsdam:
+"Herr Stolpe, unterstützen Sie Industrieansiedlung auch in Premnitz", steht auf einem weiteren Transparent.
+Es ist so aufgestellt, daß der --Ministerpräsident--1 es als erstes sehen muß, wenn --er--2 - wie angekündigt - das Werk besucht.
+Die Basis indessen spielt nicht mit.
+Während die Gewerkschafter noch diskutieren, wie sie den --Ministerpräsidenten--1 am wirkungsvollsten anmachen könnten, fährt die Wagenkolonne vor - und rauschender Beifall empfängt den "--Landesvater--1", --der--2 sich sogleich im Applaus badet, Hände schüttelt, freundliche Worte verteilt nach allen Seiten und zu jedermann.
+Nix von Buhmann, der keine Staatsknete rausrückt.
+Kein einziger Pfiff, nur die Randbemerkung eines langmähnigen --Radfahrers--1: "fast wie bei Honecker".
+Aber --der--2 macht sich sicherheitshalber rasch aus dem Staube.
+So geht es fast immer, wenn Manfred Stolpe auf Kreisbereisung unterwegs ist.
+Es ist seine 30., zwei Drittel Brandenburgs hat er hinter sich, "und hinterher fängt 's von vorne an".
+Er ist fürs Harmonische in der märkischen Gesellschaft zuständig.
+Weil dies seinem Naturell entspricht, wird es ihm auch abgenommen.
+Obrigkeitsstaatliche Rudimente spielen dabei bei den Bürgern offenbar ebenso noch eine Rolle wie das menschenfängerische Wesen des --Ministerpräsidenten--1, --der--1 für jeden, der in seine Nähe kommt, ein freundliches Wort hat, jede Hand schüttelt, auch wenn --er--2 bereits in das Gesicht des nächsten schaut, ganz Politprofi nach westlicher Art.
+"Reisen sind erst dann richtig, wenn man die Menschen sieht", meint er.
+Von den Balkonen winken die Alten, die Jüngeren am Straßenrand haben bereits in drei Metern Abstand den Demutsknick in der Hüfte;
+hinterher werden einige wie üblich Briefe an die Staatskanzlei in Potsdam schreiben.
+Die beiden Vertreter der Rathenower Verkehrsbetriebe, die am frühen Nachmittag dem --Ministerpräsidenten--1 geharnischt ihre Probleme mit der Entschuldung der Nahverkehrseinrichtungen vortragen, wirken wie Abiturienten im verschärften Examen;
+der --Landesvater--3 sagt Prüfung zu.
+Der gelegentlich etwas aufdringliche Geruch von politischem Weihrauch ist nicht unbedingt dem --Ministerpräsidenten--1 anzulasten;
+die Kreisbereisungen sind keine PR-Nummern (mit der Kollegin der brandenburgischen Lokalpresse sind diesmal nur zwei Journalisten dabei).
+Stolpe ist offenkundig darauf aus, eine schwierige, zur Unberechenbarkeit neigende Befindungslage im Griff zu behalten.
+Er praktiziert auf seinen Landpartien in seinen Statements eine Mischung von Aufmunterung und Besänftigung, gegen Resignation und gegen Chaos.
+Kreisbereisungen sind offenbar in erster Linie Seelenbad für den --Ministerpräsidenten--1 und Seelenmassage für die Brandenburger.
+In einem Rundfunkinterview hat --er--2 am Wochenende darauf hingewiesen, die Gründung einer ostdeutschen Sammlungsbewegung sei womöglich die letzte Warnung an die Parteien.
+Den Protestlern vor Tor 2 in Premnitz bringt --er--2 Streicheleinheiten mit: Es sei wichtig und richtig, "daß man seine Anliegen deutlich macht";
+die "Geduld der Ossis wird doch ausgenutzt", bei Gesprächen in Bonn begegne --ihm--2 immer wieder Verwunderung und Gelächter, was man sich hierzulande alles gefallen lasse.
+--Er--2 feuert die Arbeitnehmer und Arbeitnehmerinnen geradezu zu weiteren Protesten an:
+"Das einzige, was wir uns nicht leisten können, ist Zeitverlust;
+Zeitverlust geht auf Kosten der Menschen", unter anderem wegen der anhaltenden Abwanderung von Fachkräften in die Altländer.
+--Er--2 "legt noch --einen--5 drauf":
+--Er--2 lasse sich von der Belegschaft überprüfen auf Verwirklichung von Artikel 48 der Landesverfassung, Recht auf Arbeit.
+Das soll Mut machen für die wirtschaftlich eher noch schwierigeren Zeiten, die die Landesregierung für den nächsten Winter insgeheim vorhersieht.
+Konkret verspricht er meist nichts.
+In unübersichtlichen Situationen ist Stolpe gelegentlich ein wahrer Worthülsenmeister.
+Eine Woche zuvor ist der --Ministerpräsident--1 in Horno gewesen, einer 380-Einwohner-Gemeinde südöstlich Berlins, nahe der polnischen Grenze.
+Das Dorf soll eventuell zugunsten des Braunkohleabbaus entfernt werden, die Bewohner sind dagegen, was sonst.
+Stolpe dort: "Es gibt nur zwei Wege.
+Entweder wir halten Horno mit allen Mitteln, obwohl ich als --Ministerpräsident--1 auch nur ein kleines Würstchen bin.
+Oder wir finden für die gesamte Gemeinde einen Platz, --den--6 man sich gemeinsam aussucht, an --dem--6 man in Zukunft gemeinsam leben will."
+Er werde sich den Willen der Bürger Hornos - wie vor Monaten schon versprochen - zur Leitlinie machen;
+und dann der Zusatz: "Ich kann im Kabinett natürlich auch überstimmt werden."
+Alles also offen.
+Ähnlich in Premnitz.
+Die Schwierigkeiten mit den Märkischen Faserwerken (Eigenwerbung: "Handelspartner mit Tradition ") liegen in einem schwer entwirrbaren Knäuel neu-deutscher Probleme:
+ein sozialistischer Chemiebetrieb, der von der Treuhand "für 'n Appel und 'n Ei "verkauft wurde an einen --Investor--1, --der--2 anscheinend nicht in erster Linie am Werk, sondern an dem mehrere hundert Hektar umfassenden Gelände interessiert ist, das nach fünf Jahren partieller Veräußerungs-Sperre mit vermutlich enormem Profit veräußert werden kann.
+Der neue --Eigentümer--1 ist nach Kenntnis der Kreisverwaltung Rathenow vorwiegend im Immobiliengeschäft tätig.
+Die Werktätigen haben alle Chancen, als die Dummen auf der Strecke zu bleiben.
+Was die Faserwerke anbelangt, müßten zunächst die umweltechnologischen Standards der westlichen Bundesrepublik erfüllt werden.
+So steht es im Einigungsvertrag.
+Aber --keiner--5 will zahlen.
+Eine Erpressungssituation:
+Die restlichen 2000 Arbeitsplätze seien nur zu halten, wenn der Staat sich in der technologischen Umrüstung engagiere, sagt der geländereiche --Investor--1.
+Er kann warten:
+Das Steigen der Grundstückspreise rechnet sich auf jeden Fall.
+Aber Premnitz hat sonst fast nichts an Industrie.
+Stolpe hält sich raus.
+Er sagt den Protestierenden lediglich: "Premnitz muß ein Industriestandort bleiben";
+über das Werk selbst:
+"Die Beteiligten müssen sich zusammensetzen", also Treuhand, Eigentümer, Landesregierung und Belegschaft, möglichst noch im Juli.
+Dann werde man weitersehen.
+An seinen Begleittroß gibt er intern die Weisung weiter: "Wir müssen da was machen."
+Die Kundgebungsteilnehmer selbst hören diesen vielleicht für ihre Zukunft entscheidenden Hinweis nicht.
+Sie sonnen sich derweil im Schatten des --Ministerpräsidenten--1.
+Und der Protest endet wie eine Familienfeier.
+Acht Stunden hat die Kreisbereisung Rathenow durch den --Ministerpräsidenten--1 gedauert.
+Das Wort Stasi im Zusammenhang mit Stolpe ist, so weit das Ohr reichte, kein einziges Mal gefallen.
+Auch keiner aus dem Begleittroß will es gehört haben.
+Es scheint, die Menschen haben andere Sorgen.
+Einen Berg von Sorgen, über --den--6 man kaum hinausschauen kan
+
+FALSE POSITIVES:
+['Landesvater', 'Ministerpräsident', 'er', 'Ministerpräsidenten', 'Landesvater', 'der', 'Radfahrers', 'der', 'Ministerpräsidenten', 'der', 'er', 'Ministerpräsidenten', 'Landesvater', 'Ministerpräsidenten', 'Ministerpräsidenten', 'er', 'er', 'ihm', 'Er', 'Er', 'einen', 'Er', 'Ministerpräsident', 'Ministerpräsident', 'den', 'dem', 'Investor', 'der', 'Eigentümer', 'keiner', 'Investor', 'Ministerpräsidenten', 'Ministerpräsidenten', 'den']
+
+================================================================================
+ArtikelId: 0001_0157:
+"Die wollen, daß du wimmerst und schreist"
+Eine junge Frau berichtet von den Foltermethoden der politischen Polizei in der Türkei
+Schwarzes, kurzgeschnittenes Haar, dunkelbraune Augen in einem schmalen, blassen Gesicht, zierliche Hände, dünne Arme.
+Die junge Frau sieht zerbrechlich aus.
+Mit leiser Stimme erzählt sie ihre Geschichte.
+Mal stockt sie, sucht nach Worten, dann wieder hastet sie von einem Satz zum nächsten, so als hätte sie Angst, nicht rechtzeitig zum Ende zu kommen.
+Es ist eine furchtbare Geschichte, die sie erzählt;
+es sind Bilder des Grauens, die der Zuhörer vor sich sieht.
+Die junge Frau heißt Nazli Top.
+Sie ist 23 Jahre alt und arbeitet als Hebamme in einem Istanbuler Krankenhaus.
+Die Geschichte der Nazli Top handelt von der Folter.
+Am 27. April 1992 gerät Nazli Top auf dem Heimweg von der Arbeit gemeinsam mit ihrem --Freund--1 in eine Ausweiskontrolle der Polizei.
+In Istanbul läuft an diesem Nachmittag eine Großfahndung:
+Wenige Stunden zuvor hatte ein Terroristenkommando im Istanbuler Stadtteil Mecidiyeköy einen Feuerüberfall auf einen Mannschaftswagen der Polizei verübt.
+Acht Beamte wurden verletzt.
+Jetzt sucht man die flüchtigen Täter.
+Nazli Top und ihr --Freund--1 werden, wie Hunderte junger Leute an diesem Tag, in eine Polizeistation gebracht.
+Es heißt, man müsse ihre Personalien genauer überprüfen.
+Als Nazli Top auf die Wache geführt wird, begegnen ihr zwei --Polizisten--1 in Zivil.
+Der --eine--2 sieht sie an, bleibt stehen und sagt zu seinem --Kollegen--1: "Ist sie das nicht?"
+--Der--2 gibt zur Antwort: "Ja, das könnte sie sein!"
+Mit dieser Verwechslung beginnt für Nazli Top ein zehn Tage währender Alptraum.
+Man bringt sie zur berüchtigten 2. Abteilung, der politischen Polizei.
+Dort verbindet man ihr die Augen.
+Sie soll jene, die sich nun über sie hermachen, nicht erkennen.
+"Sie haben mich geprügelt, haben auf mich eingeschlagen, mich getreten und an den Haaren gezerrt.
+, Gib zu, daß du dabei warst _ q, haben sie immer wieder geschrien und mich gefragt:, Wer waren die anderen?
+_ q
+Das ging so bis drei, vier Uhr früh."
+Nazli Top verlangt, einen Rechtsanwalt zu sehen.
+Sie weiß, was die neue, seit dem vergangenen Dezember amtierende Koalition aus Konservativen und Sozialdemokraten angekündigt hat:
+Jeder Beschuldigte habe fortan das Recht, einen Anwalt zu verlangen;
+die Folter werde abgeschafft;
+und die Wände der türkischen Polizeiwachen würden "aus Glas "sein, wie Ministerpräsident Süleyman Demirel im Wahlkampf versprochen hatte.
+Nazli Top sagt das den auf sie einschlagenden --Polizisten--1:
+das habe doch in den Zeitungen gestanden, jeder habe es gelesen, sie doch sicher auch!
+Aber die --Polizisten--1 lachen nur:
+"Bist du etwa keine Türkin?
+Kennst du die Türkei denn nicht?
+Weißt du nicht, daß es eine Sache ist, was hier die Politiker sagen und eine ganz andere, was wirklich passiert?"
+Nazli Top sagt den --Polizisten--1, daß sie im zweiten Monat schwanger ist, bittet sie, mit den Schlägen und den Fußtritten aufzuhören.
+Aber wieder erntet sie nur verächtliches Gelächter.
+Am frühen Morgen bringt man sie in einen anderen Teil des Gebäudes, in den sogenannten "Operationssaal".
+--Einer--5 der --Polizisten--1 sagt zu ihr:
+"Dir kommt das wohl alles wie ein Spiel vor.
+Du weißt noch gar nicht, wo du bist und was noch alles auf dich wartet!"
+Der --Polizist--1 greift ihre Arme und biegt sie nach hinten, auf den Rücken, ein anderer drückt ihren Kopf nach unten und klemmt ihn zwischen seine Beine.
+Dann wickeln sie einen Riemen um ihre Handgelenke.
+Sie hört eine Männerstimme sagen: "Nun wirst du sehen, was mit dir passiert!"
+Sie hängen Nazli Top an den "Palästinensischen Bügel".
+Im Januar 1986 veröffentlichte die türkische Wochenzeitschrift Nokta (Punkt) ein aufsehenerregendes Interview.
+Zu Wort meldete sich Sedat Caner, 33 Jahre alt, --Vater--1 von zwei Kindern.
+Ein Mann, der Folterpraktiken anprangerte;
+er wußte, wovon er sprach:
+Sedat Caner war Polizist.
+Er selbst hat gefoltert.
+Den Lesern von Nokta hat Sedat Caner beschrieben, was man unter dem palästinensischen Bügel zu verstehen hat:
+"Das ist die schwerste Folter.
+Sie wird sehr oft angewendet.
+Mehr als zwanzig Minuten kann das niemand aushalten.
+Nackt werden sie aufgehangen, egal ob Mann oder Frau.
+Die Hände werden von hinten mit einem Riemen gefesselt.
+In der Mitte des Riemens ist ein Loch.
+Durch das Loch wird eine Stange gesteckt.
+Man stellt die Person auf einen Stuhl, und die Stange wird an zwei Haken in der Decke befestigt.
+Der Stuhl wird dann weggezogen.
+Schulterblatt und Rippe drücken entsetzlich auf die Lunge.
+Die Person wird bewußtlos.
+Aber wenn wir Strom geben, kommt sie wieder zu Bewußtsein."
+An den hinter dem Rücken gefesselten Händen hängen sie Nazli Top auf.
+Der Schmerz in den Schultergelenken und Armen ist kaum zu ertragen.
+"Die --Polizisten--1 nannten mir fünfzehn, zwanzig Namen - Namen von Leuten, die in diesem Raum gewesen seien, die alle zu Anfang störrisch gewesen seien, dann aber, nach dieser Prozedur, gezwitschert hätten wie die Vögel..."
+Nazli Top schweigt.
+Sie läßt die Schläge, die Fußtritte, die Beschimpfungen stumm über sich ergehen.
+Dann schließen sie die Kabel an, eines an einen Finger, das andere an einen Zeh.
+"Sie fingen an, mir Stromschläge zu geben.
+Erst in größeren Abständen, dann folgten die Schläge immer schneller aufeinander und wurden immer stärker.
+--Einer--5 der --Polizisten--1 griff mit seiner Hand nach meinen Brüsten und begann, mit seinen Fingern meine Brustwarzen zu quetschen.
+Weil ich schwanger war, tat mir das besonders weh."
+Elektroschocks und wüste Prügel wechseln einander ab.
+Die --Polizisten--1 schlagen sie mit Knüppeln auf die Brüste, in die Nieren und auf den Bauch.
+"Bist du sicher, daß du schwanger bist?", fragen sie unter höhnischem Gelächter.
+Dann beratschlagen sie untereinander, wer sie als --erster--5 vergewaltigen soll.
+Der --eine--5 sagte: "Ich bin noch nicht soweit."
+Der --andere--5 meint: "Ich auch nicht - vielleicht etwas später."
+Nazli Top erinnert sich:
+"Ich habe versucht, so stark wie nur irgend möglich zu sein.
+Auf die Fragen, ob ich wirklich schwanger sei, habe ich keine Antwort mehr gegeben, denn ich hatte mein Kind nach den Schlägen und Elektroschocks sowieso längst abgeschrieben.
+Ich dachte, die wollen jetzt, daß du wimmerst und schreist, bettelst und sie anflehst, aufzuhören.
+Und weil sie das erwarteten, habe ich ihnen diesen Triumph nicht geben wollen."
+--Einer--5 der beiden Männer, die mit Nazli Top im "Operationssaal "sind, nimmt einen Schlagstock.
+--Er--2 streicht mit ihm über ihren Körper, auf und ab.
+"Spürst du das?", fragt --er--2, "spürst du den Knüppel?
+Es ist ein schöner, langer Knüppel!"
+Vor Zorn oder aus Scham:
+Nazli Tops Hände zittern, als sie dies erzählt.
+"Zuerst haben sie versucht, mir den Knüppel in den Anus zu stoßen, aber ich schrie vor Schmerz, und da hatten sie wohl Angst, mich ernstlich zu verletzen.
+Dann führten sie den Knüppel in meine Scheide ein.
+Anschließend brachten sie eine Flasche, mit der sie das gleiche machten.
+Danach schlossen sie wieder die Stromkabel an, diesmal an meine Brustwarzen."
+Die ersten drei Tage nach der Festnahme wird Nazli Top fast ununterbrochen gefoltert.
+Sie bekommt weder etwas zu essen, noch gönnt man ihr Schlaf.
+Unterdessen durchsuchen Polizeibeamte ihre Wohnung.
+Man findet nichts, was auf eine Verwicklung in terroristische Aktivitäten hindeutet.
+Allmählich wird auch der Polizei klar, daß es sich um eine Verwechslung handelt, daß Nazli Top unschuldig ist.
+Die Hebamme ist eine Hebamme - nichts sonst.
+Wenn die Polizei sie dennoch weiter gefangenhält, ohne jeden Kontakt zur Außenwelt, ohne einen Anwalt zuzulassen oder sie einem Haftrichter vorzuführen, so dient das ausschließlich der Verschleierung der Folter:
+Die physischen Spuren der Mißhandlungen sollen verheilen, bevor Nazli Top entlassen wird.
+Immer wieder fragt die junge Frau nach einem Arzt, besteht darauf, untersucht zu werden.
+Sie kann ihre Arme kaum mehr bewegen und hat starke Schmerzen im Unterleib.
+Jeden Tag kommen die --Polizisten--1 in ihre Zelle, um sich davon zu überzeugen, wie weit die äußerlich sichtbaren Folterspuren ausgeheilt sind.
+"Wozu willst du einen Arzt?", fragen sie, "bei dir ist doch nichts gebrochen!"
+Am zehnten Tag nach ihrer Festnahme, dem 7. Mai 1992, legt man Nazli Top ein Protokoll zur Unterschrift vor.
+Darin steht, daß sie am 27. April bei einer Ausweiskontrolle festgenommen worden sei, weil sie einer mutmaßlichen Terroristin ähnlich gesehen habe.
+Die Festnahme und zehntägige Haft habe der zweifelsfreien Feststellung ihrer Identität gedient, heißt es in dem Protokoll, das Nazli Top unterschreiben muß.
+Am folgenden Tag wird sie auf Beschluß eines --Staatsanwaltes--1 freigelassen.
+Mittlerweile hat Nazli Top bei der Istanbuler Staatsanwaltschaft Strafanzeige gegen ihre Folterer gestellt.
+Ob und wann der Fall verhandelt wird, ist ungewiß.
+Ende November soll sie ihr Kind zur Welt zu bringen.
+Nazli Top hat die Ärzte gefragt, welche Folgen die Schläge, die Fußtritte, die Elektroschocks und die Vergewaltigung mit dem Polizeiknüppel für ihr ungeborenes Kind gehabt haben könnten.
+Niemand wußte eine Antwort.
+Wir trafen Nazli Top im Büro des 1986 gegründeten Istanbuler Menschenrechtsvereins.
+47 solcher Gruppen mit mehr als 22 000 Mitgliedern gibt es mittlerweile in der ganzen Türkei.
+Vorsitzender des Istanbuler Vereins ist der Rechtsanwalt Ercan Kanar.
+Auf die seit vergangenem Dezember amtierende neue Koalition setzten viele in der Türkei große Hoffnungen.
+Aber Ercan Kanar zieht eine ernüchternde Bilanz:
+"In den Monaten seit dem Regierungswechsel ist, im Gegensatz zu den Ankündigungen der neuen Regierung, kein Fortschritt in Menschenrechtsfragen festzustellen.
+Im Gegenteil, man muß sogar sagen, daß sich die Folter weiter institutionalisiert hat."
+Zwar brüstet sich die Regierung in Ankara nun mit einer Reform des Strafprozeßrechts, die helfen soll, Polizeiwillkür und Folter abzuschaffen.
+Aber auch nach dem neuen Recht können Verdächtige bis zu sechzehn Tage lang von der Polizei ohne richterlichen Haftbefehl in Gewahrsam gehalten werden.
+Überdies kann nicht einmal diese vom Parlament gebilligte "Reform "in Kraft treten, weil Staatspräsident Turgut Özal bisher seine Unterschrift verweigert - dem --Staatschef--1 sind die neuen Gesetze zu lasch.
+Um das katastrophale Menschenrechts-Image der Türkei aufzupolieren, schaffte zwar schon die konservative Regierung im Frühjahr vergangenen Jahres die berüchtigten Gesinnungsparagraphen ab, die "staatsfeindliche Propaganda "unter scharfe Strafen stellten.
+Aber im Rahmen des neuen "Antiterrorgesetzes Nr. 3713 "blieben die alten Straftatbestände weitgehend erhalten, und neue kamen hinzu.
+So gilt nun bereits als "Terrorist", wer die "öffentliche Ordnung stört "oder "die allgemeine Gesundheit "beeinträchtigt - Gummiparagraphen, wie sie flexibler sich auch eine Diktatur nicht ausdenken könnte.
+Das neue Anti-Terror-Gesetz bestimmt auch, daß Polizisten, die der Folter beschuldigt werden, zunächst strafrechtliche Immunität genießen.
+Nur nach Genehmigung des Innenministers darf gegen die --Folterknechte--3 verhandelt werden, und auch dann nur unter Ausschluß der Öffentlichkeit.
+Die furchtbare Geschichte der Nazli Top: ein Einzelfall?
+Sicher nicht.
+Schon das Vorhandensein der Folterwerkzeuge - der Fleischerhaken, der Elektrokabel, der Hochdruckschläuche, aus denen die Opfer mit eiskaltem Wasser bespritzt werden - beweist, daß die Folter in der Türkei systematisch betrieben wird, mit Wissen und Billigung der Regierenden.
+Die türkische Menschenrechtsstiftung zählt allein für das vergangene Jahr 552 Folteropfer auf.
+"Ich glaube nicht", sagt Ercan Kanar, "daß die Folter unter dieser Regierung ausgemerzt wird, wie man uns das verspricht.
+Die Folter ist eine furchtbare Tradition in der Türkei.
+In der Zeit des osmanischen Reiches wie in den siebzig Jahren der türkischen Republik ist sie zu einer Institution geworden - die Folter ist offizielle Staatspolitik.
+Unter Staatsanwälten, Richtern und Politikern ist die Ansicht weit verbreitet, daß man ohne Folter, ohne Gewaltanwendung die Wahrheit nicht ans Licht bringt.
+Diese Mentalität - körperlicher Zwang als Mittel der Wahrheitsfindung - herrscht in der Familie, in der Schule, beim Militär, bei der Polizei.
+Überall in unserer Gesellschaft wird geprügelt, werden Menschen gezüchtigt.
+Wenn wir also von der Abschaffung der Folter reden, dann reden wir von der Notwendigkeit, das Bewußtsein unserer Gesellschaft zu verändern
+
+FALSE POSITIVES:
+['Freund', 'Freund', 'Polizisten', 'eine', 'Kollegen', 'Der', 'Anwalt', 'Polizisten', 'Polizisten', 'Polizisten', 'Einer', 'Polizisten', 'Polizist', 'Vater', 'Polizisten', 'Einer', 'Polizisten', 'Polizisten', 'erster', 'eine', 'andere', 'Einer', 'Er', 'er', 'Polizisten', 'Staatsanwaltes', 'Staatschef', 'Folterknechte']
+
+================================================================================
+ArtikelId: 0145_0001:
+Imaginäres Museum des Kinos (45)
+"Meine Uhr ist kaputt"
+Der, Augenblick der Wahrheit ' meiner Initiation in die Filmkunst?
+Dieses Thema bereitet mir keinerlei Kopfzerbrechen.
+Wie paradox jedoch - oder zumindest so zweideutig wie einige der bedrückendsten Filmszenen -, daß dieser Augenblick einem Stillstand der Zeit entspricht.
+Vielleicht deutet es auch auf einen Ruhepunkt in der Entwicklung meiner Kritikfähigkeit hin, denn der Film ist seit jener Begegnung während meiner Studententage sehr viel komplexer, wagemutiger, innovativer geworden, sinnlicher und gelegentlich sogar subtiler!
+Und doch wird diese eine Szene ebenso unvergänglich bleiben, wie ich darauf beharre, daß Fellinis Film La Strada der exquisiteste Film ist, --den--6 ich je gesehen habe.
+Ich gebrauche das Wort, exquisit ' aus Mangel an einem zufriedenstellenderen Ausdruck.
+, Pathos ' gibt es in Hülle und Fülle in La Strada, auch moralische Unparteilichkeit, die sich wie von selbst vor allem durch den Schauplatz aufdrängt, ist doch der Zirkus die Fabrik aller Illusionen sowie ihrer Kehrseite hinter dem Glanz.
+Die Hauptrolle kommt dem robustesten --Vertreter--1 dieser Welt zu, einem von Anthony Quinn dargestellten --Zirkusartisten--1 und --Vagabunden--1, --der--2, Produkt seiner Zeit, als ein zwanghaft unmoralischer Charakter seine nichtsahnenden Opfer bis auf die letzte Lira schröpft.
+Nein, an Anthony Quinn ist in keiner seiner Rollen etwas, Exquisites ', weshalb dann dieses Wort?
+Nun, ich möchte mir den Begriff für das Zusammenspiel einer Vielzahl sensorischer Empfindungen dienbar machen - für jenen nahtlosen Übergang, aus --dem--6 Geist und Sinne nur aufsteigen, damit sie erneut in ihn zurücktauchen können, um mit genau diesem Gefühl der Unauflöslichkeit ihrer Bestandteile just diese Einzelteile zu genießen.
+Ergänzend, geradezu alles durchdringend, wird der sehr realen, harten, korrupten, entmenschlichenden Umgebung mit großem Geschick das Element einer versponnenen, weltentrückten Abgeschiedenheit übergestülpt, und zwar durch die naive, aber sehr anrührende, von Giulietta Masina verkörperte Gestalt: ein Bild der Zerbrechlichkeit und unausgesetzter Verwirrung, scheinbarer Willfährigkeit und Loyalität, dem ein starkes, intuitiv moralisches Empfinden zugrunde liegt.
+Schalkhaft bis böse, gar unverantwortlich und doch insgeheim wissend, ist diese Figur ein wahrhaft Skakespearscher Narr, übertragen in ein - so schien es mir damals - exotisches italienisches Ambiente.
+Anthony Quinn, nicht gerade der subtilste unter den Schauspielern - seinen Alexis Sorbas ausgenommen (sieht man von seinem bleifüßigen Tanzen ab) -, war auch in diesem Film das immer die Leinwand dominierende Muskelpaket.
+Doch schien sogar er auf die sehr feine Hand der Regie gefühlvoll reagiert zu haben.
+Die Wandlung, die sich in ihm vollzieht, als er entdeckt, daß die brutale Wirklichkeit seiner Körperkräfte - die er in der Zirkusarena ja immer nur vortäuscht - im richtigen Leben tödliche Folgen hatte, zählt fraglos zu den erinnerungswürdigsten Momenten dieser bäurischen Zierde der Filmkunst;
+aber dies ist nicht der Augenblick, --den--6 ich meine.
+, Mein ' Augenblick gehört keinem Schauspieler, nicht einmal dem Opfer und unmittelbaren --Darsteller--1 (an dessen Namen ich mich nicht erinnere) dieses Augenblicks - dem jungen Zirkuskünstler, dessen gewaltsamer Tod vorgeführt wird wie eine noch unberührte, archetypische Erfahrung.
+Dreist und gefühllos, verdient er, wie manche sagen mögen, die Gewalt, die über ihn hereinbricht, wenn auch nicht dieses endgültige Schicksal.
+Seine metaphorische Reaktion auf dieses Schicksal aber, das gedämpfte Wehklagen, als er im Sterben liegt, entspricht, denke ich, beinahe einer tragischen Opernarie, wenn es denn möglich wäre, sich eine auf ein Minimum zusammengestutzte, aller emotionalen Bravour entkleidete Arie vorzustellen.
+Diese schlichte, trügerisch untertriebene Szene ist, wenn ich mich recht entsinne, mit keinerlei Musik unterlegt, das schmerzverzerrte, stoische Wehklagen unseres gar nicht tragischen --Helden--1 erfährt keine belanglosen Zusätze, es gibt keinerlei visuelle oder akustische, Spezialeffekte ';
+nur diese untertriebene Konfrontation mit dem Tod, unser Entsetzen über die Gewalt, das sich ausgezeichnet auf dem Gesicht der Masina abzeichnet und im Kontrast steht zu dem brutalen, rachsüchtigen, selbstzufriedenen Triumph auf dem Gesicht des --Totschlägers--1.
+--Er--2 hat endlich mit seinem Quälgeist abgerechnet, doch er hat noch nicht begriffen, als was seine Rache sich erweisen wird.
+Die Überraschung darüber, zu welcher Tat seine animalische Kraft ihn getrieben hat, wird von Quinn überzeugend dargestellt, und diese Unschuld spiegelt sich in der idyllischen Unvoreingenommenheit einer Landschaft, die plötzlich und brutal unter diesem zeugenlosen Gewaltakt der unschuldigen Umarmung zerbricht.
+Geschlagen und von seinem --Angreifer--1 tödlich verletzt, bringt der sterbende junge Mann ein reumütiges Lächeln zustande, hebt dann den Arm, um auf die Uhr zu schauen, und klagt nur:
+"Meine Uhr ist kaputt."
+Dann sinkt er in einen Tod, der paradoxerweise völlig friedlich ist.
+Als ich diesen Film Fellinis vor rund 35 Jahren zum ersten Mal sah, war ich --Student--1 an der Universität von Leeds in Nordengland.
+Seither habe ich --ihn--6 noch drei- oder viermal gesehen, zum letzten Mal, leider, vor mehr als 15 Jahren.
+Bei jedem Wiedersehen fühle ich mich in eine vertraute Realität katapultiert - nein, nicht weil ich --ihn--6 schon so oft gesehen habe -, vielmehr einfach deshalb, weil mir diese kleinstädtische oder dörfliche Gemeinschaft vertraut ist, deren Werte überrollt werden, die den Tod ihrer Gemeinschaft und ihrer verwandtschaftlichen Bande schweigend über sich ergehen läßt, die sich einer zweifelhaften Weltlichkeit unterordnet, verführt durch eine oberflächliche Kultiviertheit, deren offensichtliches Ziel das bloße wirtschaftliche Überleben ist, koste es, was es wolle.
+Es wird um ein Familienmitglied gefeilscht, schließlich wird es an einen fahrenden --Zirkusartisten--1 verkauft.
+Und sie ist nicht die erste, eine ältere Schwester wurde schon auf die gleiche Weise, verkauft ', dieser neue Gebrauchsgegenstand ist also nur ein Ersatz.
+Kein Mitglied der Familie interessiert sich ernsthaft für das Schicksal der Vorgängerin.
+Sie soll irgendwo an irgendeiner Krankheit gestorben sein - erst später erfahren wir, daß sie sich schlicht zu Tode arbeitete - oder wurde sie umgebracht?
+Auch ich habe, wie ich gestehen muß, diese Details inzwischen vergessen.
+Was sich ins Gedächtnis gräbt, ist die Kälte der Transaktion, der eine Familie zustimmt, die nur zu gern bereit ist, sich von einem überflüssigen Esser zur befreien, einem Mitglied, das geistig etwas minderbemittelt und schwierig ist, eine Heimatlose, die in ihrer naiven Unschuld glücklich ist, in eine weite, geheimnisvolle Welt voller Romantik und Flitterglanz ziehen zu dürfen - und die Stück um Stück und mit großer Brutalität aller Illusionen beraubt wird.
+Wieviel in der Darstellung der Masina ist wohl inspiriert vom --Narren--3 in Shakespeares --König--3 Lear?
+Ich wäre sehr überrascht, sollte Fellini im Laufe seiner Karriere nicht immer wieder mit dieser Frage konfrontiert worden sein.
+Allerdings möchte ich auf gar keinen Fall unterstellen, auch dem Film unterliege die Beurteilung menschlicher Werte als Thema - ganz im Gegenteil.
+Ich wies bereits auf die grundsätzliche Amoralität des Filmes hin -, es ist ein Werk von derart unaufdringlicher Wahrhaftigkeit, daß das allein sein privates Signum ausmacht.
+Leben, Loyalität, --Verrat--4 und Tod... alle in einem Mikrokosmos, der jede wie auch immer geartete kleine Kommune spiegelt, und der Archetyp des Eindringlings, des räuberischen Fremden, der die Bestechlichkeit der Gemeinschaft mit Leichtigkeit durchschaut und ausnutzt, --der--2 (Bezug zum Räuberischen Fremden) den Glanz bringt - und die Verzweiflung.
+Federico Fellinis Filme wurden nach La Strada zu einem Muß für mich.
+Seine Exzesse sind, meiner Ansicht nach, Erweiterungen, oft extravagante Essays über jenes spezifische Thema, das er schon in La Strada ausgebreitet hat.
+Daß das wiederkehrende Motiv seiner Filme - La Dolce Vita, Satyricon usw. - immer das Zarte, das Lächerliche und Groteske, aber auch das Ausschweifende, das, Pathos ' von Leben und Tod sein würde, überraschte mich nie.
+Der --Zirkusdirektor--1 kehrt nur - auf verschiedenen Ebenen der Opulenz natürlich und mit einer oft ärgerlichen Hemmungslosigkeit - zu einem zentralen Thema zurück, mit dem sich seine magische Phantasie wahrscheinlich schon beschäftigte, noch bevor --er--2 sich an sein erstes Flimscript machte: das Paradoxon zwischen Zeit und Stillstand, selbst da, wo es scheint, die Zeit würde auf das orgiastischste gefeiert.
+Vor vielen Jahren schwärmte ich von diesem --ersten--2 meiner Lieblingsfilme, als --einer--5 der Zuhörer mich fragte, ob Fellinis Film Einfluß gehabt habe auf die Titelgebung eines Stückes - The Road -, das gerade seine Uraufführung erlebt hatte.
+Erst da fiel es mir wie Schuppen von den Augen - ich habe nie nähere Bekanntschaft mit der italienischen Sprache gemacht, doch habe ich in der Schule wenigstens ein wenig Latein gelernt! -, daß der Titel The Road ja in der Tat eine wörtliche Übersetzung von La Strada darstellt.
+Merkwürdig, vielleicht unglaublich, aber es ist wahr!
+Nun, die Themen, die Geschichte, die Charaktere, das Leitmotiv etc. sind völlig unterschiedlich, doch stimmt es andererseits nicht auch, daß unter all meinen Stücken es vor allem The Road ist, das ich mir beharrlich und glühend auf Zelluloid gebannt wünschte - und zwar unter meiner eigenen Regie?
+Vielleicht erlebe ich es noch, bevor meine eigene Uhr abläuft.
+"Meine Uhr ist kaputt "- ich kenne keinen anderen Moment der Kinogeschichte, der die Vergänglichkeit des Lebens und die essentielle Widersinnigkeit des Gedankens, die Zeit sei Gebieter über den Tod, derart sanft vor Augen führt.
+Der 1934 in West-Nigeria geborene Literaturnobelpreisträger von 1986, Wole Soyinka, lebt z. Zt. als --Unesco-Botschafter--1 in Europa, nachdem es --ihm--2 gelungen war, seine Heimat zu verlassen, die --ihm--2 den Paß entzogen hatte.
+--Er--2 hatte beim Bundesgericht in Lagos beantragt, das nigerianische Militärregime für illegal zu erklären.
+Der Erzähler, --Dramatiker--1 und Essayist hat in Großbritannien studiert und war 1960 in seine Heimat zurückgekehrt, wo er während des Biafra-Kriegs 1968 / 69 inhaftiert wurde.
+Sein Buch Der Mann ist tot gibt davon literarisches Zeugnis.
+Er war danach Dozent in Oxford, Sheffield und in Ghana, bevor er 1975 Leiter der Dramatik-Abteilung der nigerianischen Universität in Ife wurde.
+Er gehört zu den unbeugsamsten Kritikern der innerafrikanischen Machtoligarchien.
+Bei Ammann (und z. T. auch als Fischer-Taschenbücher) liegen seine Romane Aké, eine afrikanische Kindheit; Isarà, eine Reise um den --Vater--1; Der Mann ist tot, ein Gefängnistagebuch) vor.
+Übersetzt hat sie, wie diesen Originalbeitrag Wole Soyinkas, Inge Üffelmann.
+Das hier erwähnte Theaterstück des --Autors--1 ist unter dem Titel Die Straße als Fischer-Taschenbuch erhältlic
+
+FALSE POSITIVES:
+['den', 'Vertreter', 'Zirkusartisten', 'Vagabunden', 'der', 'dem', 'den', 'Darsteller', 'Helden', 'Totschlägers', 'Er', 'Angreifer', 'Student', 'ihn', 'ihn', 'Zirkusartisten', 'Narren', 'König', 'Verrat', 'der', 'Zirkusdirektor', 'er', 'ersten', 'einer', 'Unesco-Botschafter', 'ihm', 'ihm', 'Er', 'Dramatiker', 'Vater', 'Autors']
+
+================================================================================
+ArtikelId: 0001_0103:
+Ein --Gastgeber--1, --der--2 kein --Lehrmeister--3 mehr ist
+Die westliche Wirtschaft bietet derzeit keinen günstigen Rahmen für Hilfe an Ost wie Süd
+Als Bundeskanzler Helmut Kohl am Montagnachmittag kurz nach zwei Uhr im Vierschimmelsaal der Münchner Residenz seinen Regierungskollegen aus den sechs anderen führenden Industriestaaten und dem --EG-Kommissionspräsidenten--1 am Runden Tisch gegenübersaß, hatte er die langwierigen Begrüßungspflichten als --Gastgeber--1 endlich hinter sich.
+Mit Tschingdarassa-bum und den jeweils passenden Nationalhymnen hatte er am späten Vormittag auf dem Max-Joseph-Platz vor der Residenz zwischen Nationaltheater und "Spatenbräu "die Mächtigen dieser Welt in Empfang genommen.
+Ganz protokollgerecht - die politischen "Leichtgewichte "mit EG-Chefkommissar Jacques Delors zu Beginn und danach die "einfachen "Regierungschefs aus Japan, Großbritannien, Italien und Kanada.
+Als Krönung am Ende des Zeremoniells die Präsidenten, wobei sich der französische nach alter Tradition das Recht zum Superlativ vorbehält, nach dem US-amerikanischen empfangen zu werden.
+So streng sind auf den Gipfeln die Sitten - und die Gesetze der Eitelkeiten.
+Begrüßt hatte der --Bundeskanzler--1 allerdings die Mehrzahl der Gipfelgäste schon vorher in sogenannten "Vier-Augen-Gesprächen", die treffender "Vier-Ohren-Gespräche "genannt werden müßten, wenn sie ihren Sinn erfüllt haben sollen.
+Wenn der deutsche --Regierungschef--1 die Ankündigung seines "--Sherpas--1 "- wie die mit den Gipfelvorbereitungen beauftragten Vertrauensleute der Regierungschefs heißen (in diesem Falle Finanzstaatssekretär Horst Köhler) - wahrgemacht hat, ist "Tacheles "geredet worden im "Hotel Vier Jahreszeiten".
+Kohls ausdrücklicher Wunsch war es für "seinen "Gipfel, mehr als auf den Höhenbegegnungen der Vorjahre Zeit für ganz persönliche Gespräche zu haben, um zum "Kern der Dinge "vorzudringen.
+"Die Dinge "sehen denn auch für den gerade erst in Rom im Amt als --Präsident--1 des Ministerrats bestätigten Giuliano Amato, --den--2 Kohl als --ersten--2 empfing, alles andere als rosig aus.
+Mit über elf Prozent Arbeitslosigkeit, einer Inflationsrate von reichlich fünf Prozent, einem außenwirtschaftlichen Defizit von gut 20 Milliarden Dollar und einem Staatsdefizit von mehr als zehn Prozent des Sozialprodukts hält Italien unter den "Großen Sieben "überall dort Führungspositionen, wo die Politiker ihr jeweiliges Land eigentlich lieber am hinteren Ende sähen.
+Der japanische Premier Kiichi Miyazawa wiederum, der nach dem regierenden --Italiener--1 bei Kohl auftauchte, dürfte den Unwillen seines --Gastgebers--1 erregt haben, weil sein Land in entgegengesetzter Richtung aus dem Rahmen der Mittelmäßigkeit fällt.
+Auf dem fernöstlichen Inselreich klagt alles über eine nie dagewesene Rezession, und das bei Wachstumsraten von zwei Prozent und mehr, die in anderen Ländern als Aufschwung gefeiert werden.
+Auch mit der Inflationsrate von zwei Prozent, einer Arbeitslosigkeit in derselben Größenordnung und wieder explosiv auf über 93 Milliarden Dollar steigenden Leistungsbilanzüberschüssen hält Japan Traumnoten, die den Tadel seiner Handelspartner erregen, weil es zu wenig zum Aufschwung in der Welt beiträgt.
+Auf den Gipfeltouren zeichnen sich indes seine Regierungschefs in der Regel durch beredtes Schweigen aus, das in München auch ein --Politiker--1 vom Kaliber Kohls nicht durchbrechen dürfte.
+Dafür könnte Kanadas Premier Brian Mulroney, der nach dem Primus aus Tokio vom deutschen --Regierungschef--1 empfangen wurde, des Wohlwollens seines --Gastgebers--1 sicher gewesen sein, weil beide Länder mit ihren wirtschaftlichen Daten derzeit im schlechten Mittelmaß versinken - mit den Defiziten in ihren Leistungsbilanzen ebenso wie in ihren Staatsbudgets.
+Allerdings liegen die Deutschen in ihrer "Musterdisziplin", der Preisstabilität, weit schlechter und können auch bei der Arbeitslosigkeit mit den miserablen Vorgaben der Kanadier noch gut mithalten.
+Die Rolle des selbsternannten "--Lehrmeisters--1", so sie Kohl bei seinen Privatissima von Vorgänger Helmut Schmidt übernommen haben sollte, stünde dem Mann aus Oggersheim schlecht zu Gesicht.
+Dieses Manko dürfte dem --Kanzler--1 auch am Montagmorgen vor seinem Intim-Frühstück mit US-Präsident George Bush das Aufstehen schwergemacht haben.
+In puncto Arbeitslosigkeit, Inflation und Staatsverschuldung hat Kohl den lähmenden Vorgaben des Wahlkämpfers Bush nichts entgegenzusetzen.
+Allerdings verspricht der --Präsident--1 seinem Wahlvolk seit Jahren (bisher vergeblich), es aus dem Wachstumskeller herauszuführen, während der --Kanzler--1 das seine vor diesem Schicksal bewahren will.
+Da Kohl aber mit den deutschen Hochzinsen als Konsequenz der "Einheit auf Pump "nicht nur der eigenen Wirtschaft den Aufschwung erschwert, sondern auch die der Partnerländer mit Gewichten belastet, kann Bush diesmal für einen Rollentausch sorgen und den --Kanzler--1 auf einer "Anklagebank "seinen Morgenkaffee einnehmen lassen.
+Im gobelinbesetzten Kaisersaal der Residenz, wo am heutigen Dienstag in drei Sitzungen die eigentlichen Plenartreffen der Chefs und ihrer Minister am extra angefertigten ovalen Tisch beginnen, wäre ein solches Möbelstück fehl am Platze.
+"Dann müßten alle darauf hocken", wehrt sich Bundesfinanzminister Theo Waigel gegen eine solche Sitzordnung.
+Dennoch schwant dem --CSU-Vorsitzenden--1, daß die miserable Wirtschaftsverfassung in den Teilnehmerländern eine denkbar schlechte Ausgangssituation für die Behandlung der anderen kritischen Gipfelthemen darstellt.
+Denn auch Großbritannien und Frankreich können sich mit ihrer heimischen Krise aus der Verantwortung herausreden, mehr für die Länder der Zweiten und Dritten Welt zu tun.
+Von wohlfeilen Versprechen über verstärkte Anstrengungen zum Schutz der Umwelt ganz zu schweigen.
+Allenfalls da, wo es an die eigene Substanz zu gehen droht, ist auf dem Münchner Gipfel mit Bewegung zu rechnen;
+etwa wenn es gilt, die Wiederholung eines Tschernobyl zu verhindern.
+Aber sogar bei diesem explosiven Thema der Reaktorsicherheit in den ehemaligen Ostblockstaaten fühlt sich der wohlhabende Westen finanziell überfordert und gerade mal in der Lage, 700 Millionen Dollar für diese Zwecke bereitzuhalten, wo die zuständigen Minister und Experten mindestens zwölf Milliarden Dollar "fürs erste "verlangen.
+"Wahrscheinlich muß doch erst wieder etwas passieren", heißt es vielsagend im Vorfeld des großen Palavers - nicht nur bei den Gipfelgegnern auf den Alternativtreffen, sondern auch bei den amtlichen Schlachtenbummlern, allerdings hinter vorgehaltener Hand.
+Ein "Tschernobyl "droht nach überwiegender Befürchtung selbst der Offiziellen nicht nur im Energiebereich des Ostens, sondern auch in den Finanzbeziehungen und bei der Umgestaltung der untergegangenen Befehlswirtschaft insgesamt.
+Von dem Besuch des russischen Präsidenten Boris Jelzin nach dem Gipfel in München verspricht sich die Siebener-Seilschaft allenfalls eine moralische Stärkung für ihren --Gast--1 aus Moskau.
+"Sherpa "Köhler dürfte nicht nur für seinen --Chef--1 gesprochen, sondern die Stimmungslage der Schwergewichte auch aus den anderen westlichen Hauptstädten getroffen haben, als er die Einladung an den russischen Präsidenten auf eine Geste als "Ausdruck der Anerkennung für das Festhalten Jelzins am Reformkurs "herabstufte.
+Die in der Hinterhand gehaltenen 24 Milliarden Dollar Belohnung für Jelzin, wenn dieser die harten Hungerauflagen des Internationalen Währungsfonds (IWF) erfüllt, werden von den Kritikern der "bösen Sieben", wie dem früheren --Vize-Ministerpräsidenten--1 Rußlands, Grigori Jawlinski, selbst ein --Reformer--1, als "Hinterhalt "beargwöhnt.
+Auch Köhler hat bei seiner Good-will-Tour durch die osteuropäischen Reformländer zur psychologischen Vorbereitung des Münchner Gipfels überall Reformmüdigkeit angetroffen.
+Schon läßt Jelzin seinen Berater Jawlinski vor einer "globalen politischen Destabilisierung "warnen.
+Diese Gefahr bestehe, wenn der Westen nicht sofort mit Hunderttausenden von Experten in der ehemaligen Sowjetunion Hand anlege, die mit "allen Arten von Massenvernichtungswaffen und Technologien vollgestopft ist, die eine Umweltverschmutzung im Weltmaßstab bewirken können und wo es über 100 Nationalitäten und Glaubensrichtungen gibt".
+Jawlinskis düstere Prophezeiung:
+Wenn in München die Möglichkeit zu einem Umschwung zu einer neuen Etappe des strategischen Zusammenwirkens der Völker der führenden entwickelten Länder und der ehemaligen UdSSR ungenutzt verstreiche, werde man wahrscheinlich auf dem nächsten Wirtschaftsgipfel schon nicht mehr feststellen können, daß der "Triumphzug der Freiheit und Demokratie an Kraft gewinnt".
+Diese Hymne hatten die Sieben vor einem Jahr vom Londoner Gipfel herunter dem sowjetischen Reformer Michail Gorbatschow in seiner demütigenden Rolle als --Bittsteller--1 gewidmet - und ihn mit leeren Händen in seinen Untergang entlasse
+
+FALSE POSITIVES:
+['Gastgeber', 'der', 'Lehrmeister', 'EG-Kommissionspräsidenten', 'Gastgeber', 'Bundeskanzler', 'Regierungschef', 'Sherpas', 'Präsident', 'den', 'ersten', 'Italiener', 'Gastgebers', 'Politiker', 'Regierungschef', 'Gastgebers', 'Lehrmeisters', 'Kanzler', 'Präsident', 'Kanzler', 'Kanzler', 'CSU-Vorsitzenden', 'Gast', 'Chef', 'Vize-Ministerpräsidenten', 'Reformer', 'Bittsteller']
+
+================================================================================
+ArtikelId: 0063_0001:
+--Er--2 tat, woran --er--2 glaubte
+Yitzhak Rabin konnte den Schritt zum Frieden wagen, weil die Mehrheit der Israelis ihm vertraute
+In einem kurzen Satz beschrieb ein erschütterter US-Präsident Bill Clinton gestern Israels ermordeten Ministerpräsidenten Yitzhak Rabin besser, als viele noch so wohlgewählte Worte es vermöchten:
+"Ein halbes Jahrhundert riskierte er sein Leben bei der Verteidigung seines Landes und Volkes.
+Nun verlor er es, als er Frieden machen wollte."
+Der alte Haudegen und Falke Rabin blieb zwar zeitlebens - auch bei den nun schon seit vier Jahren sich hinziehenden Friedensverhandlungen - ein Sicherheitsfanatiker.
+Doch er erkannte, daß die von ihm so sehnlichst gewünschte Sicherheit, eben besser durch das friedvolle Zusammenleben der Völker als durch militärische Siege zu erreichen ist.
+Und die Mehrheit des israelischen Volkes vertraute ihm, fühlte sich unter seiner Regierung sicher.
+Darum konnte er den Schritt wagen und seinem langjährigen Todfeind --PLO-Chef--1 Yassir Arafat die Hand zum Frieden reichen.
+Und darum folgte ihm der größte Teil seines Volkes - wenn auch unsicher und gelegentlich ängstlich - bei diesem Schritt.
+"Er war ein Kämpfer, ein Staatsmann, ein --Freund--1", rühmte ihn auch Präsident Ezer Weizman, der häufig und nicht nur in den letzten Wochen an Rabins Politik zweifelte:
+"Er tat, woran er glaubte."
+Diese Ehrlichkeit wohl war es, warum seine Landsleute diesen introvertierten, kühlen, hölzernen, in der Öffentlichkeit manchmal beinahe unbeholfen wirkenden Mann, der nie eine besondere Zuneigung zu den Arabern gezeigt, lieber eine harte Hand im Umgang mit ihnen gefordert hat und dann doch Frieden mit ihnen schloß, oftmals nicht nur verehrten, sondern wirklich liebten.
+Schon früh, lange vor den meisten Politikern in Israel, hatte er von der Notwendigkeit gesprochen, Frieden mit den Feinden zu schließen.
+Schon vor 21 Jahren, als er zum ersten Mal das Amt des --Ministerpräsidenten--1 übernahm, betonte er in seiner Antrittsrede: "Die erste Pflicht dieser Regierung ist, jeden vernünftigen Weg zum Frieden zu suchen."
+Rabin hatte nie diesen Besitzanspruch auf die Westbank und den Gazastreifen, wie etwa jene Träumer von einem Großreich Israel, aus deren Reihen auch sein --Mörder--1 kam.
+--Er--2 fühlte nie diese religiöse Bindung an das Gebiet, das andere "Judäa und Samaria "nannten.
+"Es ist keine Katastrophe", so sagte er einmal, "wenn wir ein Visum brauchen, um nach Kfar Etzion (eine Siedlung) zu fahren."
+In den Augen der Israelis, denen von klein auf Sicherheitsdoktrinen vermittelt werden, war der Falke Rabin der ideale Friedensunterhändler.
+Der Sicherheitsfanatiker Rabin, das wußten sie, gibt den Arabern nicht zuviel.
+Schließlich hatte er als --Ministerpräsident--1 vor 17 Jahren 32 Siedlungen in den besetzten Gebieten gegründet und gelegentlich auch mit der Bombardierung Kairos gedroht.
+Dies wußten aber auch die Palästinenser.
+Wohl erst heute haben sie jenen Befehl vergessen, mit --dem--6 der damalige Verteidigungsminister Rabin 1988 der Intifada Einhalt gebieten wollte:
+"Brecht ihnen die Knochen."
+Darum brauchte er zur Durchführung und Erfüllung seiner Vision vom Frieden seinen langjährigen --Parteirivalen--1, mit --dem--2 er sich zwanzig lange Jahre mit wechselndem Erfolg um Parteivorsitz und Ministerpräsidentenamt gestritten hat und --der--2 nun als amtierender --Ministerpräsident--1 die Geschicke des Landes leiten wird: Außenminister Schimon Peres.
+Rabin, ein Experte in Geheimverhandlungen, hielt seinem --Außenminister--1 den Rücken frei.
+Rabin hatte nicht nur mit den Truppenentflechtungsabkommen Sinai I sowie Sinai II den Weg für den späteren Camp-David-Frieden mit Ägypten geebnet.
+Er hatte sich während seiner ersten Amtszeit als --Ministerpräsident--1 (1974-1977) auch heimlich viermal mit Jordaniens König Hussein getroffen, das erste Mal sogar - drei Jahre vor Anwar Sadats (der ebenfalls für den Frieden starb) historischem Jerusalem-Besuch - in Tel Aviv.
+Damals schon weckte er, so wie 18 Jahre später bei seiner erneuten Wahl zum --Regierungschef--1, große Hoffnungen, die dann allerdings mit seiner vorzeitigen Demission für 17 Jahre wieder verschwanden.
+Er war der erste Sabra, in Israel geborene und erzogene Ministerpräsident, der erste --Nicht-Politiker--1, der erste Offizier.
+1922 als --Sohn--1 russischer Einwanderer in Jerusalem geboren, bekam --er--2, wie jeder Jude im damaligen Palästina, 13jährig sein erstes militärisches Training in der geheimen Verteidigungsorganisation Haganah:
+"Ich lernte, mit der Pistole umzugehen und Wache zu schieben."
+Fünf Jahre später kam ein --Kompaniechef--1 namens Moshe Dayan in seinen Kibbuz und heuerte ihn für Einsätze der "Palmach", Stoßtruppen der Haganah, in Syrien an, das damals unter Vichy-Verwaltung stand.
+Beförderungen folgten rasch: --Kompaniechef--1, Bataillonskommandeur, im Unabhängigkeitskrieg hielt --er--2 als --Chef--1 der Harel-Brigade in erbitterten Gefechten die Straße nach Jerusalem frei.
+1953 General, 1959 --Operationschef--1, 1961 stellvertretender --Stabschef--1.
+Nichts aber prägte Rabins Bild in der Öffentlichkeit mehr als Israels triumphaler Sieg über die vereinigten Armeen Äygptens, Jordaniens, Syriens, Libanons und Iraks im Sechs-Tage-Krieg, --den--6 er als Generalstabschef minuziös geplant hatte.
+Der Kettenraucher Rabin avancierte zum --Helden--1 der Israelis.
+Seine Hobbys Fußball und Scrabble wurden Mode, Berge von Schokoriegeln (die Rabin gerne aß) trafen im Stabsquartier ein;
+42,1 Prozent der Israelis wählten ihn zum "Mann des Jahres".
+Obwohl er 1949, nach den Waffenstillstandsverhandlungen auf Rhodos, entschieden hatte, "von Diplomatie und Politik genug "zu haben, ließ er sich nach fünfjähriger Botschaftertätigkeit in Washington 1973 in die Knesset wählen.
+Als im April 1974 die Regierung Golda Meirs über die Folgen des Yom-Kippur-Krieges stürzte, wurde er der Nachfolger der "großen, alten Dame".
+Im September 1984 trat er der "Regierung der Nationalen Einheit "als --Verteidigungsminister--1 bei, in der er für Israels weitgehenden Rückzug aus Libanon, aber auch für die Bombardierung des PLO-Hauptquartiers in Tunis (1985) verantwortlich zeichnete.
+Im Wahlkampf 1992 trat Rabin mit dem Versprechen an, "in neun Monaten "Frieden mit Israels arabischen Nachbarn zu schaffen.
+Es dauerte länger und blieb ihm verwehrt, sein Werk zu vollenden.
+"Wir sollten das Land, wo Milch und Honig fließen, nicht in ein Land verwandeln, wo Blut und Tränen fließen", hatte er noch vor wenigen Wochen in Washington bei der feierlichen Unterzeichnung des Vertrages über die Erweiterung der palästinensischen Autonomie seine politischen Gegner, deren Angriffe zunehmend schärfer wurden, ahnungsvoll ermahnt.
+Gestern starb er auf einer Friedensdemonstration in seinem Blut, und Israel weint.
+"Er fiel im Kampf für den Frieden", sagte Präsident Ezer Weizma
+
+FALSE POSITIVES:
+['Er', 'er', 'PLO-Chef', 'Freund', 'Ministerpräsidenten', 'Mörder', 'Er', 'Ministerpräsident', 'dem', 'Parteirivalen', 'dem', 'der', 'Ministerpräsident', 'Außenminister', 'Ministerpräsident', 'Regierungschef', 'Nicht-Politiker', 'Sohn', 'er', 'Kompaniechef', 'Kompaniechef', 'er', 'Chef', 'Operationschef', 'Stabschef', 'den', 'Helden', 'Verteidigungsminister']
+
+================================================================================
+
+
+

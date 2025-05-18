@@ -2,35 +2,39 @@ from loguru import logger
 
 
 def find_initial_words(doc):
+    """
+    Findet alle potenziellen generisch-maskulinen Formen im Dokument,
+    darunter maskuline Nomen und relevante maskuline Pronomen (3. Person, Singular),
+    wobei problematische Stopwörter ausgeschlossen werden.
+    """
     result = []
-    index = 0
+    stop_words = {
+        "niemand", "jemand", "man", "wer", "was", "selbst", "selber",
+        "derlei", "dergleichen", "einander", "beide", "viele", "irgendwem", "irgendjemand"
+    }
+
     for word in doc:
-        logger.debug(f"{word.text} : {word.pos_} : {word.tag_} : {word.morph} : {word.lemma_}")
+        gender = word.morph.get("Gender")
+        person = word.morph.get("Person")
+        number = word.morph.get("Number")
+        is_stop_word = any(word.text.lower().startswith(x) for x in stop_words)
 
-        # Problematisch man
-        # niemand, jemand, man, wer, was, selbst, selber, derlei, dergleichen, einander, beide
-        stop_words = ["niemand", "jemand", "man", "wer", "was", "selbst", "selber", "derlei", "dergleichen", "einander", "beide"]
+        # Maskuline Nomen
+        if word.pos_ == "NOUN" and gender and gender[0] == "Masc":
+            result.append(word)
 
-        is_stop_word = any([word.text.lower().startswith(x) for x in stop_words])
+        # Maskuline Pronomen (nur 3. Person, Singular, kein Stopwort)
+        elif (
+                word.pos_ == "PRON" and
+                gender and gender[0] == "Masc" and
+                word.tag_ in {"PDS", "PIS", "PPER", "PPOSS", "PRELS", "PWS"} and
+                (not person or person[0] == "3") and
+                (not number or number[0] == "Sing") and
+                not is_stop_word
+        ):
+            result.append(word)
 
-        if word.pos_ == "NOUN" and word.morph.get("Gender") and word.morph.get("Gender")[0] == "Masc":
-            result.append((word, index))
-
-        # Wenn es eine Angabe zur Person gibt, dann ist nur die dritte Person relevant:
-        # Bspsw. bei Personalpronomen.
-        # Außerdem nur Singular-Pronomen relevant!
-        # Niemand wird nicht korrigiert!
-
-        elif word.pos_ == "PRON" and \
-                word.morph.get("Gender") and \
-                word.morph.get("Gender")[0] == "Masc" \
-                and word.tag_ in ["PDS", "PIS", "PPER", "PPOSS", "PRELS", "PWS"]\
-                and (not word.morph.get("Person") or not word.morph.get("Person")[0] or (word.morph.get("Person")[0] == "3"))\
-                and (not word.morph.get("Number") or not word.morph.get("Number")[0] or (word.morph.get("Number")[0] == "Sing"))\
-                and (not is_stop_word):
-            result.append((word, index))
-
-        index = index + 1
+    return result
     #
     # logger.debug(f"Result before filtering: {result}")
     #
@@ -75,5 +79,3 @@ def find_initial_words(doc):
     #         logger.debug(f"Remove: {r[0].text} (apposition rule)")
     #
     # return [x for x in result if x not in words_to_remove]
-
-    return result

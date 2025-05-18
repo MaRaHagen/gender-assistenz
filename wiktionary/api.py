@@ -4,19 +4,26 @@ import dataset
 import os
 from sqlalchemy import or_
 
+_db = None
+
+def get_db():
+    global _db
+    if _db is None:
+        db_path = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'words.db')
+        _db = dataset.connect('sqlite:///' + db_path)
+    return _db
+
 def find_verb_by_title(word):
-    db = dataset.connect('sqlite:///' + os.path.dirname(os.path.realpath(__file__)) + '/words.db')
+    db = get_db()
 
     verbs_table = db['verbs']
 
     result = verbs_table.find_one(title=word)
 
-    db.close()
-
     return result
 
 def find_verb_by_any_form(word):
-    db = dataset.connect('sqlite:///' + os.path.dirname(os.path.realpath(__file__)) + '/words.db')
+    db = get_db()
 
     verbs_table = db['verbs']
 
@@ -70,17 +77,16 @@ def find_verb_by_any_form(word):
         praet_akt_konj2_1_plur == word,
         praet_akt_konj2_2_plur == word,
         praet_akt_konj2_3_plur == word,
-    )
+        )
 
     result = verbs_table.find_one(clause)
 
-    db.close()
 
     return result
 
 
 def find_by_title(title):
-    db = dataset.connect('sqlite:///' + os.path.dirname(os.path.realpath(__file__)) + '/words.db')
+    db = get_db()
 
     words_table = db['words']
 
@@ -90,12 +96,11 @@ def find_by_title(title):
         result["maennliche_formen"] = json.loads(result["maennliche_formen"]) if result["maennliche_formen"] else []
         result["weibliche_formen"] = json.loads(result["weibliche_formen"]) if result["weibliche_formen"] else []
 
-    db.close()
 
     return result
 
 def find_by_any_form(word):
-    db = dataset.connect('sqlite:///' + os.path.dirname(os.path.realpath(__file__)) + '/words.db')
+    db = get_db()
 
     words_table = db['words']
 
