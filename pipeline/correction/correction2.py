@@ -283,11 +283,11 @@ def transform_noun_or_pron(word, target_number, target_gender, noun_transformer,
         fnf = feminine_noun_forms_and_convert(word)
 
         return transform_noun(word, fnf[0], target_number, target_gender, noun_transformer, det_transformer, pron_transformer)
-    elif word.pos_ == "PRON" or word.pos_ == "DET":
+    elif word.pos_ in {"PRON", "DET"}:
         #
         # Für Plural-Vorkomnisse macht eine Umwandlung keinen Sinn, hier unterscheiden sich Maskulinum und Femininum nicht. (wir, ihr, sie, ...)
         #
-        if word.morph.get("Number")[0] == "Plur":
+        if (number := word.morph.get("Number")) and number[0] == "Plur":
             return None
 
         return transform_pron_base(word, target_number, target_gender, transform_pron=det_transformer)
