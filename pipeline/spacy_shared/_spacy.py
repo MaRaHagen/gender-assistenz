@@ -12,8 +12,6 @@ nlp2.add_pipe('coreferee')
 def spacify(text):
     return nlp(text)
 
-#ToDo: Warum Cache?
-@memory.cache
 def spacify_with_coref(text):
     doc2 = nlp2(text)
     doc = nlp(text)

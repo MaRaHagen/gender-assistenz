@@ -8,89 +8,78 @@ from pipeline.spacy_shared.wordlib import get_coref_words_in_sentence
 
 
 def full_pipeline(text):
-    #
-    # Zunächst führen wir SpacY aus um Grammatikinformationen initial
-    # zu erhalten.
-    #
-    doc = spacify_with_coref(text)
-
-    #
-    # 1. Schritt: Suche nach allen maskulinen Formen
-    #
-    initial_words = find_initial_words(doc)
-
+    """
+    Führt eine vollständige Analyse durch:
+    1. Initiale spaCy-Analyse mit Koreferenz
+    2. Suche nach maskulinen Formen
+    3. Prüfung auf generisches Maskulinum
+    4. Ggf. Generierung von Korrekturvorschlägen
+    Rückgabe: Liste von Erkennungen mit Metadaten
+    """
     result = []
 
-    while initial_words:
-        word = initial_words.pop()
+    try:
+        doc = spacify_with_coref(text)
+    except Exception as e:
+        loguru.logger.error("Fehler bei der spaCy/Koreferenz-Analyse: " + str(e))
+        return []
 
+    try:
+        initial_words = find_initial_words(doc)
+    except Exception as e:
+        loguru.logger.error("Fehler bei der Initialerkennung maskuliner Formen: " + str(e))
+        return []
+
+    for word in initial_words:
         try:
-            #
-            # 2. Schritt: Überprüfung der gefundenen Vorkommen, ob es sich um das generische Maskulinum handelt.
-            #
-            ntbg = needs_to_be_gendered(doc, word[0])
+            needs_gendering, reason = needs_to_be_gendered(doc, word)
         except Exception as e:
-            loguru.logger.error(f"Es konnte für das Wort {word[0].text} nicht festgestellt werden, ob es einer Änderung bedarf.")
-
+            loguru.logger.error(f"Fehler bei needs_to_be_gendered() für '{word.text}': {e}")
             result.append({
-                "word": word[0].text,
-                "from": word[0].idx,
-                "to": word[0].idx + len(word[0].text),
+                "word": word.text,
+                "from": word.idx,
+                "to": word.idx + len(word.text),
                 "possibleCorrections": [],
                 "shouldBeGendered": False,
-                "reasonNotGendered": [("", "Fehler: " + str(e))],
+                "reasonNotGendered": [("", f"Fehler: {str(e)}")],
                 "errors": [str(e)]
             })
-
             continue
 
-        #
-        # Es handelt sich nicht um generisches Maskulinum. Wir geben jedoch das
-        # Vorkommen für Debugging-Zwecke per API weiter.
-        #
-        if not ntbg[0]:
+        if not needs_gendering:
             result.append({
-                "word": word[0].text,
-                "from": word[0].idx,
-                "to": word[0].idx + len(word[0].text),
+                "word": word.text,
+                "from": word.idx,
+                "to": word.idx + len(word.text),
                 "possibleCorrections": [],
                 "shouldBeGendered": False,
-                "reasonNotGendered": ntbg[1],
+                "reasonNotGendered": reason,
                 "errors": []
             })
-
             continue
 
-        #
-        # 3. Schritt: Erstellung von Korrekturvorschlägen.
-        #
         try:
-            possible_corrections, errors = generate_possible_corrections(get_coref_words_in_sentence(doc, word[0]))
-
+            context_words = get_coref_words_in_sentence(doc, word)
+            possible_corrections, errors = generate_possible_corrections(context_words)
             result.append({
-                "word": word[0].text,
-                "from": word[0].idx,
-                "to": word[0].idx + len(word[0].text),
+                "word": word.text,
+                "from": word.idx,
+                "to": word.idx + len(word.text),
                 "possibleCorrections": possible_corrections,
-                "shouldBeGendered": ntbg[0],
+                "shouldBeGendered": True,
                 "reasonNotGendered": [],
                 "errors": errors
             })
         except Exception as e:
-            loguru.logger.exception(e)
-
+            loguru.logger.exception(f"Fehler bei generate_possible_corrections() für '{word.text}': {e}")
             result.append({
-                "word": word[0].text,
-                "from": word[0].idx,
-                "to": word[0].idx + len(word[0].text),
+                "word": word.text,
+                "from": word.idx,
+                "to": word.idx + len(word.text),
                 "possibleCorrections": [],
                 "shouldBeGendered": True,
                 "reasonNotGendered": [],
                 "errors": [str(e)]
             })
 
-
-
     return sorted(result, key=lambda x: x["from"])
-
-

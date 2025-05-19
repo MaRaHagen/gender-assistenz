@@ -9,3 +9,5 @@ cachedir
 /wiktionary/dewiktionary-20210601-pages-articles.xml
 /results/results.db-shm
 /results/results.db-wal
+results/local-store/*.pkl
+
