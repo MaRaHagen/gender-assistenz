@@ -27,7 +27,7 @@ def find_initial_words(doc):
         elif (
                 word.pos_ == "PRON" and
                 gender and gender[0] == "Masc" and
-                word.tag_ in {"PDS", "PIS", "PPER", "PPOSS", "PRELS", "PWS"} and
+                word.tag_ in {"PDS", "PIS", "PPER", "PPOSS", "PRELS"} and
                 (not person or person[0] == "3") and
                 (not number or number[0] == "Sing") and
                 not is_stop_word

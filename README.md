@@ -46,7 +46,7 @@ Ausgehend vom Projektverzeichnis als Working Directory:
 - npm install
 - npm run build
 - cd ..
-- poetry shell
+- poetry shell/poetry env activate (je nach installierter poetry version)
 - python -m spacy download de_dep_news_trf
 - python -m spacy download de_core_news_lg
 - (python -m pip install coreferee)*

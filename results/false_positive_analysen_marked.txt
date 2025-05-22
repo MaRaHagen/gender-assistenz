@@ -26,7 +26,7 @@ Vorhanden: 5
 
 5: Funktionale Pronomen und Fragewörter
 Definition:
-Maskuline Fragewörter oder Pronomina wie wer, wen, wem, dessen, einiger, die keine Personenbezeichnung im engeren Sinn darstellen, sondern grammatische Operatoren sind, werden fälschlich als generische Maskulina gewertet.
+Maskuline Fragewörter oder Pronomina wie wer, wen, wem, einiger, die keine Personenbezeichnung im engeren Sinn darstellen, sondern grammatische Operatoren sind, werden fälschlich als generische Maskulina gewertet.
 Vorhanden: 18
 
 Kategorie 6 : Grammatische Maskulina mit gegenständlichem Bezug

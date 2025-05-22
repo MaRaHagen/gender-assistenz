@@ -1,4 +1,3 @@
-
 from ntbg import needs_to_be_gendered, RELATIVE_CLAUSE, APPOSITION, KOPULA_SENTENCE, GENITIVE_ATTRIBUTE, \
     EIGENNAME_GEFUNDEN, NOUN_KERNEL_NAME_FOUND, COREF_CHAIN, NO_FEMININE_FORM, BOTH_FORMS, \
     _is_feminine_noun_form_of_extended, _is_feminine_pron_form, _feminine_noun_forms
@@ -364,15 +363,19 @@ def test_both_forms_pron_3():
     assert not ntbg
     assert code[0][0] == BOTH_FORMS
 
+
 def test_xyz():
-    result = _spacy("Der Arbeitgeber muss auch die Schulungskurse bezahlen, mit denen der Fahrer wieder einen Punktebonus erwerben kann.")
+    result = _spacy(
+        "Der Arbeitgeber muss auch die Schulungskurse bezahlen, mit denen der Fahrer wieder einen Punktebonus erwerben kann.")
 
     ntbg, code = needs_to_be_gendered(result, result[11])
 
     assert ntbg
 
+
 def test_xyz2():
-    result = _spacy("Der Arbeitgeber muss auch die Schulungskurse bezahlen, mit denen er wieder einen Punktebonus erwerben kann.")
+    result = _spacy(
+        "Der Arbeitgeber muss auch die Schulungskurse bezahlen, mit denen er wieder einen Punktebonus erwerben kann.")
 
     ntbg, code = needs_to_be_gendered(result, result[11])
 
@@ -421,6 +424,7 @@ def test__feminine_noun_forms_Beamter():
 
     assert result
 
+
 # ToDo:
 def test__feminine_noun_forms_Offizier():
     # Problem: Offizierin nicht in Wiktionary (damals)
@@ -429,6 +433,7 @@ def test__feminine_noun_forms_Offizier():
 
     assert result
 
+
 # ToDo:
 def test__feminine_noun_forms_Japaner():
     # Problem: Word-Parser -> fixed
@@ -436,12 +441,14 @@ def test__feminine_noun_forms_Japaner():
 
     assert result
 
+
 # ToDo:
 def test__feminine_noun_forms_General():
     # Problem: Word-Parser
     result = _feminine_noun_forms(_spacy("Generäle")[0])
 
     assert result
+
 
 def test__feminine_noun_forms_Rebellen():
     # Problem: Word-Parser -> nun gefixt
@@ -460,6 +467,7 @@ def test__feminine_noun_forms_HobbyKicker():
 
     assert result
 
+
 def test__feminine_noun_forms_Hochzeitsgaeste():
     result = feminine_noun_forms_and_convert(_spacy("Hochzeitsgäste")[0])
 
@@ -467,11 +475,13 @@ def test__feminine_noun_forms_Hochzeitsgaeste():
 
     assert result
 
+
 def test__feminine_noun_forms_Rumaene():
     # Problem: Word-Parser -> nun gefixt
     result = _feminine_noun_forms(_spacy("Rumänen")[0])
 
     assert result
+
 
 def test__feminine_noun_forms_Ordnungshueter():
     result = feminine_noun_forms_and_convert(_spacy("Ordnungshüter")[0])

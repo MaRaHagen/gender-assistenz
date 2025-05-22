@@ -257,3 +257,13 @@ Früher oder später, da sind sich alle einig, muß Perot Farbe bekennen und Kon
 sch / rtr""")
 
     print(res)
+
+def test_Kurt_Beck():
+    res = full_pipeline("""Da dreht sich Kurt Beck, zu dieser Zeit Tagungspräsident, auf seinem Stuhl halb um, langt nach Scharpings Arm - eine mitleidige, eine tröstende Geste.""")
+
+    print(res)
+
+def test_Scharping():
+    res = full_pipeline("""Drei Schnitte, und die drei Personen: der Täter, der Psychiater Professor Dr. Ernst Schultze, der Stenograf, sind eingeführt, der Raum ist grob definiert.""")
+
+    print(res)

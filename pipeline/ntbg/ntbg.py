@@ -42,8 +42,10 @@ def _feminine_noun_forms(word):
 
     return []
 
+
 def _has_feminine_noun_form(word):
     return _feminine_noun_forms(word)
+
 
 #
 # Gibt an, ob das Wort [feminine_form] eine weibliche Form von [of_word]
@@ -184,7 +186,6 @@ def needs_to_be_gendered(doc, word, check_coref=True):
         if conj.pos_ == "DET" or conj.pos_ == "PRON" and _is_feminine_pron_form(conj, word):
             return False, [(BOTH_FORMS, "Beide Formen")]
 
-
     # Das Nomen wird durch einen Namen spezifiziert,
     # daher gehen wir davon aus, dass das Gendern
     # nicht nötig ist.
@@ -201,6 +202,10 @@ def needs_to_be_gendered(doc, word, check_coref=True):
     # https://www.coli.uni-saarland.de/projects/sfb378/negra-corpus/kanten.html#NK
     #
     noun_kernel_modifiers = follow_child_dep(word, "nk")
+
+    parent_nk = follow_parent_dep(word, "nk")
+    if parent_nk:
+        noun_kernel_modifiers.append(parent_nk)
 
     for nkm in noun_kernel_modifiers:
         if nkm.pos_ != "PROPN":
@@ -233,7 +238,6 @@ def needs_to_be_gendered(doc, word, check_coref=True):
             if not result[0]:
                 return False, [(KOPULA_SENTENCE, f"Kopula-Satzbau: {subject} (Kopula-Verb: {kopula_verb})")] + result[1]
 
-
     # Einschubsätze (App)
     #
     # Ein Einschubsatz beschreibt ein Subjekt oder Objekt genauer. Die dadurch notwendigen Adjektive
@@ -247,7 +251,6 @@ def needs_to_be_gendered(doc, word, check_coref=True):
         if not result[0]:
             return False, [(APPOSITION, f"Einschubsatz: {app}")] + result[1]
 
-
     # Erweiterung von Nominalphrase mittels Genitiv-Attribut
     #
     # Wenn ein Nominal
@@ -259,7 +262,6 @@ def needs_to_be_gendered(doc, word, check_coref=True):
 
         if not result[0]:
             return False, [(GENITIVE_ATTRIBUTE, f"Genitiv-Attribut: {ag} (für: {word})")] + result[1]
-
 
     # Subjekt der Relativklausel
     #
@@ -288,14 +290,32 @@ def needs_to_be_gendered(doc, word, check_coref=True):
             if not result[0]:
                 return False, [(RELATIVE_CLAUSE, f"Pronomen des Relativsatzes: {result} (für: {word})")] + result[1]
 
+    # Parataxen (dep_ == "par")
+    #
+    #  Die Dependenzrelation "par" steht für parataktische Einschübe – also Satzteile,
+    #  die eingeschoben sind, um zusätzliche Informationen zu liefern, aber nicht direkt
+    #  grammatisch untergeordnet sind. Sie sind inhaltlich mit einem anderen Element
+    #  (z.B. einer benannten Person) verbunden, stehen aber oft grammatisch isoliert da.
+    #
+    #  Beispiel:
+    #  „Da dreht sich Kurt Beck, zu dieser Zeit –Tagungspräsident–, auf seinem Stuhl halb um …“
+    #  → „Tagungspräsident“ steht in einer Einschubstruktur und hat die Dependenzrelation "par".
+    #     Der Einschub liefert eine Zusatzinformation über „Kurt Beck“.
+    # eht unter anderem Lucent Technologies, einer der größten Anbieter von Equipment für Netzwerke und Telekommunikation.
+    #                                                  ___________________  _____
+    par = follow_parent_dep(word, "par")
+    if par:
+        result = needs_to_be_gendered(doc, par, check_coref)
 
+        if not result[0]:
+            return False, [(APPOSITION, f"Parataxe: {par}")] + result[1]
 
 
     if check_coref:
         # Coreference Chains
         #
         #
-        #doc._.coref_chains.print()
+        # doc._.coref_chains.print()
         for chain in doc._.coref_chains:
             mention_indices = [x.root_index for x in chain]
 
@@ -311,7 +331,6 @@ def needs_to_be_gendered(doc, word, check_coref=True):
 
                     if not result[0]:
                         return False, [(COREF_CHAIN, f"Koreferenz-Kette: {doc[owi]} (für: {word})")] + \
-                               result[1]
-
+                                      result[1]
 
     return True, None

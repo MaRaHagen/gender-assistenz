@@ -292,7 +292,6 @@ def transform_noun_or_pron(word, target_number, target_gender, noun_transformer,
 
         return transform_pron_base(word, target_number, target_gender, transform_pron=det_transformer)
     else:
-        # ToDo: Ausgabe!
         return None
 
 
@@ -351,7 +350,7 @@ def generate_possible_corrections(coref_words):
         except Exception as e:
             errors.append(f"Konnte Korrekturvorschlag '*' nicht erstellen: {e}")
             loguru.logger.info(f"Konnte Korrekturvorschlag '*' nicht erstellen: {e}")
-            loguru.logger.exception(e)
+            #loguru.logger.exception(e)
 
         try:
             changes = []
@@ -458,7 +457,7 @@ def generate_possible_corrections(coref_words):
         except Exception as e:
             errors.append(f"Konnte Korrekturvorschlag 'BOTH_FORMS' nicht erstellen: {e}")
             loguru.logger.info(f"Konnte Korrekturvorschlag 'BOTH_FORMS' nicht erstellen: {e}")
-            loguru.logger.exception(e)
+            #loguru.logger.exception(e)
 
         return possible_corrections, errors
     elif are_singular:
@@ -500,7 +499,7 @@ def generate_possible_corrections(coref_words):
         except Exception as e:
             errors.append(f"Konnte Korrekturvorschlag '*' nicht erstellen: {e}")
             loguru.logger.info(f"Konnte Korrekturvorschlag '*' nicht erstellen: {e}")
-            loguru.logger.exception(e)
+            #loguru.logger.exception(e)
 
         try:
             def genderify_feminine_form(word_str):
@@ -518,7 +517,7 @@ def generate_possible_corrections(coref_words):
         except Exception as e:
             errors.append(f"Konnte Korrekturvorschlag 'PLURAL_*' nicht erstellen: {e}")
             loguru.logger.info(f"Konnte Korrekturvorschlag 'PLURAL_*' nicht erstellen: {e}")
-            loguru.logger.exception(e)
+            #loguru.logger.exception(e)
 
         return possible_corrections, errors
 
