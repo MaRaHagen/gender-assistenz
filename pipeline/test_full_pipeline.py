@@ -267,3 +267,8 @@ def test_Scharping():
     res = full_pipeline("""Drei Schnitte, und die drei Personen: der Täter, der Psychiater Professor Dr. Ernst Schultze, der Stenograf, sind eingeführt, der Raum ist grob definiert.""")
 
     print(res)
+
+def test_Scharping():
+    res = full_pipeline("""Einen Berg von Sorgen, über den man kaum hinausschauen kann""")
+
+    print(res)

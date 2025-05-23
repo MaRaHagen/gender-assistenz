@@ -3,7 +3,7 @@ from charsplit import splitter, Splitter
 from pipeline.correction.pron_art.select_pron_form import get_possible_pronomen_lists_for_tag
 from loguru import logger
 
-from pipeline.spacy_shared.wordlib import follow_child_dep, follow_parent_dep, follow_child_dep_single_or_none
+from pipeline.spacy_shared.wordlib import follow_child_dep, follow_parent_dep, follow_child_dep_single_or_none, follow_parent_dep_recursive
 from wiktionary.db_extender import find_in_db_and_convert
 from wiktionary.fnf import feminine_noun_forms, find_in_db
 
@@ -126,6 +126,31 @@ def _is_feminine_pron_form(feminine_form, word):
     return False
 
 
+def is_concrete_role_assignment(word):
+    # 1. Ist das Wort Teil einer "zu"-Präpositionalphrase?
+    if word.dep_ not in ("nk"):
+        return False, []
+
+    # 2. Finde das "zu"
+    zu_token = None
+    if word.head.text.lower().startswith("zu")  and word.head.dep_ == "mnr":
+        zu_token = word.head
+    if not zu_token:
+        return False, []
+
+    # 3. Finde das zugehörige Nomen (z.B. "Wahl", "Ernennung")
+    head = zu_token.head
+    if head.pos_ != "NOUN" or head.lemma_.lower() not in ("wahl", "ernennung", "berufung", "nominierung","beförderung"): #ToDo: Diese liste stammt aus beispielen aus den testdaten
+        return False, []
+
+    # 4. Finde, ob dieses Nomen im Genitiv zu einer benannten Person steht
+    for child in head.doc:
+        if child.head == head and child.pos_ == "PROPN" and child.dep_ in ("ag"):
+            return True, [("KONKRETE_ROLLENZUSCHREIBUNG", f"{head.text} zu {word.text} für {child.text}")]
+
+    return False, []
+
+
 def needs_to_be_gendered(doc, word, check_coref=True):
     if word.pos_ == "PROPN":
         return False, [(EIGENNAME_GEFUNDEN, f"Eigenname gefunden: {word}")],
@@ -203,9 +228,10 @@ def needs_to_be_gendered(doc, word, check_coref=True):
     #
     noun_kernel_modifiers = follow_child_dep(word, "nk")
 
-    parent_nk = follow_parent_dep(word, "nk")
-    if parent_nk:
-        noun_kernel_modifiers.append(parent_nk)
+#TODO: Commented out for now might need to reinvest (this lead to a serious decrease in recall)
+#parent_nk = follow_parent_dep(word, "nk")
+  #  if parent_nk:
+   #     noun_kernel_modifiers.append(parent_nk)
 
     for nkm in noun_kernel_modifiers:
         if nkm.pos_ != "PROPN":
@@ -272,6 +298,13 @@ def needs_to_be_gendered(doc, word, check_coref=True):
     #
     # Bsp.: Der Duden für Szenesprachen , der bereits seit dem Frühjahr im Handel ist , wird nun online fortgeschrieben .
     #           _____                     ___
+    if word.tag_ == "PRELS":
+        relativ_parent = follow_parent_dep_recursive(word, "rc")
+        if relativ_parent:
+            result = needs_to_be_gendered(doc, relativ_parent, check_coref)
+            if not result[0]:
+                return False, [(RELATIVE_CLAUSE, f"Pronomen des Relativsatzes: {result} (für: {word})")] + result[1]
+
     parent_of_subject = follow_parent_dep(word, "sb")
     if parent_of_subject and word.pos_ == "PRON":
         parent_of_relative_clause = follow_parent_dep(parent_of_subject, "rc")
@@ -301,8 +334,8 @@ def needs_to_be_gendered(doc, word, check_coref=True):
     #  „Da dreht sich Kurt Beck, zu dieser Zeit –Tagungspräsident–, auf seinem Stuhl halb um …“
     #  → „Tagungspräsident“ steht in einer Einschubstruktur und hat die Dependenzrelation "par".
     #     Der Einschub liefert eine Zusatzinformation über „Kurt Beck“.
-    # eht unter anderem Lucent Technologies, einer der größten Anbieter von Equipment für Netzwerke und Telekommunikation.
     #                                                  ___________________  _____
+    #TODO: warscheinlich enger fassen
     par = follow_parent_dep(word, "par")
     if par:
         result = needs_to_be_gendered(doc, par, check_coref)
@@ -310,6 +343,9 @@ def needs_to_be_gendered(doc, word, check_coref=True):
         if not result[0]:
             return False, [(APPOSITION, f"Parataxe: {par}")] + result[1]
 
+    role = is_concrete_role_assignment(word)
+    if role[0]:
+        return False, [(NOUN_KERNEL_NAME_FOUND, f"Noun-Kernel weist auf Eigenname hin")]
 
     if check_coref:
         # Coreference Chains

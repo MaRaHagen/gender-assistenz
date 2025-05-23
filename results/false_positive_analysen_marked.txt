@@ -10,7 +10,7 @@ Vorhanden: 184
 
 2. Pronomen mit referenziellem Bezug:
 Maskuline Pronomina wie er oder ihn werden als generisch erkannt, obwohl sie klar auf eine zuvor genannte Einzelperson zurückverweisen. Ohne Koreferenzauflösung wird etwa ein Satz wie „Yitzhak Rabin war Ministerpräsident. Er strebte nach Frieden.“ fälschlich als generisch-maskulin interpretiert.
-Fehlende Koreferenzauflösung über Satzgrenzen hinweg.
+Das wird gemacht zu schlechte Corerefenz resolution eher das Problem.
 Vorhanden: 96
 
 3. Maskuline Bezeichnungen in erzählenden oder biografischen Kontexten:

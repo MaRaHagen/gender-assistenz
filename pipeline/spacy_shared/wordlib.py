@@ -36,6 +36,26 @@ def follow_parent_dep(word, rel):
 
     return None
 
+"""
+Geht rekursiv nach oben im Baum, solange die aktuelle Dependenz in 'rels' ist.
+Vermeidet endlose Schleifen durch Begrenzung von max_depth.
+"""
+def follow_parent_dep_recursive(word, rels, max_depth=10):
+
+    if isinstance(rels, str):
+        rels = [rels]
+
+    current = word
+    depth = 0
+
+    while depth <= max_depth:
+        if current.dep_ in rels and current.head != current:
+            return current.head
+        else:
+            current = current.head
+            depth += 1
+    return None
+
 def get_coref_words_in_sentence(doc, word):
     result = []
 
