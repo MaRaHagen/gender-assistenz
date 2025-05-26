@@ -1,71 +1,98 @@
 from pipeline.full_pipeline import full_pipeline
+
+
 #
 # def test_full_pipeline_2():
 #     res =
 
 def test_full_pipeline():
-    res = full_pipeline("""Frühaufsteher, Radfahrer und zu 100 Prozent loyal: Söders Machtzirkel besteht aus einem sorgsam ausgewählten Kreis an langjährigen Vertrauten. Wer gehört dazu? Heute ist ihr Chef im ARD-Sommerinterview.""")
+    res = full_pipeline(
+        """Frühaufsteher, Radfahrer und zu 100 Prozent loyal: Söders Machtzirkel besteht aus einem sorgsam ausgewählten Kreis an langjährigen Vertrauten. Wer gehört dazu? Heute ist ihr Chef im ARD-Sommerinterview.""")
 
     print(res)
+
 
 def test_full_pipeline_ex1():
     # Soll einfach nur keine Exception werfen.
     full_pipeline("Landtel ist nicht das erste Unternehmen , das als WLL-Anbieter scheitert")
 
+
 def test_full_pipeline_ex2():
     # Soll einfach nur keine Exception werfen.
-    full_pipeline("Das schwäche nicht nur die Interessen der Aktionäre , sondern auch die der Arbeitnehmer und Gläubiger .")
+    full_pipeline(
+        "Das schwäche nicht nur die Interessen der Aktionäre , sondern auch die der Arbeitnehmer und Gläubiger .")
+
 
 def test_full_pipeline_ex3():
     # Soll einfach nur keine Exception werfen.
-    full_pipeline("Sollte ein Dienstanbieter die Kanäle einzeln weitervermieten , sind damit nach den Vorstellungen der Telekom pro Kanal 160 Mark an Telekom-Vorleistungsgebühren fällig - , eine Summe , die weit über den von einigen Anbietern wie AOL geforderten Endkundentarifen von rund 50 Mark für eine Flatrate liegt .")
+    full_pipeline(
+        "Sollte ein Dienstanbieter die Kanäle einzeln weitervermieten , sind damit nach den Vorstellungen der Telekom pro Kanal 160 Mark an Telekom-Vorleistungsgebühren fällig - , eine Summe , die weit über den von einigen Anbietern wie AOL geforderten Endkundentarifen von rund 50 Mark für eine Flatrate liegt .")
+
 
 def test_full_pipeline_ex4():
     # Soll einfach nur keine Exception werfen.
     full_pipeline("TelDaFax-Nachfolger mit neuen Angeboten")
 
+
 def test_full_pipeline_ex5():
     # Soll einfach nur keine Exception werfen.
-    full_pipeline("Die Regulierungsbehörde für Telekommunikation und Post(RegTP) hat entschieden, dass die Telekom den XXL - Pauschaltarif weiter anbieten darf - unter der Voraussetzung, dass der Rosa Riese das Angebot nicht nur für ISDN -, sondern auch für Analog - Zugänge anbietet.")
+    full_pipeline(
+        "Die Regulierungsbehörde für Telekommunikation und Post(RegTP) hat entschieden, dass die Telekom den XXL - Pauschaltarif weiter anbieten darf - unter der Voraussetzung, dass der Rosa Riese das Angebot nicht nur für ISDN -, sondern auch für Analog - Zugänge anbietet.")
+
 
 def test_full_pipeline_ex6():
     # Soll einfach nur keine Exception werfen.
     full_pipeline("In einem Bereich gab es in diesem Jahr keinen Sieger.")
 
+
 def test_full_pipeline_ex7():
     # Soll einfach nur keine Exception werfen.
     full_pipeline("Wie angekündigt trennte die Telekom auch diesen Anbieter vom Netz.")
 
+
 def test_full_pipeline_ex8():
     # TODO
     # Soll einfach nur keine Exception werfen.
-    full_pipeline("Betroffen waren laut BerlinWeb - Inhaber Clemens Gerth zirka 10.000 Kunden, die ihre Web - Domains über den Berliner Anbieter laufen lassen.")
+    full_pipeline(
+        "Betroffen waren laut BerlinWeb - Inhaber Clemens Gerth zirka 10.000 Kunden, die ihre Web - Domains über den Berliner Anbieter laufen lassen.")
+
 
 def test_full_pipeline_ex9():
     # Soll einfach nur keine Exception werfen.
-    full_pipeline("Es würden aber auch Gespräche mit jedem anderen Anbieter geführt, der meine, ein entsprechendes Angebot machen zu können.")
+    full_pipeline(
+        "Es würden aber auch Gespräche mit jedem anderen Anbieter geführt, der meine, ein entsprechendes Angebot machen zu können.")
+
 
 def test_full_pipeline_ex10():
     # Soll einfach nur keine Exception werfen.
-    full_pipeline("Nach seiner Aussage würde zwar sein Buchhalter daran glauben , aber nicht seine Kinder - und die wüssten viel mehr vom Internet als er .")
+    full_pipeline(
+        "Nach seiner Aussage würde zwar sein Buchhalter daran glauben , aber nicht seine Kinder - und die wüssten viel mehr vom Internet als er .")
+
 
 def test_full_pipeline_ex11():
     # Soll einfach nur keine Exception werfen.
-    full_pipeline("""Nach Angaben der Freiburger " Aktionärsgemeinschaft Metabox " soll ein Berliner Immobilienunternehmer Kopf der Investorengruppe sein .""")
+    full_pipeline(
+        """Nach Angaben der Freiburger " Aktionärsgemeinschaft Metabox " soll ein Berliner Immobilienunternehmer Kopf der Investorengruppe sein .""")
+
 
 def test_full_pipeline_ex12():
     # Soll einfach nur keine Exception werfen.
-    full_pipeline("""" Der Messeführer kann jedoch nicht nur über das Internet , sondern auch direkt vor Ort in den Handheld geladen werden " , sagte Oliver Leheis , Sprecher der Drupa Düsseldorf , zu c't .""")
+    full_pipeline(
+        """" Der Messeführer kann jedoch nicht nur über das Internet , sondern auch direkt vor Ort in den Handheld geladen werden " , sagte Oliver Leheis , Sprecher der Drupa Düsseldorf , zu c't .""")
+
 
 def test_full_pipeline_step3b():
-    res = full_pipeline("""Fortschritt wird erreicht, wenn jeder volljährige Bürger, der eine Meinung hat, wählen geht.""")
+    res = full_pipeline(
+        """Fortschritt wird erreicht, wenn jeder volljährige Bürger, der eine Meinung hat, wählen geht.""")
 
     print(res)
+
 
 def test_combination():
     res = full_pipeline("Der Benutzer sagte, er sei vorsichtig vorgegangen.")
 
     print(res)
+
 
 def test_combination_2():
     res = full_pipeline("Der Benutzer sagte, er sei vorsichtig vorgegangen.")
@@ -74,9 +101,11 @@ def test_combination_2():
 
 
 def test_Beamte():
-    res = full_pipeline("Angesichts der grenzüberschreitenden Mistproblematik beschäftigen sich in den Hauptstädten der beiden neutralen Nachbarländer bald mehr Beamte mit dem Mistkrieg als direkt betroffene Bauern.")
+    res = full_pipeline(
+        "Angesichts der grenzüberschreitenden Mistproblematik beschäftigen sich in den Hauptstädten der beiden neutralen Nachbarländer bald mehr Beamte mit dem Mistkrieg als direkt betroffene Bauern.")
 
     print(res)
+
 
 def test_Demonstranten():
     res = full_pipeline("""
@@ -203,6 +232,7 @@ Die Gewaltschwelle sinkt.
 
     print(res)
 
+
 def test_RossPerot():
     res = full_pipeline(""""Ross Perot wäre vielleicht ein prächtiger Diktator"
 
@@ -258,13 +288,17 @@ sch / rtr""")
 
     print(res)
 
+
 def test_Kurt_Beck():
-    res = full_pipeline("""Da dreht sich Kurt Beck, zu dieser Zeit Tagungspräsident, auf seinem Stuhl halb um, langt nach Scharpings Arm - eine mitleidige, eine tröstende Geste.""")
+    res = full_pipeline(
+        """Da dreht sich Kurt Beck, zu dieser Zeit Tagungspräsident, auf seinem Stuhl halb um, langt nach Scharpings Arm - eine mitleidige, eine tröstende Geste.""")
 
     print(res)
 
+
 def test_noun_kernel_modifiers():
-    res = full_pipeline("""Drei Schnitte, und die drei Personen: der Täter, der Psychiater Professor Dr. Ernst Schultze, der Stenograf, sind eingeführt, der Raum ist grob definiert.""")
+    res = full_pipeline(
+        """Drei Schnitte, und die drei Personen: der Täter, der Psychiater Professor Dr. Ernst Schultze, der Stenograf, sind eingeführt, der Raum ist grob definiert.""")
 
     print(res)
 
@@ -274,9 +308,17 @@ def test_relative_clause():
     print(res)
 
 def test_antony_quinn():
-    res = full_pipeline("""Die Hauptrolle kommt dem robustesten Vertreter dieser Welt zu, einem von Anthony Quinn dargestellten Zirkusartisten und Vagabunden, der, Produkt seiner Zeit, als ein zwanghaft unmoralischer Charakter seine nichtsahnenden Opfer bis auf die letzte Lira schröpft.""")
+    res = full_pipeline(
+        """Die Hauptrolle kommt dem robustesten Vertreter dieser Welt zu, einem von Anthony Quinn dargestellten Zirkusartisten und Vagabunden, der, Produkt seiner Zeit, als ein zwanghaft unmoralischer Charakter seine nichtsahnenden Opfer bis auf die letzte Lira schröpft.""")
     print(res)
+
 
 def test_helden_rabin():
     res = full_pipeline("""Der Kettenraucher Rabin avancierte zum Helden der Israelis.""")
+    print(res)
+
+def test_word_has_apposition():
+    res = full_pipeline("""
+Schon im Januar, berichtet der Generaldirektor der britischen Greenpeace-Division, Lord Melchett, hätten er und Saro-Wiwas Sohn Ken Shell International auf die Zusammenhänge mit dem Engagement des Ölmultis in Nigeria hingewiesen.
+""")
     print(res)

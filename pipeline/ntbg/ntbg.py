@@ -109,15 +109,18 @@ def _is_feminine_noun_form_of(feminine_form, of_word):
     logger.debug("db: {}", db)
     logger.debug("fnf: {}", fnf)
 
-    if db["title"] in [x["title"] for x in fnf]:
-        return True
-
+    if fnf:
+        if db["title"] in [x["title"] for x in fnf]:
+            return True
     return False
 
 
 # Ausgehend von einem initialen Wort überprüfen wir,
 # ob dieses Vorkomniss gegendert werden muss.
 def _is_feminine_pron_form(feminine_form, word):
+    if word.pos_ != "PRON":
+        return False
+
     possible_pronomen_lists = get_possible_pronomen_lists_for_tag(word.tag_)
 
     for pron_list in possible_pronomen_lists:
@@ -282,7 +285,6 @@ def needs_to_be_gendered(doc, word, check_coref=True):
 
         if not result[0]:
             return False, [(APPOSITION, f"Einschubsatz: {app}")] + result[1]
-
     # Erweiterung von Nominalphrase mittels Genitiv-Attribut
     #
     # Wenn ein Nominal
