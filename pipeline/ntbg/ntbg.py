@@ -3,7 +3,8 @@ from charsplit import splitter, Splitter
 from pipeline.correction.pron_art.select_pron_form import get_possible_pronomen_lists_for_tag
 from loguru import logger
 
-from pipeline.spacy_shared.wordlib import follow_child_dep, follow_parent_dep, follow_child_dep_single_or_none, follow_parent_dep_recursive
+from pipeline.spacy_shared.wordlib import follow_child_dep, follow_parent_dep, follow_child_dep_single_or_none, \
+    follow_parent_dep_recursive
 from wiktionary.db_extender import find_in_db_and_convert
 from wiktionary.fnf import feminine_noun_forms, find_in_db
 
@@ -113,6 +114,7 @@ def _is_feminine_noun_form_of(feminine_form, of_word):
 
     return False
 
+
 # Ausgehend von einem initialen Wort überprüfen wir,
 # ob dieses Vorkomniss gegendert werden muss.
 def _is_feminine_pron_form(feminine_form, word):
@@ -133,14 +135,15 @@ def is_concrete_role_assignment(word):
 
     # 2. Finde das "zu"
     zu_token = None
-    if word.head.text.lower().startswith("zu")  and word.head.dep_ == "mnr":
+    if word.head.text.lower().startswith("zu") and word.head.dep_ == "mnr":
         zu_token = word.head
     if not zu_token:
         return False, []
 
     # 3. Finde das zugehörige Nomen (z.B. "Wahl", "Ernennung")
     head = zu_token.head
-    if head.pos_ != "NOUN" or head.lemma_.lower() not in ("wahl", "ernennung", "berufung", "nominierung","beförderung"): #ToDo: Diese liste stammt aus beispielen aus den testdaten
+    if head.pos_ != "NOUN" or head.lemma_.lower() not in ("wahl", "ernennung", "berufung", "nominierung",
+                                                          "beförderung"):  # ToDo: Diese liste stammt aus beispielen aus den testdaten
         return False, []
 
     # 4. Finde, ob dieses Nomen im Genitiv zu einer benannten Person steht
@@ -225,14 +228,7 @@ def needs_to_be_gendered(doc, word, check_coref=True):
     # Siehe auch:
     # https://universaldependencies.org/u/pos/PROPN.html
     # https://www.coli.uni-saarland.de/projects/sfb378/negra-corpus/kanten.html#NK
-    #
     noun_kernel_modifiers = follow_child_dep(word, "nk")
-
-#TODO: Commented out for now might need to reinvest (this lead to a serious decrease in recall)
-#parent_nk = follow_parent_dep(word, "nk")
-  #  if parent_nk:
-   #     noun_kernel_modifiers.append(parent_nk)
-
     for nkm in noun_kernel_modifiers:
         if nkm.pos_ != "PROPN":
             continue
@@ -241,6 +237,16 @@ def needs_to_be_gendered(doc, word, check_coref=True):
 
         if not result[0]:
             return False, [(NOUN_KERNEL_NAME_FOUND, f"Noun-Kernel weist auf Eigenname hin: {nkm}")] + result[1]
+
+    # In Kombinationen wie "Psychiater Professor Dr. Ernst Schultze, der Stenograf, sind eingeführt, der Raum ist grob definiert. "
+    # bezieht sich Professor auf zwar auf ernst schulte sein name kernel ist aber der Psychiater
+    #parent_nk = follow_parent_dep(word, "nk") TODO: DAS wird viele False Positives los, ergänzt allerdings viele false negatives
+    #if parent_nk:
+    #    result = needs_to_be_gendered(doc, parent_nk, check_coref)
+
+    #    if not result[0]:
+    #       return False, [(NOUN_KERNEL_NAME_FOUND, f"Noun-Kernel weist auf Eigenname hin: {parent_nk}")] + result[1]
+
 
     # Kopulasätze (vgl.: https://de.wikipedia.org/wiki/Kopula_(Grammatik))
     #
@@ -314,9 +320,6 @@ def needs_to_be_gendered(doc, word, check_coref=True):
         #
         # Der Arbeitgeber muss auch die Schulungskurse bezahlen, mit denen er wieder einen Punktebonus erwerben kann.
         #
-        # ToDo: Genauer einschränken
-        # has_modifier = follow_child_dep(parent_of_subject, "mo") is not None
-
         if parent_of_relative_clause:
             result = needs_to_be_gendered(doc, parent_of_relative_clause, check_coref)
 
@@ -335,7 +338,6 @@ def needs_to_be_gendered(doc, word, check_coref=True):
     #  → „Tagungspräsident“ steht in einer Einschubstruktur und hat die Dependenzrelation "par".
     #     Der Einschub liefert eine Zusatzinformation über „Kurt Beck“.
     #                                                  ___________________  _____
-    #TODO: warscheinlich enger fassen
     par = follow_parent_dep(word, "par")
     if par:
         result = needs_to_be_gendered(doc, par, check_coref)
@@ -346,6 +348,26 @@ def needs_to_be_gendered(doc, word, check_coref=True):
     role = is_concrete_role_assignment(word)
     if role[0]:
         return False, [(NOUN_KERNEL_NAME_FOUND, f"Noun-Kernel weist auf Eigenname hin")]
+
+    # Dativ Relationen sollten verfolgt werden TODO: DAS wird viele False Positives los, ergänzt allerdings viele false negatives
+    #if word.pos_ == "NOUN" or word.morph.get("Case") == ["Dat"]:
+    #    # Dieser teil löst Dativrelationen über den gesamtsatz (siehe test anthony quinn)
+    #    sent = word.sent
+    #    for tok in sent:
+    #        if tok.dep_ in {"sbp", "mo", "pn"} and tok.pos_ == "ADP":
+    #            for child in tok.children:
+    #                 if child.pos_ == "PROPN" or any(grand.pos_ == "PROPN" for grand in child.children if grand.dep_ == "pnc"):
+    #                    return False, [("REFERENTIELLE_NP", f"Wort '{word}' steht in Kontext mit benannter Figur ({child.text})")]
+
+        # dieser teil für konkrete relationen über einen zu modifiert test_helden_rabin
+        #if word.head.pos_ == "ADP" or word.head.dep_ == "mo":
+        #    verb = word.head.head.head
+        #    if verb.pos_ == "VERB":
+        #        subject = next((tok for tok in verb.children if tok.dep_ == "sb"), None)
+        #        if subject:
+        #            result = needs_to_be_gendered(doc, subject, check_coref)
+        #            if not result[0]:
+        #                return False, [("PRÄDIKAT_PROPN", f"'{word.text}' bezieht sich auf {subject.text}")] + result[1]
 
     if check_coref:
         # Coreference Chains

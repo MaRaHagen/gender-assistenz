@@ -263,12 +263,20 @@ def test_Kurt_Beck():
 
     print(res)
 
-def test_Scharping():
+def test_noun_kernel_modifiers():
     res = full_pipeline("""Drei Schnitte, und die drei Personen: der Täter, der Psychiater Professor Dr. Ernst Schultze, der Stenograf, sind eingeführt, der Raum ist grob definiert.""")
 
     print(res)
 
-def test_Scharping():
+def test_relative_clause():
     res = full_pipeline("""Einen Berg von Sorgen, über den man kaum hinausschauen kann""")
 
+    print(res)
+
+def test_antony_quinn():
+    res = full_pipeline("""Die Hauptrolle kommt dem robustesten Vertreter dieser Welt zu, einem von Anthony Quinn dargestellten Zirkusartisten und Vagabunden, der, Produkt seiner Zeit, als ein zwanghaft unmoralischer Charakter seine nichtsahnenden Opfer bis auf die letzte Lira schröpft.""")
+    print(res)
+
+def test_helden_rabin():
+    res = full_pipeline("""Der Kettenraucher Rabin avancierte zum Helden der Israelis.""")
     print(res)

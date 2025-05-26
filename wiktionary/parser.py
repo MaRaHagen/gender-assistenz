@@ -26,13 +26,13 @@ def print_cnt(str):
 result = []
 
 # Namespace der Tags innerhalb des Wiktionary-Exports
-ns = "{http://www.mediawiki.org/xml/export-0.10/}"
+ns = "{http://www.mediawiki.org/xml/export-0.11/}"
 
-for event, page_tag in ET.iterparse("dewiktionary-20210601-pages-articles.xml", events=("end",), tag=f"{ns}page"):
+for event, page_tag in ET.iterparse("dewiktionary-20250520-pages-articles.xml", events=("end",), tag=f"{ns}page"):
     title = page_tag.find(f"{ns}title")
 
-    if title.text != "Kickerin":
-        continue
+    #if title.text == "Kickerin":
+    #    continue
 
     revision_tag = page_tag.find(f"{ns}revision")
 

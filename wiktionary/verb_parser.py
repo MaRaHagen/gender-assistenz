@@ -21,8 +21,8 @@ def print_cnt(str):
 result = []
 
 # Namespace der Tags innerhalb des Wiktionary-Exports
-ns = "{http://www.mediawiki.org/xml/export-0.10/}"
-for event, page_tag in ET.iterparse("dewiktionary-20210601-pages-articles.xml", events=("end",), tag=f"{ns}page"):
+ns = "{http://www.mediawiki.org/xml/export-0.11/}"
+for event, page_tag in ET.iterparse("dewiktionary-20250520-pages-articles.xml", events=("end",), tag=f"{ns}page"):
     title = page_tag.find(f"{ns}title")
 
 
