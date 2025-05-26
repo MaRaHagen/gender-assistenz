@@ -8,7 +8,7 @@ from pipeline.spacy_shared.wordlib import get_coref_words_in_sentence
 
 
 def full_pipeline(text):
-    print('This is the pipeline with error correction')
+    print('This is the pipeline with appositions going both ways')
     """
     Führt eine vollständige Analyse durch:
     1. Initiale spaCy-Analyse mit Koreferenz

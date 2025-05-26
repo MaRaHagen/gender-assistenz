@@ -243,12 +243,6 @@ def needs_to_be_gendered(doc, word, check_coref=True):
 
     # In Kombinationen wie "Psychiater Professor Dr. Ernst Schultze, der Stenograf, sind eingeführt, der Raum ist grob definiert. "
     # bezieht sich Professor auf zwar auf ernst schulte sein name kernel ist aber der Psychiater
-    #parent_nk = follow_parent_dep(word, "nk") TODO: DAS wird viele False Positives los, ergänzt allerdings viele false negatives
-    #if parent_nk:
-    #    result = needs_to_be_gendered(doc, parent_nk, check_coref)
-
-    #    if not result[0]:
-    #       return False, [(NOUN_KERNEL_NAME_FOUND, f"Noun-Kernel weist auf Eigenname hin: {parent_nk}")] + result[1]
 
 
     # Kopulasätze (vgl.: https://de.wikipedia.org/wiki/Kopula_(Grammatik))
@@ -285,6 +279,12 @@ def needs_to_be_gendered(doc, word, check_coref=True):
 
         if not result[0]:
             return False, [(APPOSITION, f"Einschubsatz: {app}")] + result[1]
+    else:
+        child_apps = follow_child_dep(word, "app")
+        for child_app in child_apps:
+            result = needs_to_be_gendered(doc, child_app, check_coref)
+            if not result[0]:
+                return False, [(APPOSITION, f"Einschubsatz: {app}")] + result[1]
     # Erweiterung von Nominalphrase mittels Genitiv-Attribut
     #
     # Wenn ein Nominal

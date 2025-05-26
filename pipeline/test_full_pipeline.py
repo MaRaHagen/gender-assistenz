@@ -322,3 +322,8 @@ def test_word_has_apposition():
 Schon im Januar, berichtet der Generaldirektor der britischen Greenpeace-Division, Lord Melchett, hätten er und Saro-Wiwas Sohn Ken Shell International auf die Zusammenhänge mit dem Engagement des Ölmultis in Nigeria hingewiesen.
 """)
     print(res)
+
+def test_fremdwörter():
+    res = full_pipeline("""Der Totmacher, Karmakars erster Spielfilm, greift den Fall Fritz Haarmann auf, der zwischen 1918 und 1924 in Hannover über 20 Strichjungen ermordete.""")
+
+    print(res)
