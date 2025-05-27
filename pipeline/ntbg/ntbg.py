@@ -157,7 +157,16 @@ def is_concrete_role_assignment(word):
     return False, []
 
 
-def needs_to_be_gendered(doc, word, check_coref=True):
+def needs_to_be_gendered(doc, word, check_coref=True, visited = None):
+    if visited is None:
+        visited = set()
+
+    # Wenn dieses Wort schon untersucht wurde → Abbruch
+    if word.i in visited:
+        return True, None
+
+    visited.add(word.i)
+
     if word.pos_ == "PROPN":
         return False, [(EIGENNAME_GEFUNDEN, f"Eigenname gefunden: {word}")],
 
@@ -236,13 +245,21 @@ def needs_to_be_gendered(doc, word, check_coref=True):
         if nkm.pos_ != "PROPN":
             continue
 
-        result = needs_to_be_gendered(doc, nkm, check_coref)
+        result = needs_to_be_gendered(doc, nkm, check_coref,visited)
 
         if not result[0]:
             return False, [(NOUN_KERNEL_NAME_FOUND, f"Noun-Kernel weist auf Eigenname hin: {nkm}")] + result[1]
 
     # In Kombinationen wie "Psychiater Professor Dr. Ernst Schultze, der Stenograf, sind eingeführt, der Raum ist grob definiert. "
     # bezieht sich Professor auf zwar auf ernst schulte sein name kernel ist aber der Psychiater
+    # resultWithParentNKFollowedWhenArticle
+    #if word.pos_ == "DET":
+    #    parent_nk = follow_parent_dep(word, "nk") #TODO: DAS wird viele False Positives los, ergänzt allerdings viele false negatives
+    #    if parent_nk:
+    #        result = needs_to_be_gendered(doc, parent_nk, check_coref)
+    #        # oder hier prüfen ob es DET is
+    #        if not result[0]:
+    #            return False, [(NOUN_KERNEL_NAME_FOUND, f"Noun-Kernel weist auf Eigenname hin: {parent_nk}")] + result[1]
 
 
     # Kopulasätze (vgl.: https://de.wikipedia.org/wiki/Kopula_(Grammatik))
@@ -262,7 +279,7 @@ def needs_to_be_gendered(doc, word, check_coref=True):
         #    gendern wir nicht.
         subject = follow_child_dep_single_or_none(kopula_verb, "sb")
         if subject:
-            result = needs_to_be_gendered(doc, subject, check_coref)
+            result = needs_to_be_gendered(doc, subject, check_coref, visited)
 
             if not result[0]:
                 return False, [(KOPULA_SENTENCE, f"Kopula-Satzbau: {subject} (Kopula-Verb: {kopula_verb})")] + result[1]
@@ -275,14 +292,14 @@ def needs_to_be_gendered(doc, word, check_coref=True):
     #                                                  ___________________  _____
     app = follow_parent_dep(word, "app")
     if app:
-        result = needs_to_be_gendered(doc, app, check_coref)
+        result = needs_to_be_gendered(doc, app, check_coref, visited)
 
         if not result[0]:
             return False, [(APPOSITION, f"Einschubsatz: {app}")] + result[1]
     else:
         child_apps = follow_child_dep(word, "app")
         for child_app in child_apps:
-            result = needs_to_be_gendered(doc, child_app, check_coref)
+            result = needs_to_be_gendered(doc, child_app, check_coref, visited)
             if not result[0]:
                 return False, [(APPOSITION, f"Einschubsatz: {app}")] + result[1]
     # Erweiterung von Nominalphrase mittels Genitiv-Attribut
@@ -292,7 +309,7 @@ def needs_to_be_gendered(doc, word, check_coref=True):
     # Bsp.: Hinter der neuen Firma steht unter anderem Lucent Technologies , einer der größten Anbieter von Equipment für Netzwerke und Telekommunikation .
     ag = follow_parent_dep(word, "ag")
     if ag and ag.pos_ == "PRON":
-        result = needs_to_be_gendered(doc, ag, check_coref)
+        result = needs_to_be_gendered(doc, ag, check_coref, visited)
 
         if not result[0]:
             return False, [(GENITIVE_ATTRIBUTE, f"Genitiv-Attribut: {ag} (für: {word})")] + result[1]
@@ -309,7 +326,7 @@ def needs_to_be_gendered(doc, word, check_coref=True):
     if word.tag_ == "PRELS":
         relativ_parent = follow_parent_dep_recursive(word, "rc")
         if relativ_parent:
-            result = needs_to_be_gendered(doc, relativ_parent, check_coref)
+            result = needs_to_be_gendered(doc, relativ_parent, check_coref, visited)
             if not result[0]:
                 return False, [(RELATIVE_CLAUSE, f"Pronomen des Relativsatzes: {result} (für: {word})")] + result[1]
 
@@ -323,7 +340,7 @@ def needs_to_be_gendered(doc, word, check_coref=True):
         # Der Arbeitgeber muss auch die Schulungskurse bezahlen, mit denen er wieder einen Punktebonus erwerben kann.
         #
         if parent_of_relative_clause:
-            result = needs_to_be_gendered(doc, parent_of_relative_clause, check_coref)
+            result = needs_to_be_gendered(doc, parent_of_relative_clause, check_coref, visited)
 
             if not result[0]:
                 return False, [(RELATIVE_CLAUSE, f"Pronomen des Relativsatzes: {result} (für: {word})")] + result[1]
@@ -342,7 +359,7 @@ def needs_to_be_gendered(doc, word, check_coref=True):
     #                                                  ___________________  _____
     par = follow_parent_dep(word, "par")
     if par:
-        result = needs_to_be_gendered(doc, par, check_coref)
+        result = needs_to_be_gendered(doc, par, check_coref, visited)
 
         if not result[0]:
             return False, [(APPOSITION, f"Parataxe: {par}")] + result[1]
@@ -387,7 +404,7 @@ def needs_to_be_gendered(doc, word, check_coref=True):
                     if owi == word.i:
                         continue
 
-                    result = needs_to_be_gendered(doc, doc[owi], False)
+                    result = needs_to_be_gendered(doc, doc[owi], False, visited)
 
                     if not result[0]:
                         return False, [(COREF_CHAIN, f"Koreferenz-Kette: {doc[owi]} (für: {word})")] + \

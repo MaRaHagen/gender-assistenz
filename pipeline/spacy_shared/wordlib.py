@@ -67,7 +67,7 @@ def get_coref_words_in_sentence(doc, word):
 
         if word.i in mention_indices:
             for owi in mention_indices:
-                # Es intressieren uns nur Wörter, die im gleichen Satz stehen.
+                # Es interessieren uns nur Wörter, die im gleichen Satz stehen.
                 if word.doc[owi].sent != word.sent:
                     continue
 
