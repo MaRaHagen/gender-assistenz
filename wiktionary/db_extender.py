@@ -45,6 +45,23 @@ def find_in_db_and_convert(iword):
 
     if not last_part_word:
         return None
+    if "-" in splits[-1][-2]:
+        return {
+            "title": splits[0][-2] + last_part_word["title"],
+            "genus": last_part_word["genus"],
+            "nominativ_singular": splits[0][-2] + last_part_word["nominativ_singular"],
+            "nominativ_plural": splits[0][-2] + last_part_word["nominativ_plural"],
+            "genitiv_singular": splits[0][-2] + last_part_word["genitiv_singular"],
+            "genitiv_plural": splits[0][-2] + last_part_word["genitiv_plural"],
+            "dativ_singular": splits[0][-2] + last_part_word["dativ_singular"],
+            "dativ_plural": splits[0][-2] + last_part_word["dativ_plural"],
+            "akkusativ_singular": splits[0][-2] + last_part_word["akkusativ_singular"],
+            "akkusativ_plural": splits[0][-2] + last_part_word["akkusativ_plural"],
+            "maennliche_formen": [splits[0][-2] + x for x in last_part_word["maennliche_formen"]] if
+            last_part_word["maennliche_formen"] else None,
+            "weibliche_formen": [splits[0][-2] + x for x in last_part_word["weibliche_formen"]] if
+            last_part_word["weibliche_formen"] else None,
+        }
 
     return {
         "title": splits[0][-2] + last_part_word["title"].lower(),

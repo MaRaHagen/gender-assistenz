@@ -516,4 +516,12 @@ def test_Kritiker():
     print(res)
     print(e)
 
+def test_Bindestrich():
+    doc = spacify_with_coref("Bei seinen Kontakten mit Student sei ihm das neue Europa nicht wie eine Zivilisation vorgekommen.")
+
+    res, e = generate_possible_corrections([doc[4]])
+
+    print(res)
+    print(e)
+
 

@@ -23,11 +23,11 @@ class Splitter:
         :param word: Word to be split
         :return: List of all splits
         """
-        word = word.lower()
-
         # If there is a hyphen in the word, return part of the word behind the last hyphen
         if '-' in word:
-            return [(1., re.search('(.*)-', word.title()).group(1), re.sub('.*-', '', word.title()))]
+            return [(1., re.search(r'(.*?-)', word).group(1), re.sub(r'.*?-', '', word.title()))]
+
+        word = word.lower()
 
         scores = list() # Score for each possible split position
 

@@ -302,10 +302,12 @@ def test_noun_kernel_modifiers():
 
     print(res)
 
+
 def test_relative_clause():
     res = full_pipeline("""Einen Berg von Sorgen, über den man kaum hinausschauen kann""")
 
     print(res)
+
 
 def test_antony_quinn():
     res = full_pipeline(
@@ -317,13 +319,31 @@ def test_helden_rabin():
     res = full_pipeline("""Der Kettenraucher Rabin avancierte zum Helden der Israelis.""")
     print(res)
 
+
 def test_word_has_apposition():
     res = full_pipeline("""
 Schon im Januar, berichtet der Generaldirektor der britischen Greenpeace-Division, Lord Melchett, hätten er und Saro-Wiwas Sohn Ken Shell International auf die Zusammenhänge mit dem Engagement des Ölmultis in Nigeria hingewiesen.
 """)
     print(res)
 
-def test_fremdwörter():
-    res = full_pipeline("""Der Totmacher, Karmakars erster Spielfilm, greift den Fall Fritz Haarmann auf, der zwischen 1918 und 1924 in Hannover über 20 Strichjungen ermordete.""")
+
+def test_relative_clause_with_article():
+    res = full_pipeline(
+        """Der Totmacher, Karmakars erster Spielfilm, greift den Fall Fritz Haarmann auf, der zwischen 1918 und 1924 in Hannover über 20 Strichjungen ermordete.""")
 
     print(res)
+
+
+def test_endlossschleifen():
+    res = full_pipeline("""
+Doch Ekkehard Storck, geschäftsführendes Verwaltungsratsmitglied der Deutschen Bank Luxemburg, sieht in den Maßnahmen nur einen ersten Schritt in die richtige Richtung.
+Er spricht mit seinen Vorbehalten auch für die anderen Banken:
+"Zweifellos machen diese Maßnahmen den Finanzplatz attraktiver.""")
+
+    print(res)
+
+def test_duplicate_subject():
+   res = full_pipeline("""Rau muß in der Nacht gespürt haben, daß er für eine dauerhafte Lähmung der SPD verantwortlich wäre, wenn er sich einem Personalwechsel widersetzt.
+Seiner feinen Witterung für Stimmungen und seinem Lebensmotto "Versöhnen statt spalten "folgend, ließ er sich auf die Gegenkandidatur ein.
+In den Gesprächen, die er moderierte - als Berater und Mittler mischten im Hintergrund der frühere Parteivorsitzende Hans-Jochen Vogel und der rheinland-pfälzische Ministerpräsident Beck mit - entwickelte sich während der Nacht eine Idee, wie die überstürzte Rochade der Öffentlichkeit dargestellt werden könnte: Als eine Lösung, bei der Scharping im Fall der Niederlage das Gesicht nicht verliert.""")
+   print(res)
