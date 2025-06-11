@@ -97,4 +97,5 @@ des Autors einmal aufgelistet werden, die den Programmcode deutlich verbessern s
 - **Probleme mit Leerzeichen**: Der Client macht Probleme, wenn ein Wort durch Leerzeichen ersetzt wird. Beispielsweise wenn der Artikel *Ein* korrekterweise in einen Leerstring korrigiert wird (*Ein Student geht.* -> *Studenten gehen.*). Das ist zu korrigieren.
 - **Generierung von Korrekturvorschlägen**: Das aktuelle Vorgehen zur Erstellung der Korrekturvorschläge und der dazugehörige Code ist zurzeit Kraut und Rüben. Dieser könnte durch die Implementierung von *Coreferee + X* deutlich einfacher werden.
 - **LibreOffice Plugin**: das Plugin liegt aktuell lediglich in Form eine proof of concept vor und müsste an die Anforderungen für produktive Software angepasst werden.
+- **GenderRegeln*: es wäre sinnvoll die Regeln ob ein Begriff gegendert werden muss oder nicht in eine zentrale Rule-Engine auszulagern so das diese einzeln testbar und manuell wartbar werden würden.
 #
