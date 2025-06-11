@@ -295,12 +295,18 @@ def test_Kurt_Beck():
 
     print(res)
 
+def test_noun_upwards():
+    res = full_pipeline(
+            """Drei Schnitte, und die drei Personen: der Täter, der Psychiater Professor Dr. Ernst Schultze, der Stenograf, sind eingeführt, der Raum ist grob definiert.""")
+    print(res)
+
 
 def test_noun_kernel_modifiers():
     res = full_pipeline(
-        """Drei Schnitte, und die drei Personen: der Täter, der Psychiater Professor Dr. Ernst Schultze, der Stenograf, sind eingeführt, der Raum ist grob definiert.""")
+        """Der Totmacher, Karmakars erster Spielfilm, greift den Fall Fritz Haarmann auf, der zwischen 1918 und 1924 in Hannover über 20 Strichjungen ermordete.""")
 
     print(res)
+
 
 
 def test_relative_clause():
@@ -309,7 +315,7 @@ def test_relative_clause():
     print(res)
 
 
-def test_antony_quinn():
+def test_dativ_relation():
     res = full_pipeline(
         """Die Hauptrolle kommt dem robustesten Vertreter dieser Welt zu, einem von Anthony Quinn dargestellten Zirkusartisten und Vagabunden, der, Produkt seiner Zeit, als ein zwanghaft unmoralischer Charakter seine nichtsahnenden Opfer bis auf die letzte Lira schröpft.""")
     print(res)
@@ -320,7 +326,7 @@ def test_helden_rabin():
     print(res)
 
 
-def test_word_has_apposition():
+def test_word_has_apposition_both_ways():
     res = full_pipeline("""
 Schon im Januar, berichtet der Generaldirektor der britischen Greenpeace-Division, Lord Melchett, hätten er und Saro-Wiwas Sohn Ken Shell International auf die Zusammenhänge mit dem Engagement des Ölmultis in Nigeria hingewiesen.
 """)

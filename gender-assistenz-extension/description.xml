@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<description xmlns="http://openoffice.org/extensions/description/2006">
+  <identifier value="org.genderassist.extension"/>
+  <version value="0.2"/>
+  <display-name>
+    <name lang="de">Gender Assistent v9</name>
+  </display-name>
+  <extension-description>
+    <src lang="de">Erkennt automatisch geschlechtsspezifische Begriffe in deutschen Texten und schlägt inklusive Alternativen vor.</src>
+  </extension-description>
+  <platform value="all"/>
+    <registration>
+    <component name="GenderAssist" service="com.sun.star.task.Job"/>
+  </registration>
+</description>

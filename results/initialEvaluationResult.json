@@ -1,158 +1,41 @@
-[
-  [
-    "correct",
-    75084
-  ],
-  [
-    "incorrect",
-    8956
-  ],
-  [
-    "marks",
-    84002
-  ],
-  [
-    "not_marked",
-    38
-  ],
-  [
-    "not_ntbg",
-    74920
-  ],
-  [
-    "not_ntbg_correct",
-    66986
-  ],
-  [
-    "not_ntbg_incorrect",
-    7934
-  ],
-  [
-    "not_ntbg_plural",
-    21780
-  ],
-  [
-    "not_ntbg_singular",
-    51915
-  ],
-  [
-    "nouns",
-    69143
-  ],
-  [
-    "nouns_not_ntbg",
-    60235
-  ],
-  [
-    "nouns_not_ntbg_correct",
-    53859
-  ],
-  [
-    "nouns_not_ntbg_incorrect",
-    6376
-  ],
-  [
-    "nouns_ntbg",
-    8908
-  ],
-  [
-    "nouns_ntbg_correct",
-    7962
-  ],
-  [
-    "nouns_ntbg_incorrect",
-    946
-  ],
-  [
-    "ntbg",
-    9120
-  ],
-  [
-    "ntbg_correct",
-    8098
-  ],
-  [
-    "ntbg_incorrect",
-    1022
-  ],
-  [
-    "ntbg_plural",
-    7994
-  ],
-  [
-    "ntbg_singular",
-    1072
-  ],
-  [
-    "num_undetermined",
-    1279
-  ],
-  [
-    "plural",
-    29774
-  ],
-  [
-    "plural_not_ntbg_correct",
-    20337
-  ],
-  [
-    "plural_not_ntbg_incorrect",
-    1443
-  ],
-  [
-    "plural_ntbg_correct",
-    7215
-  ],
-  [
-    "plural_ntbg_incorrect",
-    779
-  ],
-  [
-    "pronouns",
-    14897
-  ],
-  [
-    "pronouns_not_ntbg",
-    14685
-  ],
-  [
-    "pronouns_not_ntbg_correct",
-    13127
-  ],
-  [
-    "pronouns_not_ntbg_incorrect",
-    1558
-  ],
-  [
-    "pronouns_ntbg",
-    212
-  ],
-  [
-    "pronouns_ntbg_correct",
-    136
-  ],
-  [
-    "pronouns_ntbg_incorrect",
-    76
-  ],
-  [
-    "singular",
-    52987
-  ],
-  [
-    "singular_not_ntbg_correct",
-    45443
-  ],
-  [
-    "singular_not_ntbg_incorrect",
-    6472
-  ],
-  [
-    "singular_ntbg_correct",
-    846
-  ],
-  [
-    "singular_ntbg_incorrect",
-    226
-  ]
-]
+{
+  "correct": 75084,
+  "incorrect": 8956,
+  "marks": 84002,
+  "not_marked": 38,
+  "not_ntbg": 74920,
+  "not_ntbg_correct": 66986,
+  "not_ntbg_incorrect": 7934,
+  "not_ntbg_plural": 21780,
+  "not_ntbg_singular": 51915,
+  "nouns": 69143,
+  "nouns_not_ntbg": 60235,
+  "nouns_not_ntbg_correct": 53859,
+  "nouns_not_ntbg_incorrect": 6376,
+  "nouns_ntbg": 8908,
+  "nouns_ntbg_correct": 7962,
+  "nouns_ntbg_incorrect": 946,
+  "ntbg": 9120,
+  "ntbg_correct": 8098,
+  "ntbg_incorrect": 1022,
+  "ntbg_plural": 7994,
+  "ntbg_singular": 1072,
+  "num_undetermined": 1279,
+  "plural": 29774,
+  "plural_not_ntbg_correct": 20337,
+  "plural_not_ntbg_incorrect": 1443,
+  "plural_ntbg_correct": 7215,
+  "plural_ntbg_incorrect": 779,
+  "pronouns": 14897,
+  "pronouns_not_ntbg": 14685,
+  "pronouns_not_ntbg_correct": 13127,
+  "pronouns_not_ntbg_incorrect": 1558,
+  "pronouns_ntbg": 212,
+  "pronouns_ntbg_correct": 136,
+  "pronouns_ntbg_incorrect": 76,
+  "singular": 52987,
+  "singular_not_ntbg_correct": 45443,
+  "singular_not_ntbg_incorrect": 6472,
+  "singular_ntbg_correct": 846,
+  "singular_ntbg_incorrect": 226
+}

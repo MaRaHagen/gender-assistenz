@@ -250,14 +250,12 @@ def needs_to_be_gendered(doc, word, check_coref=True, visited = None):
         if not result[0]:
             return False, [(NOUN_KERNEL_NAME_FOUND, f"Noun-Kernel weist auf Eigenname hin: {nkm}")] + result[1]
 
-    # In Kombinationen wie "Psychiater Professor Dr. Ernst Schultze, der Stenograf, sind eingeführt, der Raum ist grob definiert. "
-    # bezieht sich Professor auf zwar auf ernst schulte sein name kernel ist aber der Psychiater
+    # In Kombinationen wie "Der Totmacher, Karmakars erster Spielfilm, greift den Fall Fritz Haarmann auf, der zwischen 1918 und 1924 in Hannover über 20 Strichjungen ermordete. "
     # resultWithParentNKFollowedWhenArticle
     #if word.pos_ == "DET":
-    #    parent_nk = follow_parent_dep(word, "nk") #TODO: DAS wird viele False Positives los, ergänzt allerdings viele false negatives
+    #    parent_nk = follow_parent_dep(word, "nk") #TODO: Siehe ergebniss ParentNKfollowedWhenArticle
     #    if parent_nk:
-    #        result = needs_to_be_gendered(doc, parent_nk, check_coref)
-    #        # oder hier prüfen ob es DET is
+    #        result = needs_to_be_gendered(doc, parent_nk, check_coref, visited)
     #        if not result[0]:
     #            return False, [(NOUN_KERNEL_NAME_FOUND, f"Noun-Kernel weist auf Eigenname hin: {parent_nk}")] + result[1]
 
@@ -319,7 +317,7 @@ def needs_to_be_gendered(doc, word, check_coref=True, visited = None):
     # Wenn ein Pronomen als Subjekt eines Relativsatzes steht,
     # dann bezieht es sich wahrscheinlich auf das Subjekt des
     # äußeren Satzes. Wir übernehmen das Ergebnis des Wortes,
-    # auf den sich das Pronomen bezieht.
+    # auf den sich das Pronomen bezieht. Hierbei folgen wir auch recursiv dem Baum um die komplette Kette abzudecken.
     #
     # Bsp.: Der Duden für Szenesprachen , der bereits seit dem Frühjahr im Handel ist , wird nun online fortgeschrieben .
     #           _____                     ___
@@ -368,7 +366,7 @@ def needs_to_be_gendered(doc, word, check_coref=True, visited = None):
     if role[0]:
         return False, [(NOUN_KERNEL_NAME_FOUND, f"Noun-Kernel weist auf Eigenname hin")]
 
-    # Dativ Relationen sollten verfolgt werden TODO: DAS wird viele False Positives los, ergänzt allerdings viele false negatives
+    # Dativ Relationen sollten verfolgt werden Ergebniss mit beiden in DativRelation nur oben in just referentiell und nur unten in JustZumCase kann entfernt werden
     #if word.pos_ == "NOUN" or word.morph.get("Case") == ["Dat"]:
     #    # Dieser teil löst Dativrelationen über den gesamtsatz (siehe test anthony quinn)
     #    sent = word.sent
@@ -379,14 +377,14 @@ def needs_to_be_gendered(doc, word, check_coref=True, visited = None):
     #                    return False, [("REFERENTIELLE_NP", f"Wort '{word}' steht in Kontext mit benannter Figur ({child.text})")]
 
         # dieser teil für konkrete relationen über einen zu modifiert test_helden_rabin
-        #if word.head.pos_ == "ADP" or word.head.dep_ == "mo":
-        #    verb = word.head.head.head
-        #    if verb.pos_ == "VERB":
-        #        subject = next((tok for tok in verb.children if tok.dep_ == "sb"), None)
-        #        if subject:
-        #            result = needs_to_be_gendered(doc, subject, check_coref)
-        #            if not result[0]:
-        #                return False, [("PRÄDIKAT_PROPN", f"'{word.text}' bezieht sich auf {subject.text}")] + result[1]
+    #    if word.head.pos_ == "ADP" or word.head.dep_ == "mo":
+    #        verb = word.head.head.head
+    #        if verb.pos_ == "VERB":
+    #            subject = next((tok for tok in verb.children if tok.dep_ == "sb"), None)
+    #            if subject:
+    #                result = needs_to_be_gendered(doc, subject, check_coref)
+    #                if not result[0]:
+    #                    return False, [("PRÄDIKAT_PROPN", f"'{word.text}' bezieht sich auf {subject.text}")] + result[1]
 
     if check_coref:
         # Coreference Chains

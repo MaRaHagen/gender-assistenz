@@ -8,7 +8,7 @@ from pipeline.spacy_shared.wordlib import get_coref_words_in_sentence
 
 
 def full_pipeline(text):
-    print('This is the pipeline with appositions going both ways')
+    loguru.logger.error(text)
     """
     Führt eine vollständige Analyse durch:
     1. Initiale spaCy-Analyse mit Koreferenz
@@ -32,6 +32,7 @@ def full_pipeline(text):
         return []
 
     for word in initial_words:
+        print(word.idx)
         try:
             needs_gendering, reason = needs_to_be_gendered(doc, word)
         except Exception as e:

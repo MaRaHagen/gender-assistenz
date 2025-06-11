@@ -1,22 +1,13 @@
 # Gender-Assistenz
 
-Dieses Repository beziehungsweise die hier liegende Anwendung entstand im Rahmen der Abschlussarbeit *Computerlinguistische Unterstützung des gendergerechten Schreibens* im Rahmen des Studiengangs *B.Sc. Informatik* an der Fernuniversität in Hagen. 
+Die hier liegende Anwendung entstand im Rahmen der Abschlussarbeit *Computerlinguistische Unterstützung des gendergerechten Schreibens* im Rahmen des Studiengangs *B.Sc. Informatik* an der Fernuniversität in Hagen. 
 Die Arbeit wurde betreut von [Dr. Niels Seidel](https://www.fernuni-hagen.de/ks/team/niels.seidel.shtml) im Lehrgebiet [Kooperative Systeme](https://www.fernuni-hagen.de/ks/) der Fernuniversität.
-
-Die schriftliche Ausarbeitung ist unter dem Link [https://ub-deposit.fernuni-hagen.de/receive/mir_mods_00001773](https://ub-deposit.fernuni-hagen.de/receive/mir_mods_00001773) zu finden. 
+Weiterentwickelt wurde diese Anwendung im Rahmen der Abschlussarbeit *Evaluation und methodische Weiterentwicklung eines Assistenzsystemes für das gendergerechte
+Schreiben* im Rahmen des Studiengang *M.Sc. Praktische Informatik*  an der Fernuniversität in Hagen. 
+Die Arbeit wurde betreut von [Dr. Niels Seidel](https://www.fernuni-hagen.de/ks/team/niels.seidel.shtml) bei CATALPA der Fernuniversität.
 
 ## Zusammenfassung der Arbeit
-Diese Arbeit beschäftigt sich mit der Frage, wie Verfasserinnen und Verfasser von Texten maschinell
-bei der Umsetzung eines geschlechtergerechten Sprachgebrauchs unterstützt werden können. Zu
-einem solchen geschlechtergerechten Sprachgebrauch in der deutschen Sprache gehört insbesondere
-die Vermeidung des generischen Maskulinums. Für diese Aufgabe der Vermeidung generischen
-Maskulinums soll ein System mittels der Verfahren der Computerlinguistik entwickelt werden, welches
-Vorkommen identifizieren und Korrekturvorschläge für diese erstellen kann. Ergänzend soll die
-Entwicklung einer Anwendung vorgestellt werden, die Anwenderinnen und Anwender eine grafische
-Oberfläche zur Korrektur ihrer Texte mit dem beschriebenen System bereitstellt. Im Rahmen einer
-Evaluation des Systems werden die Genauigkeit untersucht und Verbesserungsmöglichkeiten herausgearbeitet.
-Darüber hinaus werden auch andere Aspekte einer geschlechtergerechten Sprache in
-Bezug auf maschinelle Unterstützungsmöglichkeiten diskutiert.
+Diese Arbeit beschäftigt sich mit der Frage, wie gut ein System zur Unterstützung des gender gerech
 
 ## Screenshots
 ### Erkennnung von generischem Maskulinum
@@ -46,7 +37,7 @@ Ausgehend vom Projektverzeichnis als Working Directory:
 - npm install
 - npm run build
 - cd ..
-- poetry shell/poetry env activate (je nach installierter poetry version)
+- poetry shell / poetry env activate (je nach installierter poetry version)
 - python -m spacy download de_dep_news_trf
 - python -m spacy download de_core_news_lg
 - (python -m pip install coreferee)*
@@ -71,6 +62,15 @@ Ausgehend vom Projektverzeichnis als Working Directory:
 
 Die gestartete Applikation kann im Browser unter der Adresse *http://localhost:8080/index.html* aufgerufen werden.
 
+## Nutzung in LibreOffice
+### Vorraussetzungen
+- LibreOffice & LibreOfficeSDK (https://de.libreoffice.org/)
+- Lokaler GenderAssistenz Server läuft
+
+### Installation
+LibreOffice starten Writer Dokument auswählen unter Tools -> Extensions -> Add (dann gender-assist.oxt wählen) Libre office neu starten. 
+Ein Klick auf Analyse Starten analysiert den gesamten Text und geht danach die Änderungen durch.
+
 ## Überblick über die Ordnerstruktur
 
 - /charsplit : Hier ist die Bibliothek [charsplit](https://github.com/dtuggener/CharSplit) von *Tuggener, Don* zu finden. Sie wird im Rahmen der Anwendung zum sogenannten *compound splitting* im Rahmen der Suche nach abstrahierender Verwendung (2. Schritt) und Erstellung der Korrekturvorschläge (3. Schritt) verwendet. Weitere Informationen gibt es dazu im Kapitel *2.4.2 Dynamische Erweiterung um zusammengesetzte Nomen*. 
@@ -85,7 +85,7 @@ Die gestartete Applikation kann im Browser unter der Adresse *http://localhost:8
 
 ## Weitere Anmerkungen
 
-Bei der Anwendung handelt es sich ein Projekt, welches unter den Zeitbegrenzungen einer Bachelor-Arbeit der Fernuniversität Hagen, entwickelt wurde. Insofern darf man an die Qualität 
+Bei der Anwendung handelt es sich ein Projekt, welches unter den Zeitbegrenzungen einer Bachelor-Arbeit der Fernuniversität Hagen, entwickelt wurde und unter den Bedingungen einer Masterarbeit weiterentwicklet wurde. Insofern darf man an die Qualität 
 des erstellten Programmcodes nicht zu hohe Anforderungen haben. Wesentlich sind die vorgestellten Ideen und Vorgehensweisen. Nichtsdestotrotz sollen im Folgenden einige Gedanken
 des Autors einmal aufgelistet werden, die den Programmcode deutlich verbessern sollten:
 
@@ -93,7 +93,8 @@ des Autors einmal aufgelistet werden, die den Programmcode deutlich verbessern s
 - **Trennung: Erkennung von Personenbezeichnungen und abstrahierender Verwendung** : Ob eine Personenbezeichnung und / oder eine abstrahierende Verwendung vorliegt wird im Moment stark verzahnt geprüft. Es wäre sinnvoll, diese Aufgaben als Teilprobleme aufzufassen und entsprechend zu abstrahieren.
 - **Wortdatenbank** : Der Code für den Zugriff auf die Wortdatenbank ist ziemlich verstreut. Es wäre sinnvoll, diese in eine eigene Ordnerstruktur zu legen. Gegebenenfalls wäre es sinnvoll, diese in ein eigenes Teilmodul zu übertragen. Diese Funktionalität, insbesondere im Hinblick auf die dynamische Erweiterung um zusammengesetzte Nomen, könnte auch in anderen Projekten anwendbar sein.
 - **Extrahierung aus dem Wiktionary**: Der hier erstellte Code ist sehr unübersichtlich. Statt mit regulären Ausdrücken und Zeichenkettenoperationen zu arbeiten, wäre es sinnvoll, einen Wiktionary-Parser zu verwenden. In Betracht kommen beispielsweise [wiktextract](https://github.com/tatuylonen/wiktextract) und [dkpro-jwktl](https://github.com/dkpro/dkpro-jwktl). Diese Tools wurden im Rahmen der Ausarbeitung ausprobiert, konnten jedoch nicht in der Kürze der Zeit zum Laufen gebracht werden. Zum Teil müssen sie auch um die Unterstützung der Flexionsseiten (Bsp.: [https://de.wiktionary.org/wiki/Flexion:gehen](https://de.wiktionary.org/wiki/Flexion:gehen)) erweitert werden.
-- **CharSplit**: Die Bibliothek für das *compound splitting*, [CharSplit](https://github.com/dtuggener/CharSplit) ist selbst nicht im PyPI vorhanden. Hier wurde die Bibliothek einfach als Code eingebunden. Sinnvoll wäre es, die Bibliothek auszulagern und ggf. mit Einverständnis des Autors im PyPI zu veröffentlichen.
+- **CharSplit**: Die Bibliothek für das *compound splitting*, [CharSplit](https://github.com/dtuggener/CharSplit) ist selbst nicht im PyPI vorhanden. Hier wurde die Bibliothek einfach als Code eingebunden. Sinnvoll wäre es, die Bibliothek auszulagern und ggf. mit Einverständnis des Autors im PyPI zu veröffentlichen. Außerdem hat die Bibliothek Probleme Wörter Korrektur zu trennen die auf gültige Silben enden wie Alten (Inhalten, Vorbehalte etc.)
 - **Probleme mit Leerzeichen**: Der Client macht Probleme, wenn ein Wort durch Leerzeichen ersetzt wird. Beispielsweise wenn der Artikel *Ein* korrekterweise in einen Leerstring korrigiert wird (*Ein Student geht.* -> *Studenten gehen.*). Das ist zu korrigieren.
 - **Generierung von Korrekturvorschlägen**: Das aktuelle Vorgehen zur Erstellung der Korrekturvorschläge und der dazugehörige Code ist zurzeit Kraut und Rüben. Dieser könnte durch die Implementierung von *Coreferee + X* deutlich einfacher werden.
+- **LibreOffice Plugin**: das Plugin liegt aktuell lediglich in Form eine proof of concept vor und müsste an die Anforderungen für produktive Software angepasst werden.
 #
