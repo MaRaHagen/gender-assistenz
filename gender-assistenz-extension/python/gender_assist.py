@@ -100,11 +100,6 @@ class GenderAssist(unohelper.Base, XJobExecutor):
             if self.highlight_and_confirm(c["from"]+offset, c["to"]+offset, c["replacement"]):
                 offset += len(c["replacement"]) - (c["to"] - c["from"])
 
-
-
-        # In Dokument einfügen
-        text_range = doc.Text.End
-        text_range.setString("\n\n--- Gender-Assistent Vorschlag ---\n" + text)
         return
 
     def ask_user_confirmation(self, title, message):
